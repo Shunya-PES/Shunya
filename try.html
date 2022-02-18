@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Navigation bar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@500&family=Pridi:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Events</a></li>  
+          <li><a href="">Forum</a></li>  
+          <li><a href="">Blog</a></li>  
+          <li><a href="/about">About us</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Forum</a></li>  
+          <li><a href="">Blog</a></li>
+          <li><a href="">About us</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+        </ul>
+      </div>
+    </header>
+    <table>
+        <tr>
+          <td colspan="2" class="welcome">Welcome</td>
+        </tr>
+        <tr>
+         <td>
+           <p class="welcome-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis
+            rhoncus justo. Vestibulum imperdiet pharetra elit id accumsan. Donec
+            tempus ligula at feugiat tincidunt. Pellentesque lacinia orci a dui
+            luctus commodo. Proin magna nisi, congue convallis nibh at, vestibulum
+            aliquet ligula. Sed aliquam quam quis risus sollicitudin, at ultricies
+            orci accumsan. In venenatis leo et erat mattis vehicula. Morbi ac
+            hendrerit augue, nec fringilla mauris.
+           </p>
+         </td> 
+         <td>
+          <img src="wel.png" class="welcome-img" width=500px/>
+         </td>
+        </tr>
+      </table>
+      <div class="aboutus">
+        <h1>ABOUT US</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis rhoncus justo. Vestibulum 
+            imperdiet pharetra elit id accumsan. Donec tempus ligula at feugiat tincidunt. Pellentesque lacinia
+            orci a dui luctus commodo. Proin magna nisi, congue convallis nibh at, vestibulum aliquet ligula. 
+            Sed aliquam quam quis risus sollicitudin, at ultricies orci accumsan. In venenatis leo et erat 
+            mattis vehicula. Morbi ac hendrerit augue, nec fringilla mauris.  
+        </p>
+    </div>
+    <div class="clubmem">
+        <h1>CLUB MEMBERS</h1>
+        <div class="photo">
+            <div class="gallery">
+                <img src="member.png" class="first">
+                <p>NAME</p>
+                <p>ROLE</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="gallery">
+                <img src="member.png" class="first">
+                <p>NAME</p>
+                <p>ROLE</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="gallery">
+                <img src="member.png" class="first">
+                <p>NAME</p>
+                <p>ROLE</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    <script src="index.js"></script>
+  </body>
+</html>

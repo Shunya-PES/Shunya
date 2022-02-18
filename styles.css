@@ -1,0 +1,247 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+    width: 75px;
+    cursor: pointer;
+    margin: 30px 0;
+  }
+
+  
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 50px;
+  background-color: black;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  font-family:"podkova";
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family:"Podkova";
+}
+
+ul a {
+  color: white;
+  font-family:"podkova";
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#login {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: none;
+  background-image: linear-gradient(to top, blue, rgb(133, 168, 233));
+
+}
+
+#login a {
+  color: white;
+}
+
+.col-1{
+    /* flex-basis: 40%;
+    position: relative; */
+    margin-top: 10rem;
+    margin-left: 10rem;
+    color: white;
+    width: 25rem;
+  }
+  table{
+    margin-top: 100px;
+    margin-left: 10rem;
+  }
+  .welcome {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: Old English Text MT;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+  
+  .welcome-para {
+    color: white;
+    font-family: Rage Italic;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .welcome-img{
+    float: right;
+  }
+  .aboutus {
+    margin-top: 10rem;
+    color: white;
+    font-family: "Pridi";
+  }
+  
+  .aboutus h1 {
+    margin: 0 auto;
+    width: 75rem;
+    background: linear-gradient(to top, blue, rgb(133, 168, 233));
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-family: "Pridi";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+  }
+  .aboutus p {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 50rem;
+    text-align: center;
+    font-family: "Pridi";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .clubmem {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    
+  }
+  
+  .clubmem h1 {
+    margin: 0 auto;
+    width: 75rem;
+    background: linear-gradient(to top, blue, rgb(133, 168, 233));
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-family: "Pridi";
+    font-weight: 400;
+  }
+  
+  .photo {
+    margin-top: 5rem;
+    margin-left: 19rem;
+  }
+  .gallery {
+    margin: 2rem;
+    float: left;
+    width: 10rem;
+  }
+  .gallery p {
+    margin: 1rem auto;
+    text-align: center;
+    color: white;
+    font-family: "Pridi";
+  }
+  .image {
+    float: left;
+    width: 10rem;
+    padding: 5rem;
+  }
+  .first {
+    width: 10rem;
+    clip-path: circle();
+    margin-bottom: 1rem;
+  }
+  
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
