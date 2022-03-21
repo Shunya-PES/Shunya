@@ -1,230 +1,329 @@
-<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Shunya</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@300&display=swap');
+    <link rel="icon" href="Assets/univeralAssets/logo.png" type="image/icon type" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@500&family=Pridi:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-        * {
-            color: white;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    .logo {
 
-        body {
-            background-color: black;
-        }
+        cursor: pointer;
+        margin: 20px 0;
+      }
 
-        main {
-            margin: 0 30px;
-            display: grid;
-        }
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
 
-        .box-styling {
-            padding: 30px;
-            background: linear-gradient(180deg, #161616 -5.56%, rgba(22, 22, 22, 0) 63.93%);
-            border: 1px solid #2C2A2A;
-            border-radius: 25px;
-            font-family: 'Pridi', serif;
-            line-height: 20px;
-        }
+    header a {
+      text-decoration: none;
+    }
 
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 100vw;
-            margin: 10px 0px;
-        }
+    header {
+      padding: 0 50px;
+      background-color: black;
+      height: 150px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      font-family:"podkova";
+    }
 
-        article h1 {
-            font-family: 'Ovo', serif;
-            font-size: 30px;
-        }
+    ul {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-family:"Podkova";
+    }
 
-        img {
-            width: 100%;
-            margin: 15px;
-        }
+    ul a {
+      color: white;
+      font-family:"podkova";
+    }
 
-        aside>article {
-            display: flex;
-            flex-direction: row;
-        }
+    ul li {
+      padding: 5px;
+      margin-left: 10px;
+    }
 
-        aside img {
-            max-width: 100px;
-        }
+    ul li:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
 
-        .aside-content div {
-            font-family: 'Ovo', serif;
-            font-size: large;
-        }
+    #login {
+      border-radius: 5px;
+      padding: 5px 8px;
+    }
 
-        .aside-content p {
-            font-family: 'Pridi', serif;
-        }
+    #login {
+      border: none;
+      background-image: linear-gradient(to top, blue, rgb(133, 168, 233));
 
-        .date {
-            text-transform: uppercase;
-            font-family: 'Ovo', serif;
-            display: flex;
-            width: 100%;
-            justify-content: flex-end;
-            margin: 10px;
-        }
+    }
 
-        /* Header Styles */
-        .container {
-            padding-top: 20px;
-            padding-left: 8%;
-            padding-right: 8%;
-            box-sizing: border-box;
-            overflow: hidden;
-        }
+    #login a {
+      color: white;
+    }
 
-        .navbar {
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
+    .col-1{
+        /* flex-basis: 40%;
+        position: relative; */
+        margin-top: 10rem;
+        margin-left: 10rem;
+        color: white;
+        width: 25rem;
+      }
+      table{
+        margin-top: 100px;
+        margin-left: 10rem;
+      }
+      .welcome {
+        color: white;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-family: Old English Text MT;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+      }
+      
+      .welcome-para {
+        color: white;
+        font-family: Rage Italic;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      
+      .welcome-img{
+        float: right;
+      }
+      .Main {
 
-        .logo {
-            width: 70px;
-            cursor: pointer;
-            margin: 30px 0;
-        }
+      }
+      .aboutus {
+        margin-top: 10rem;
+        color: white;
+        font-family: "Pridi";
+      }
+      
+      .aboutus h1 {
+        margin: 0 auto;
+        align-items: center;
+        background: linear-gradient(to top, blue, rgb(133, 168, 233));
+        background-clip: border-box;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+        font-family: "Pridi";
+        font-style: bolder;
+        font-weight: bolder;
+        line-height: 54px;
+        letter-spacing: 0em;
+      }
+      .aboutus p {
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: 50rem;
+        text-align: center;
+        font-family: "Pridi";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      
+      .clubmem {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        
+      }
+      
+      .clubmem h1 {
+        margin: 0 auto;
+        width: 75rem;
+        background: linear-gradient(to top, blue, rgb(133, 168, 233));
+        background-clip: border-box;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+        font-family: "Pridi";
+        font-weight: 400;
+      }
+      
+      .photo {
+        margin-top: 5rem;
+        margin-left: 19rem;
+      }
+      .gallery {
+        margin: 2rem;
+        float: left;
+        width: 10rem;
+      }
+      .gallery p {
+        margin: 1rem auto;
+        text-align: center;
+        color: white;
+        font-family: "Pridi";
+      }
+      .image {
+        float: left;
+        width: 10rem;
+        padding: 5rem;
+      }
+      .first {
+        width: 10rem;
+        clip-path: circle();
+        margin-bottom: 1rem;
+      }
+      
 
-        .menu-icon {
-            width: 25px;
-            cursor: pointer;
-            display: none;
-        }
 
-        .menus {
-            color: white;
-            font-family: "Podkova";
-            font-size: 17px;
-            font-weight: 400;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: left;
-        }
+    #hamburger-icon {
+      margin: auto 0;
+      display: none;
+      cursor: pointer;
+    }
 
-        nav {
-            font-family: "Podkova", serif;
-            flex: 1;
-            text-align: left;
-        }
+    #hamburger-icon div {
+      width: 35px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
 
-        nav ul li {
-            list-style: none;
-            display: inline-block;
-            margin-left: 30px;
-        }
+    .open .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            font-size: 12px;
-        }
+    .open .bar2 {
+      opacity: 0;
+    }
 
-        button {
-            color: white;
-            font-size: 17px;
-            border: none;
-            background-image: linear-gradient(to top, blue, rgb(133, 168, 233));
-            padding: 5px 25px;
-            border-radius: 6px;
-            font-family: "Podkova", serif;
-            cursor: pointer;
-        }
+    .open .bar3 {
+      -webkit-transform: rotate(45deg) translate(-6px, -8px);
+      transform: rotate(45deg) translate(-6px, -8px);
+    }
 
-        @media screen and (min-width: 950px) {
-            main {
-                grid-template-columns: 7fr 3fr;
-                gap: 20px;
-            }
+    .open .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
 
-            article {
-                align-items: flex-start;
-            }
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      height: calc(100vh - 50px);
+      width: 100%;
+    }
 
-            aside article {
-                align-items: center;
-            }
+    .mobile-menu li {
+      margin-bottom: 10px;
+    }
 
-            article h1 {
-                font-size: 40px;
-                margin: 10px;
-            }
-        }
-    </style>
-</head>
+    @media only screen and (max-width: 600px) {
+      header nav {
+        display: none;
+      }
 
-<body>
-    <div class="container">
-        <div class="navbar">
-            <img src="logo.png" class="logo" />
-            <nav>
-                <ul id="menu-list">
-                    <li><a href="" class="menus">Home</a></li>
-                    <li><a href="" class="menus">Events</a></li>
-                    <li><a href="" class="menus">Forum</a></li>
-                    <li><a href="" class="menus">Blog</a></li>
-                    <li><a href="" class="menus">About us</a></li>
-                </ul>
-            </nav>
-            <button>Login</button>
-            <img src="menu.jpg" class="menu-icon" />
-        </div>
-    </div>
-    <main>
-        <article class="box-styling">
-            <h1>Top 10 Math Equations</h1>
-            <img src="./shunya.png" />
-            <div class="date">
-                <span>15 january 2022</span>
-            </div>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor deserunt beatae, quasi, praesentium
-                sed ab odit voluptate molestiae necessitatibus aut? Atque, non? Animi cupiditate delectus porro
-                voluptatibus quia voluptas.
-                Blanditiis odio explicabo, facere, nemo repudiandae fugiat consequatur quas minima odit nobis recusandae
-                dignissimos cumque sit sapiente ad! Tempore. Vel tenetur illum iusto accusamus odit nesciunt est, non
-                quibusdam veniam tempora aspernatur, doloribus deleniti, ipsum reprehenderit repudiandae quas ea
-                excepturi consequatur accusantium aut numquam culpa veritatis? Voluptatem, officiis expedita!
-            </div>
-        </article>
-        <aside>
-            <article class="box-styling">
-                <img src="./shunya_.png">
-                <div class="aside-content">
-                    <div>Solve Fast!</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-            </article>
-            <article class="box-styling">
-                <img src="./shunya_.png">
-                <div class="aside-content">
-                    <div>Solve Fast!</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-            </article>
-            <article class="box-styling">
-                <img src="./shunya_.png">
-                <div class="aside-content">
-                    <div>Solve Fast!</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-            </article>
-        </aside>
-    </main>
-</body>
+      #hamburger-icon {
+        display: block;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <img href="/index.html" src="Assets/univeralAssets/logo.png" class="logo" />
+      <nav>
+        <ul>
+          <!-- <li><a href="/index.html">Home</a></li> -->
+          <li><a href="/events.html">Events</a></li>  
+          <li><a href="">Forum</a></li>  
+          <li><a href="/blog.html">Blog</a></li>  
+          <li><a href="/aboutUs.html">About us</a></li>
+          <!-- <li id="login"><a href="/login" >Login</a></li> -->
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Forum</a></li>  
+          <li><a href="">Blog</a></li>
+          <li><a href="">About us</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- <table>
+        <tr>
+          <td colspan="2" class="welcome">Welcome</td>
+        </tr>
+        <tr>
+         <td>
+           <p class="welcome-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis
+            rhoncus justo. Vestibulum imperdiet pharetra elit id accumsan. Donec
+            tempus ligula at feugiat tincidunt. Pellentesque lacinia orci a dui
+            luctus commodo. Proin magna nisi, congue convallis nibh at, vestibulum
+            aliquet ligula. Sed aliquam quam quis risus sollicitudin, at ultricies
+            orci accumsan. In venenatis leo et erat mattis vehicula. Morbi ac
+            hendrerit augue, nec fringilla mauris.
+           </p>
+         </td> 
+         <td>
+          <embed src="https://my.spline.design/shunya-fbcb002e64a2003aff3d6d3ac5b350a2/" type="">
+        </tr>
+      </table> -->
+        <img src="/Assets/index_page/main.png" width=1000px alt="">
 
+      <section class="aboutus">
+        <h1>ABOUT US</h1>
+        <p>Shunya, the official math club across all campuses of PES University, is an analysis-driven and a research-oriented club.We break down the myth of mathematics being mundane and inapplicable by discovering its practicality as a step-by-step process. To this end, we host various fun activities and events related to a variety of branches in applied math. A curious mind learns with an adrenaline rush experienced while competing.          
+          <br>Shunya promises much more than just "fun mathematics"; it is a community of extraordinary youth joining together to develop their explorative, creative, and inventive faculties. Shunya is a place to learn, explore, develop and research.<br>
+
+          With us, students are on a journey to capture the beauty of mathematics in its true essence. The club is open to all those curious to learn more about mathematics, regardless of your branch, course, or background.
+          <br>
+          Shunya is the only club which spans across all three campuses of PES University, Bengaluru! 
+        </p>
+      </section>
+    <script>
+      function toggleMobileMenu(menu){
+      menu.classList.toggle('open');}
+    </script>
+  </body>
 </html>

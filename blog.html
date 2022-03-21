@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shunya|Blog</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@300&display=swap');
+
+        * {
+            color: white;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        main {
+            margin: 0 30px;
+            display: grid;
+        }
+
+        .box-styling {
+            padding: 30px;
+            background: linear-gradient(180deg, #161616 -5.56%, rgba(22, 22, 22, 0) 63.93%);
+            border: 1px solid #2C2A2A;
+            border-radius: 25px;
+            font-family: 'Pridi', serif;
+            line-height: 20px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100vw;
+            margin: 10px 0px;
+        }
+
+        article h1 {
+            font-family: 'Ovo', serif;
+            font-size: 30px;
+        }
+
+        img {
+            width: 100%;
+            margin: 15px;
+        }
+
+        aside>article {
+            display: flex;
+            flex-direction: row;
+        }
+
+        aside img {
+            max-width: 100px;
+        }
+
+        .aside-content div {
+            font-family: 'Ovo', serif;
+            font-size: large;
+        }
+
+        .aside-content p {
+            font-family: 'Pridi', serif;
+        }
+
+        .date {
+            text-transform: uppercase;
+            font-family: 'Ovo', serif;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            margin: 10px;
+        }
+
+        /* Header Styles */
+        .container {
+            padding-top: 20px;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 70px;
+            cursor: pointer;
+            margin: 30px 0;
+        }
+
+        .menu-icon {
+            width: 25px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .menus {
+            color: white;
+            font-family: "Podkova";
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        nav {
+            font-family: "Podkova", serif;
+            flex: 1;
+            text-align: left;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        button {
+            color: white;
+            font-size: 17px;
+            border: none;
+            background-image: linear-gradient(to top, blue, rgb(133, 168, 233));
+            padding: 5px 25px;
+            border-radius: 6px;
+            font-family: "Podkova", serif;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width: 950px) {
+            main {
+                grid-template-columns: 7fr 3fr;
+                gap: 20px;
+            }
+
+            article {
+                align-items: flex-start;
+            }
+
+            aside article {
+                align-items: center;
+            }
+
+            article h1 {
+                font-size: 40px;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo" />
+            <nav>
+                <ul id="menu-list">
+                    <li><a href="" class="menus">Home</a></li>
+                    <li><a href="" class="menus">Events</a></li>
+                    <li><a href="" class="menus">Forum</a></li>
+                    <li><a href="" class="menus">Blog</a></li>
+                    <li><a href="" class="menus">About us</a></li>
+                </ul>
+            </nav>
+            <button>Login</button>
+            <img src="menu.jpg" class="menu-icon" />
+        </div>
+    </div>
+    <main>
+        <article class="box-styling">
+            <h1>Top 10 Math Equations</h1>
+            <img src="./shunya.png" />
+            <div class="date">
+                <span>15 january 2022</span>
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor deserunt beatae, quasi, praesentium
+                sed ab odit voluptate molestiae necessitatibus aut? Atque, non? Animi cupiditate delectus porro
+                voluptatibus quia voluptas.
+                Blanditiis odio explicabo, facere, nemo repudiandae fugiat consequatur quas minima odit nobis recusandae
+                dignissimos cumque sit sapiente ad! Tempore. Vel tenetur illum iusto accusamus odit nesciunt est, non
+                quibusdam veniam tempora aspernatur, doloribus deleniti, ipsum reprehenderit repudiandae quas ea
+                excepturi consequatur accusantium aut numquam culpa veritatis? Voluptatem, officiis expedita!
+            </div>
+        </article>
+        <aside>
+            <article class="box-styling">
+                <img src="./shunya_.png">
+                <div class="aside-content">
+                    <div>Solve Fast!</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </article>
+            <article class="box-styling">
+                <img src="./shunya_.png">
+                <div class="aside-content">
+                    <div>Solve Fast!</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </article>
+            <article class="box-styling">
+                <img src="./shunya_.png">
+                <div class="aside-content">
+                    <div>Solve Fast!</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </article>
+        </aside>
+    </main>
+</body>
+
+</html>
