@@ -1,0 +1,126 @@
+/*ScrollBar*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CCEAF2;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00A4EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Index.html CSS Code*/
+
+/*Hero-Section*/
+
+header {
+    z-index: 20;
+    background-color: transparent;
+    padding: 30px 0px;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    transition: 0.4s;
+    height: 170px;
+    position: fixed;
+    margin: 10px auto 0px 200px;
+    z-index: 200;
+}
+
+.navbar-items {
+    margin: 0 200px 0 auto;
+}
+
+.nav-item {
+    margin: 0 20px 2px 20px;
+    list-style-type: none;
+    font-size: 18px;
+    display: inline;
+    color: #CCEAF2;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #CCEAF2;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+.hero-section {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+#vantajs {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
+
+.hero-title {
+    display: block;
+    position: absolute;
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #CCEAF2;
+}
+
+.hero-subtitle {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #CCEAF2;
+}
