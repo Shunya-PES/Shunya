@@ -12,15 +12,43 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
+<div class="loader-wrapper">
+    <div class="boxes">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
 <body>
+    
     <div class="navbar">
         <div class="toggle">&#9776;</div>
-        <a href="#hero-section" class="box">Home</a>
-        <a href="#about-section" class="box">About</a>
-        <a href="#" class="box">Events</a>
-        <a href="#" class="box">Blog</a>
-        <a href="#" class="box">Contact</a>
+        <a href="#hero-section" class="nav-item">Home</a>
+        <a href="#about-section" class="nav-item">About</a>
+        <a href="#" class="nav-item">Events</a>
+        <a href="#" class="nav-item">Blog</a>
+        <a href="#" class="nav-item">Contact</a>
     </div>
     <section id="hero-section" class="hero-section">
         <div id="vantajs"></div>
@@ -84,11 +112,16 @@
                 those curious minds, to learn more about mathematics, regardless of their course or background.
             </h2>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader-wrapper').fadeToggle();
+        }, 1500);
+    </script>
 </body>
 <footer>
-
 </footer>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
 <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
 <script>
