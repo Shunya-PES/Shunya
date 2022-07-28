@@ -1,8 +1,8 @@
 :root {
-    --color1: #001322;
-    --color2: #0052C9;
-    --color3: #00A4EB;
-    --color4: #CCEAF2;
+    --bgColor: #001322;
+    --secondary: #0052C9;
+    --primary: #00A4EB;
+    --highlight: #CCEAF2;
 }
 
 /*ScrollBar*/
@@ -40,7 +40,7 @@ header {
 
 .sidenav {
     height: fit-content;
-    border: 2px solid var(--color4);
+    border: 2px solid var(--highlight);
     border-left: 0px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -49,7 +49,7 @@ header {
     margin-top: 30vh;
     left: 0;
     z-index: 100;
-    background-color: var(--color1);
+    background-color: var(--bgColor);
     overflow-x: hidden;
     transition: 0.5s;
     padding: 20px 0px;
@@ -60,13 +60,13 @@ header {
     padding: 10px 15px;
     font-size: 18px;
     text-decoration: none;
-    color: var(--color4);
+    color: var(--highlight);
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: var(--color3);
+    color: var(--primary);
 }
 
 .sidenav .closebtn {
@@ -93,7 +93,7 @@ header {
 .item2 {
     font-size: 40px;
     font-weight: 600;
-    color: var(--color4);
+    color: var(--highlight);
     margin: 50px 50px 20px;
 }
 
@@ -103,7 +103,7 @@ header {
     font-weight: 400;
     margin: 10px 50px;
     display: inline-block;
-    color: var(--color4);
+    color: var(--highlight);
 }
 
 .hero-content-container {
