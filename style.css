@@ -1,8 +1,9 @@
 :root {
-    --bgColor: #001322;
-    --secondary: #0052C9;
-    --primary: #00A4EB;
-    --highlight: #CCEAF2;
+    --color1: #001322;
+    --color2: #0052C9;
+    --color3: #00A4EB;
+    --color4: #CCEAF2;
+    --color5: #f9ffe7;
 }
 
 /*ScrollBar*/
@@ -13,7 +14,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -23,10 +23,17 @@ body {
     background-color: black;
     font-family: 'Work Sans', sans-serif;
     scroll-behavior: smooth;
+    user-select: none;
+}
+
+.section-seperator {
+    border-top: 1.5px dashed var(--color4);
+    background-color: transparent;
 }
 
 /*Index.html CSS Code*/
 
+/*Hero Section*/
 header {
     z-index: 20;
     background-color: transparent;
@@ -38,42 +45,52 @@ header {
     justify-content: space-between;
 }
 
-.sidenav {
-    height: fit-content;
-    border: 2px solid var(--highlight);
-    border-left: 0px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    position: fixed;
-    z-index: 1;
-    margin-top: 30vh;
-    left: 0;
+.navbar {
     z-index: 100;
-    background-color: var(--bgColor);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding: 20px 0px;
+    border: 2px solid var(--color4);
+    border-right: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+    background-color: #001322db;
+    width: 120px;
+    right: -123px;
+    top: 35vh;
+    height: 200px;
+    padding: 20px 0;
+    transition: right 0.4s ease-in-out;
 }
 
+.toggle {
+    position: absolute;
+    top: 30px;
+    right: 120px;
+    padding: 10px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid var(--color4);
+    border-right: 2px solid #001322db;
+    background-color: #001322db;
+}
 
-.sidenav a {
+.box {
     padding: 10px 15px;
     font-size: 18px;
     text-decoration: none;
-    color: var(--highlight);
+    color: var(--color4);
     display: block;
     transition: 0.3s;
 }
 
-.sidenav a:hover {
-    color: var(--primary);
+.box:hover {
+    color: var(--color3);
 }
 
-.sidenav .closebtn {
-    font-size: 30px;
+.navbar:hover {
+    right: 0px;
 }
 
-/*Hero Section*/
 .hero-section {
     display: block;
     width: 100vw;
@@ -91,19 +108,19 @@ header {
 }
 
 .item2 {
+    transition: width 2s linear 1s;
     font-size: 40px;
     font-weight: 600;
-    color: var(--highlight);
+    color: var(--color4);
     margin: 50px 50px 20px;
 }
-
 
 .item3 {
     font-size: 20px;
     font-weight: 400;
     margin: 10px 50px;
     display: inline-block;
-    color: var(--highlight);
+    color: var(--color4);
 }
 
 .hero-content-container {
