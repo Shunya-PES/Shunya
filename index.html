@@ -11,46 +11,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 
 <body>
-    <img class="nav-logo" src="Assets\logo.png" alt="" class="logo" />
-    <header>
-        <ul class="navbar-items">
-            <li class="nav-item hover-underline-animation">Home</li>
-            <li class="nav-item hover-underline-animation">About</li>
-            <li class="nav-item hover-underline-animation">Events</li>
-            <li class="nav-item hover-underline-animation">Blogs</li>
-            <li class="nav-item hover-underline-animation">Contact</li>
-        </ul>
-
-    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class=".hover-underline-animation" href="#">Home</a>
+        <a class=".hover-underline-animation" href="#">About</a>
+        <a class=".hover-underline-animation" href="#">Events</a>
+        <a class=".hover-underline-animation" href="#">Blogs</a>
+        <a class=".hover-underline-animation" href="#">Contact</a>
+    </div>
     <section class="hero-section">
+
         <div id="vantajs"></div>
-        <span class="hero-title">Shunya</span>
-        <span class="hero-subtitle">The official math club of PES University</span>
+        <div class="hero-content-container">
+            <img class="item1" src="Assets\logo.png" alt="" class="logo" />
+            <span class="item2">The Official Math Club of<br>PES University</span>
+            <span class="item3">We break down the myth of mathematics being mundane and inapplicable
+                by
+                discovering its practicality as a step-by-step process.</span>
+            <span style="z-index: 1300;font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;
+                open</span>
+
+        </div>
+
     </section>
     <div style="height: 100vh; width: 100vw; background-color: pink;"></div>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
 <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
-<script>
-    VANTA.NET({
-        el: "#vantajs",
-        mouseControls: true,
-        touchControls: false,
-        minHeight: 100.00,
-        minWidth: 100.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x00B8FF,
-        backgroundColor: 0x00172A,
-        points: 10.00,
-        maxDistance: 35.00,
-        spacing: 20.00
-    })
-</script>
+<script src="main.js"></script>
+
 
 </html>
