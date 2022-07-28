@@ -25,3 +25,11 @@ window.onscroll = function () {
         document.querySelector(".nav-logo").style.transition = "0.4s"
     }
 };
+function openNav() {
+    document.getElementById("mySidenav").style.width = "120px";
+}
+
+function closeNav() {
+
+    document.getElementById("mySidenav").style.width = "0px";
+}

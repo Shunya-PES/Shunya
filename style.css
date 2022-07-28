@@ -27,8 +27,6 @@ body {
 
 /*Index.html CSS Code*/
 
-/*Hero-Section*/
-
 header {
     z-index: 20;
     background-color: transparent;
@@ -40,53 +38,41 @@ header {
     justify-content: space-between;
 }
 
-.nav-logo {
-    transition: 0.4s;
-    height: 170px;
+.sidenav {
+    height: fit-content;
+    border: 2px solid var(--color4);
+    border-left: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     position: fixed;
-    margin: 10px auto 0px 200px;
-    z-index: 200;
-}
-
-.navbar-items {
-    margin: 0 200px 0 auto;
-}
-
-.nav-item {
-    margin: 0 20px 2px 20px;
-    list-style-type: none;
-    font-size: 18px;
-    display: inline;
-    color: var(--color4);
-}
-
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-}
-
-.hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: -4px;
+    z-index: 1;
+    margin-top: 30vh;
     left: 0;
-    background-color: var(--color4);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    z-index: 100;
+    background-color: var(--color1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 20px 0px;
 }
 
-.hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.sidenav a {
+    padding: 10px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color4);
+    display: block;
+    transition: 0.3s;
 }
 
-.nav-item:hover {
-    color: white;
+.sidenav a:hover {
+    color: var(--color3);
 }
 
+.sidenav .closebtn {
+    font-size: 30px;
+}
+
+/*Hero Section*/
 .hero-section {
     display: block;
     width: 100vw;
@@ -103,22 +89,36 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.hero-title {
-    display: block;
-    position: absolute;
-    font-size: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.item2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color4);
+    margin: 50px 50px 20px;
+}
+
+
+.item3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 50px;
+    display: inline-block;
     color: var(--color4);
 }
 
-.hero-subtitle {
-    display: block;
+.hero-content-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
     position: absolute;
-    font-size: 30px;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--color4);
+    width: 70%;
+}
+
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 18.75em;
 }
