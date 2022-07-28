@@ -45,7 +45,7 @@ body {
     width: 120px;
     right: -123px;
     top: 35vh;
-    height: 200px;
+    height: fit-content;
     padding: 20px 0;
     transition: right 0.4s ease-in-out;
 }
