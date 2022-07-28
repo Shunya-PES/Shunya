@@ -5,16 +5,19 @@
     --color4: #CCEAF2;
     --color5: #f9ffe7;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 /*ScrollBar*/
 ::-webkit-scrollbar {
     width: 0px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 body {
     overflow-x: hidden;
