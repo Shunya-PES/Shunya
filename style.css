@@ -1,15 +1,13 @@
+:root {
+    --color1: #001322;
+    --color2: #0052C9;
+    --color3: #00A4EB;
+    --color4: #CCEAF2;
+}
+
 /*ScrollBar*/
 ::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #CCEAF2;
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #00A4EB;
+    width: 0px;
 }
 
 * {
@@ -59,7 +57,7 @@ header {
     list-style-type: none;
     font-size: 18px;
     display: inline;
-    color: #CCEAF2;
+    color: var(--color4);
 }
 
 .hover-underline-animation {
@@ -75,7 +73,7 @@ header {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #CCEAF2;
+    background-color: var(--color4);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -112,7 +110,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #CCEAF2;
+    color: var(--color4);
 }
 
 .hero-subtitle {
@@ -122,5 +120,5 @@ header {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #CCEAF2;
+    color: var(--color4);
 }
