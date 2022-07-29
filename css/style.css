@@ -395,14 +395,14 @@ body {
     position: relative;
 }
 :root {
-    --background-color: #001322;
-    --blue: #0046ad;
-    --red: #b71234;
-    --yellow: #ffd500;
-    --orange: #ff5800;
-    --white: white;
-    --green: #009b48;
-    --in-between-color: black;
+    --background-color: #E1CAF9;
+    --blue: #B5D1EC;
+    --red: #F98690;
+    --yellow: #F9F7B5;
+    --orange: #F9D4BC;
+    --white: #F8F8F8;
+    --green: #B0E4D2;
+    --in-between-color: #767C87;
 }
 .box-canvas{
     perspective: 800px;
