@@ -243,7 +243,8 @@ html {
     user-select: none;
 }
 
-body {
+body,
+html {
 
     width: 100%;
     height: 100%;
@@ -275,8 +276,8 @@ body {
     border-bottom-left-radius: 10px;
     position: fixed;
     background-color: #001322db;
-    width: 120px;
-    right: -123px;
+    width: 100px;
+    right: -103px;
     top: 35vh;
     height: fit-content;
     padding: 20px 0;
@@ -286,13 +287,13 @@ body {
 .toggle {
     position: absolute;
     top: 30px;
-    right: 120px;
+    right: 98px;
     padding: 10px;
     color: white;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 2px solid var(--color4);
-    border-right: 2px solid #001322db;
+    border-right: 3px solid #001322db;
     background-color: #001322db;
 }
 
@@ -322,14 +323,14 @@ body {
 #vantajs {
     position: static;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .item2 {
     font-size: 40px;
     font-weight: 600;
-    color: var(--color4);
+    color: white;
     margin: 50px 50px 20px;
 }
 
@@ -338,7 +339,7 @@ body {
     font-weight: 400;
     margin: 10px 50px;
     display: inline-block;
-    color: var(--color4);
+    color: white;
 }
 
 .hero-content-container {
@@ -351,6 +352,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
+    align-items: center;
 }
 
 .item1 {
@@ -388,12 +390,14 @@ body {
 }
 
 /* CUBE animation start */
-.aboutText{
-    display:flex;
+.aboutText {
+    display: flex;
 }
-.cubing{
+
+.cubing {
     position: relative;
 }
+
 :root {
     --background-color: #E1CAF9;
     --blue: #B5D1EC;
@@ -404,78 +408,80 @@ body {
     --green: #B0E4D2;
     --in-between-color: #767C87;
 }
-.box-canvas{
+
+.box-canvas {
     perspective: 800px;
 }
 
 @keyframes rotateCube {
-  0% {
-    transform: rotateX(0) rotateY(0);
-  }
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
 
-  100% {
-    transform: rotateX(360deg) rotateY(360deg);
-  }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
 }
 
 .cube {
-  position:relative;
-  margin: auto;
-  margin-left: 10em;
-  width: 200px;
-  height: 200px;
+    position: relative;
+    margin: auto;
+    margin-left: 10em;
+    width: 200px;
+    height: 200px;
 
-  transform-style: preserve-3d;
-  animation: rotateCube 10s infinite;
+    transform-style: preserve-3d;
+    animation: rotateCube 10s infinite;
 }
 
 .side {
-  position: absolute;
-  width: 200px;
-  height: 200px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
 }
 
 .side::before {
-  content: '';
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  transform: rotate(90deg);
-  background: repeating-linear-gradient(to right, var(--in-between-color)  0, var(--in-between-color)  2px, transparent 2px, transparent 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, transparent 68px, transparent 132px, var(--in-between-color) 132px);
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotate(90deg);
+    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, transparent 2px, transparent 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, transparent 68px, transparent 132px, var(--in-between-color) 132px);
 }
 
 .back {
-  transform: translateZ(-100px);
-  background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--blue) 2px, var(--blue)  66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--blue) 68px, var(--blue) 132px, var(--in-between-color) 132px);
+    transform: translateZ(-100px);
+    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--blue) 2px, var(--blue) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--blue) 68px, var(--blue) 132px, var(--in-between-color) 132px);
 }
 
 
 .left {
-  transform: translateX(-100px) rotateY(90deg);
-   background: repeating-linear-gradient(to right, var(--in-between-color)  0, var(--in-between-color)  2px, var(--yellow) 2px, var(--yellow)  66px, var(--in-between-color) 66px, var(--in-between-color)  68px, var(--yellow) 68px, var(--yellow) 132px, var(--in-between-color)  132px);
+    transform: translateX(-100px) rotateY(90deg);
+    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--yellow) 2px, var(--yellow) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--yellow) 68px, var(--yellow) 132px, var(--in-between-color) 132px);
 }
 
 
 
 .right {
-  transform: translateX(100px) rotateY(90deg);
-   background: repeating-linear-gradient(to right, var(--in-between-color)  0, var(--in-between-color) 2px, var(--red) 2px, var(--red)  66px, var(--in-between-color)  66px, var(--in-between-color) 68px, var(--red) 68px, var(--red) 132px, var(--in-between-color) 132px);
+    transform: translateX(100px) rotateY(90deg);
+    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--red) 2px, var(--red) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--red) 68px, var(--red) 132px, var(--in-between-color) 132px);
 }
 
 .top {
-  transform: translateY(-100px) rotateX(90deg);
-   background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--green) 2px, var(--green) 66px, var(--in-between-color) 66px, var(--in-between-color)  68px, var(--green)  68px, var(--green) 132px, var(--in-between-color) 132px);
+    transform: translateY(-100px) rotateX(90deg);
+    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--green) 2px, var(--green) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--green) 68px, var(--green) 132px, var(--in-between-color) 132px);
 }
 
 .bottom {
-  transform: translateY(100px) rotateX(90deg);
-   background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--white) 2px, var(--white) 66px, var(--in-between-color) 66px, var(--in-between-color)  68px, var(--white)  68px, var(--white) 132px, var(--in-between-color) 132px);
+    transform: translateY(100px) rotateX(90deg);
+    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--white) 2px, var(--white) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--white) 68px, var(--white) 132px, var(--in-between-color) 132px);
 }
 
 .front {
-  transform: translateZ(100px);
-   background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--orange) 2px, var(--orange) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--orange) 68px, var(--orange) 132px, var(--in-between-color)  132px);
+    transform: translateZ(100px);
+    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--orange) 2px, var(--orange) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--orange) 68px, var(--orange) 132px, var(--in-between-color) 132px);
 }
+
 /* CUBE animation end */
 
 /*Events-section*/
@@ -507,3 +513,112 @@ body {
     width: 100vw - 300px;
     background-color: var(--color2);
 }
+
+/*Responsive*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 360px) and (max-width: 580px) {
+
+    /*hero-section*/
+    .navbar {
+        border-left: 0px;
+        display: inline;
+        width: 310px;
+        right: -310px;
+        top: 85vh;
+        padding: 10px 0px 10px 5px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .toggle {
+        top: -2px;
+        right: 310px;
+        padding: 9px 10px 8px 15px;
+        border-right: 0px;
+    }
+
+    .nav-item {
+        padding: 5px 3px;
+        font-size: 16px;
+        display: inline;
+    }
+
+    .item2 {
+        font-size: 24px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    .item3 {
+        font-size: 17px;
+        margin: 10px 10px;
+        text-align: center;
+    }
+
+    .hero-content-container {
+        grid-template-columns: auto;
+        padding: 10px 0px;
+        width: 80%;
+    }
+
+    .item1 {
+        height: 10.75em;
+        margin: auto auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 580px) and (max-width: 700px) {
+
+    /*hero-section*/
+    .item2 {
+        font-size: 30px;
+        margin: 20px 7px;
+        text-align: center;
+    }
+
+    .item3 {
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    .hero-content-container {
+        grid-template-columns: auto;
+        padding: 10px 1px;
+    }
+
+    .item1 {
+        height: 13.75em;
+        margin: auto auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    /*hero-section*/
+    .item2 {
+        font-size: 35px;
+        margin: 10px 30px 10px 10px;
+    }
+
+    .item3 {
+        font-size: 18px;
+        margin: 10px 10px;
+    }
+
+    .hero-content-container {
+        width: 80%;
+    }
+
+    .item1 {
+        height: 15.75em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
