@@ -1,3 +1,7 @@
+setTimeout(function () {
+    $('.loader-wrapper').fadeToggle();
+}, 1500);
+
 VANTA.NET({
     el: "#vantajs",
     mouseControls: true,
@@ -45,10 +49,4 @@ if (screen.width >= 580 && screen.width < 700) {
         spacing: 30.00
     })
 }
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100px";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0px";
-}
