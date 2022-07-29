@@ -513,22 +513,74 @@ html {
 }
 
 footer {
-    height: 40vh;
+    height: 28vh;
     width: 100vw-200px;
     background-color: var(--color1);
-    display: block;
-    padding: 20px 100px;
+    padding: 20px 100px 10px;
 }
 
 .footer-logo1 {
     height: 120px;
     width: 120px;
+    position: relative;
+    top: 30px;
+    left: 50px;
 }
 
 .footer-logo2 {
     height: 67.3px;
     width: 215.5px;
+    position: relative;
+    left: 940px;
+    top: 0px;
+}
+
+.footer-social {
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+}
+
+.footer-icon {
+    color: white;
+    font-size: 25px;
+    padding: 2px 10px;
+}
+
+.footer-text {
+    color: rgb(121, 121, 121);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    padding: 3px;
+    position: relative;
+    bottom: 30px;
+}
+
+.footer-links {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 115px;
+}
+
+.footerlink {
     display: inline;
-    position: absolute;
-    right: 0px;
+    padding: 10px;
+    color: var(--color4);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footerlink:hover {
+    color: var(--color3);
+    transition: 0.4s ease;
+}
+
+.footer-icon:hover {
+    color: var(--color3);
+    transition: 0.4s ease;
 }
