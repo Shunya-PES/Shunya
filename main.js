@@ -1,3 +1,7 @@
+setTimeout(function () {
+    $('.loader-wrapper').fadeToggle();
+}, 1500);
+
 VANTA.NET({
     el: "#vantajs",
     mouseControls: true,
