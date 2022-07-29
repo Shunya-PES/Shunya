@@ -182,10 +182,13 @@ img {
   font-size: 0.8rem;
 
 }
+.card-title{
+    padding:2rem 0;
+}
 
 .card-text,
 .animated-card-text {
-  padding: 0 10rem;
+  padding: 3rem 10rem;
   color: var(--color4);
 }
 
