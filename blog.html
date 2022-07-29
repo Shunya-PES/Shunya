@@ -73,15 +73,16 @@
 <!-- end of header -->
 
 <body>
-  <div class="navbar">
+  <div class="navbar" style="z-index: 2000;">
     <div class="toggle">&#9776;</div>
     <a href="./index.html#hero-section" class="nav-item">Home</a>
     <a href="./index.html#about-section" class="nav-item">About</a>
-    <a href="#" class="nav-item">Events</a>
+    <a href="./events.html" class="nav-item">Events</a>
     <a href="./blog.html" class="nav-item">Blog</a>
     <a href="#" class="nav-item">Contact</a>
   </div>
   <section id="Blogs">
+    <h1 class="RecentBlogs">Recent blogs</h1>
     <div class="card">
       <div class="card-image"><img src="./Assets/blogPage/blog-1.jpg"/></div>
       <div class="animated-card">
@@ -89,7 +90,7 @@
         <div class="animated-card-image"><img class="expandImg" src="./Assets/blogPage/blog-1.jpg"/></div>
         <div class="animated-card-text">
           <h1 class="card-title">We now have math to describe black holes.</h1>
-          <p class="card-text-lead">A new set of equations can precisely describe the reflections of the Universe that appear in the warped light around a black hole.
+          <div class="card-text-lead">A new set of equations can precisely describe the reflections of the Universe that appear in the warped light around a black hole.
             <p>The proximity of each reflection is dependent on the angle of observation with respect to the black hole, and the rate of the black hole's spin, according to a mathematical solution worked out by physics student Albert Sneppen of the Niels Bohr Institute in Denmark.This is really cool, absolutely, but it's not just really cool. It also potentially gives us a new tool for probing the gravitational environment around these extreme objects.
             <p>"There is something fantastically beautiful in now understanding why the images repeat themselves in such an elegant way," Sneppen said. "On top of that, it provides new opportunities to test our understanding of gravity and black holes."
             <p>If there's one thing that black holes are famous for, it's their extreme gravity. Specifically that, beyond a certain radius, the fastest achievable velocity in the Universe, that of light in a vacuum, is insufficient to achieve escape velocity.
@@ -105,6 +106,7 @@
             <p>Theoretically, however, there should be infinite rings of light around a black hole. Since we have imaged the shadow of a supermassive black hole once, it's hopefully only a matter of time before we're able to obtain better images, and there are already plans for imaging a photon ring.
             <p>One day, the infinite images close to a black hole could be a tool for studying not just the physics of black hole space-time, but the objects behind them - repeated in infinite reflections in orbital perpetuity.
           <a href="./blog.html"><p class="onboarding"><a style="text-decoration:none; color:white;" href="./blog.html">Go Back</a></p></a>
+          </div>
         </div>
       </div>
     </div>
@@ -116,7 +118,7 @@
         <div class="animated-card-image"><img class="expandImg" src="./Assets/blogPage/blog-3.jpg"/></div>
         <div class="animated-card-text">
           <h1 class="card-title">The turing machine should run forever-unless maths is wrong.</h1>
-          <p class="card-text-lead">One hundred and fifty years of mathematics will be proved wrong if a new computer program stops running. Thankfully, it’s unlikely to happen, but the code behind it is testing the limits of the mathematical realm.
+          <div class="card-text-lead">One hundred and fifty years of mathematics will be proved wrong if a new computer program stops running. Thankfully, it’s unlikely to happen, but the code behind it is testing the limits of the mathematical realm.
             <p>The program is a simulated Turing machine, a mathematical model of computation created by codebreaker Alan Turing. In 1936, he showed that the actions of any computer algorithm can be mimicked by a simple machine that reads and writes 0s and 1s on an infinitely long tape by working through a set of states, or instructions. The more complex the algorithm, the more states the machine requires.
             <p>Now Scott Aaronson and Adam Yedidia of the Massachusetts Institute of Technology have created three Turing machines with behaviour that is entwined in deep questions of mathematics. This includes the proof of the 150-year-old Riemann hypothesis – thought to govern the patterns of prime numbers.
             <p>Turing’s machines have long been used to probe such questions. Their origins lie in a series of philosophical revelations that rocked the mathematical world in the 1930s. First, Kurt Gödel proved that some mathematical statements can never be proved true or false – they are undecidable. He essentially created a mathematical version of the sentence “This sentence is false”: a logical brain-twister that contradicts itself.
@@ -136,7 +138,8 @@
             <p>Yedidia has placed his code online, and mathematicians may now compete to reduce the size of these Turing machines, pushing them to the limit. Already a commenter on Aaronson’s blog claims to have created a 31-state Goldbach machine, although the pair have yet to verify this.
             <p>Fortnow says the actual size of the Turing machines are irrelevant. “The paper tells us that we can have very compressed descriptions that already go beyond the power of ZFC, but even if they were more compressed, it wouldn’t give us much pause about the foundations of math,” he says.
             <p>But Aaronson says shrinking Z further could say something interesting about the limits of the foundations of maths – something Gödel and Turing are likely to have wanted to know. “They might have said ‘that’s nice, but can you get 800 states? What about 80 states?’” Aaronson says. “I would like to know if there is a 10-state machine whose behaviour is independent of ZFC.”
-          <a href="./blog.html"><p class="onboarding"><a style="text-decoration:none; color:white;" href="./blog.html">Go Back</a></p></a>
+            </div>
+            <a href="./blog.html"><p class="onboarding"><a style="text-decoration:none; color:white;" href="./blog.html">Go Back</a></p></a>
         </div>
       </div>
     </div>
@@ -148,7 +151,7 @@
         <div class="animated-card-image"><img class="expandImg" src="./Assets/blogPage/blog-2.jpg"/></div>
         <div class="animated-card-text">
           <h1 class="card-title" >The mathematics behind poker</h1>
-          <p class="card-text-lead">
+          <div class="card-text-lead">
             <p>What's the difference between an average poker player and a successful one? Some say that it's mainly down to luck and how the cards fall in any given situation. Others say it's down to strategy and their successful implementation as well as the ability to bluff with confidence.
             <p>What a lot of people fail to mention is that poker is a game based on mathematics, specifically probability and that is the basis of every successful strategy. Luck and strategy on their own are useless if you have little idea on the future possibilities of the flop, the turn or the river. Just look at what happened when man came up against machine.
             <p>In this article we'll show you how basic mathematics can improve your poker game.
@@ -178,7 +181,8 @@
             <p>The river odds: By the time the game reaches the river, your chances of making a pair increase by around 50%.
             <p>The better pair: On the occasion that two pairs go head to head, the higher pair wins roughly 80% of the time. So if you're holding queens, you might feel fairly confident, but be wary, if your opponent raises and re-raises, the likelihood is they're holding aces or kings
             <p>Its race time: A coin-flip or race as some players call it, is simply a pair against two overcards because they each win about half of the time. If overcards are suited, the pair will win around 54% of the time, if they're not then it increases to 57% of the time.
-          <a href="./blog.html"><p class="onboarding"><a style="text-decoration:none; color:white;" href="./blog.html">Go Back</a></p></a>
+            </div>
+              <a href="./blog.html"><p class="onboarding"><a style="text-decoration:none; color:white;" href="./blog.html">Go Back</a></p></a>
         </div>
       </div>
     </div>

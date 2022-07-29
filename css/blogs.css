@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 :root {
     --dark: #3c393d;
     --exDark: #2b2b2b;
@@ -85,10 +87,11 @@ header {
 
 /* Blog section */
 #Blogs {
-    height: 100vh;
+    height: 200svh;
     padding-top: 5vh;
     width: 100%;
-    background-color: var(--bgColor);
+    background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)), url("../Assets/blogPage/background.jpg") center/cover no-repeat fixed;
+ 
 }
 
 :root {
@@ -99,6 +102,15 @@ header {
 }
 ::-webkit-scrollbar {
     width: 0px;
+}
+
+.RecentBlogs{
+    position: relative;
+    font-family: var(--Playfair);
+    font-weight: 600;
+    font-size: 4em;
+    text-align: center;
+    color: var(--color4);
 }
 
 img {
@@ -113,6 +125,8 @@ img {
   transform: scale(0.8);
   transition: transform 400ms ease-in-out;
   background-color:transparent;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.53);
+
 }
 .card.active {
   transform: scale(1);
@@ -152,7 +166,7 @@ img {
 }
 
 .card-image {
-  height: 30vh;
+  height: 60vh;
   transition: height 400ms ease;
 }
 .card-image.active {
@@ -184,12 +198,20 @@ img {
 }
 .card-title{
     padding:2rem 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 4em;
 }
 
 .card-text,
 .animated-card-text {
   padding: 3rem 10rem;
   color: var(--color4);
+}
+
+.card-text-lead{
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
 }
 
 @-webkit-keyframes textFadeIn {
