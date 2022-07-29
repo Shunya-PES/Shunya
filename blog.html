@@ -45,6 +45,7 @@
   </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
 <script>
   setTimeout(function () {
     $('.loader-wrapper').fadeToggle();
@@ -81,45 +82,134 @@
     <a href="#" class="nav-item">Contact</a>
   </div>
   <section id="Blogs">
-    <div class="blog1">
-      <div class="blogContent">
-        <div class="blogColumn1">
-            <h1 class="blogHeading">We now have math to describe black holes:</h1>
-            A new set of equations can precisely describe the reflections of the Universe that appear in the warped light around a black hole.
-            <br>The proximity of each reflection is dependent on the angle of observation with respect to the black hole, and the rate of the black hole's spin, according to a mathematical solution worked out by physics student Albert Sneppen of the Niels Bohr Institute in Denmark.This is really cool, absolutely, but it's not just really cool. It also potentially gives us a new tool for probing the gravitational environment around these extreme objects.
-            <br>"There is something fantastically beautiful in now understanding why the images repeat themselves in such an elegant way," Sneppen said. "On top of that, it provides new opportunities to test our understanding of gravity and black holes."
-            <br>If there's one thing that black holes are famous for, it's their extreme gravity. Specifically that, beyond a certain radius, the fastest achievable velocity in the Universe, that of light in a vacuum, is insufficient to achieve escape velocity.
-            <br>That point of no return is the event horizon – defined by what's called the Schwarszchild radius – and it's the reason why we say that not even light can escape from a black hole's gravity.
-            <br>Just outside the black hole's event horizon, however, the environment is also seriously wack. The gravitational field is so powerful that the curvature of space-time is almost circular.
-            <br>Any photons entering this space will, naturally, have to follow this curvature. This means that, from our perspective, the path of the light appears to be warped and bent.
-          </div>
-          <div class="blogColumn2">
-            <br>At the very inner edge of this space, just outside the event horizon, we can see what is called a photon ring, where photons travel in orbit around the black hole multiple times before either falling towards the black hole, or escaping into space.
-            <br>This means that the light from distant objects behind the black hole can be magnified, distorted and 'reflected' several times. We refer to this as a gravitational lens; the effect can also be seen in other contexts, and is a useful tool for studying the Universe.
-            <br>So we've known about the effect for some time, and scientists had figured out that the closer you look towards the black hole, the more reflections you see of distant objects.
-            <br>To get from one image to the next image, you needed to look about 500 times closer to the black hole's optical edge, or the exponential function of two pi (e2π), but why this was the case was difficult to mathematically describe.
-            <br>Sneppen's approach was to reformulate the light trajectory, and quantify its linear stability, using second order differential equations. He found not only did his solution mathematically describe why the images repeat at distances of e2π, but that it could work for a rotating black hole - and that repeat distance is dependent on spin."It turns out that when it rotates really fast, you no longer have to get closer to the black hole by a factor of 500, but significantly less," Sneppen said. "In fact, each image is now only 50, or five, or even down to just two times closer to the edge of the black hole.
-            <br>In practice, this is going to be difficult to observe, at least any time soon - just look at the intense amount of work that went into the unresolved imaging of the ring of light around supermassive black hole Pōwehi (M87*).
-            <br>Theoretically, however, there should be infinite rings of light around a black hole. Since we have imaged the shadow of a supermassive black hole once, it's hopefully only a matter of time before we're able to obtain better images, and there are already plans for imaging a photon ring.
-            <br>One day, the infinite images close to a black hole could be a tool for studying not just the physics of black hole space-time, but the objects behind them - repeated in infinite reflections in orbital perpetuity.
-          </div>
+    <div class="card">
+      <div class="card-image"><img src="./Assets/blogPage/blog-1.jpg"/></div>
+      <div class="animated-card">
+        <p class="card-close"><i class="zmdi zmdi-close-circle"></i></p>
+        <div class="animated-card-image"><img class="expandImg" src="./Assets/blogPage/blog-1.jpg"/></div>
+        <div class="animated-card-text">
+          <h1 class="card-title">We now have math to describe black holes.</h1>
+          <p class="card-text-lead">A new set of equations can precisely describe the reflections of the Universe that appear in the warped light around a black hole.
+            <p>The proximity of each reflection is dependent on the angle of observation with respect to the black hole, and the rate of the black hole's spin, according to a mathematical solution worked out by physics student Albert Sneppen of the Niels Bohr Institute in Denmark.This is really cool, absolutely, but it's not just really cool. It also potentially gives us a new tool for probing the gravitational environment around these extreme objects.
+            <p>"There is something fantastically beautiful in now understanding why the images repeat themselves in such an elegant way," Sneppen said. "On top of that, it provides new opportunities to test our understanding of gravity and black holes."
+            <p>If there's one thing that black holes are famous for, it's their extreme gravity. Specifically that, beyond a certain radius, the fastest achievable velocity in the Universe, that of light in a vacuum, is insufficient to achieve escape velocity.
+            <p>That point of no return is the event horizon – defined by what's called the Schwarszchild radius – and it's the reason why we say that not even light can escape from a black hole's gravity.
+            <p>Just outside the black hole's event horizon, however, the environment is also seriously wack. The gravitational field is so powerful that the curvature of space-time is almost circular.
+            <p>Any photons entering this space will, naturally, have to follow this curvature. This means that, from our perspective, the path of the light appears to be warped and bent.
+            <p>At the very inner edge of this space, just outside the event horizon, we can see what is called a photon ring, where photons travel in orbit around the black hole multiple times before either falling towards the black hole, or escaping into space.
+            <p>This means that the light from distant objects behind the black hole can be magnified, distorted and 'reflected' several times. We refer to this as a gravitational lens; the effect can also be seen in other contexts, and is a useful tool for studying the Universe.
+            <p>So we've known about the effect for some time, and scientists had figured out that the closer you look towards the black hole, the more reflections you see of distant objects.
+            <p>To get from one image to the next image, you needed to look about 500 times closer to the black hole's optical edge, or the exponential function of two pi (e2π), but why this was the case was difficult to mathematically describe.
+            <p>Sneppen's approach was to reformulate the light trajectory, and quantify its linear stability, using second order differential equations. He found not only did his solution mathematically describe why the images repeat at distances of e2π, but that it could work for a rotating black hole - and that repeat distance is dependent on spin."It turns out that when it rotates really fast, you no longer have to get closer to the black hole by a factor of 500, but significantly less," Sneppen said. "In fact, each image is now only 50, or five, or even down to just two times closer to the edge of the black hole."
+            <p>In practice, this is going to be difficult to observe, at least any time soon - just look at the intense amount of work that went into the unresolved imaging of the ring of light around supermassive black hole Pōwehi (M87*).
+            <p>Theoretically, however, there should be infinite rings of light around a black hole. Since we have imaged the shadow of a supermassive black hole once, it's hopefully only a matter of time before we're able to obtain better images, and there are already plans for imaging a photon ring.
+            <p>One day, the infinite images close to a black hole could be a tool for studying not just the physics of black hole space-time, but the objects behind them - repeated in infinite reflections in orbital perpetuity.
+          <a href="./blog.html"><p class="onboarding"><a style="text-decoration:none; color:white;" href="./blog.html">Go Back</a></p></a>
+        </div>
+      </div>
     </div>
-    <div class="blog2"></div>
-    <div class="blog3"></div>
+    
+    <div class="card">
+      <div class="card-image"><img src="./Assets/blogPage/blog-3.jpg"/></div>
+      <div class="animated-card">
+        <p class="card-close"><i class="zmdi zmdi-close-circle"></i></p>
+        <div class="animated-card-image"><img class="expandImg" src="./Assets/blogPage/blog-3.jpg"/></div>
+        <div class="animated-card-text">
+          <h1 class="card-title">The turing machine should run forever-unless maths is wrong.</h1>
+          <p class="card-text-lead">One hundred and fifty years of mathematics will be proved wrong if a new computer program stops running. Thankfully, it’s unlikely to happen, but the code behind it is testing the limits of the mathematical realm.
+            <p>The program is a simulated Turing machine, a mathematical model of computation created by codebreaker Alan Turing. In 1936, he showed that the actions of any computer algorithm can be mimicked by a simple machine that reads and writes 0s and 1s on an infinitely long tape by working through a set of states, or instructions. The more complex the algorithm, the more states the machine requires.
+            <p>Now Scott Aaronson and Adam Yedidia of the Massachusetts Institute of Technology have created three Turing machines with behaviour that is entwined in deep questions of mathematics. This includes the proof of the 150-year-old Riemann hypothesis – thought to govern the patterns of prime numbers.
+            <p>Turing’s machines have long been used to probe such questions. Their origins lie in a series of philosophical revelations that rocked the mathematical world in the 1930s. First, Kurt Gödel proved that some mathematical statements can never be proved true or false – they are undecidable. He essentially created a mathematical version of the sentence “This sentence is false”: a logical brain-twister that contradicts itself.
+            <p>No proof of everything
+            <p>Gödel’s assertion has a get-out clause. If you change the base assumptions on which proofs are built – the axioms – you can render a problem decidable. But that will still leave other problems that are undecidable. That means there are no axioms that let you prove everything.
+            <p>Following Gödel’s arguments, Turing proved that there must be some Turing machines whose behaviour cannot be predicted under the standard axioms – known as Zermelo-Fraenkel set theory with the axiom of choice (C), or more snappily, ZFC – underpinning most of mathematics. But we didn’t know how complex they would have to be.
+            <p>Now, Yedidia and Aaronson have created a Turing machine with 7918 states that has this property. And they’ve named it “Z”.
+            <p>“We tried to make it concrete, and say how many states does it take before you get into this abyss of unprovability?” says Aaronson.
+            <p>The pair simulated Z on a computer, but it is small enough that it could theoretically be built as a physical device, says Terence Tao of the University of California, Los Angeles. “If one were then to turn such a physical machine on, what we believe would happen would be that it would run indefinitely,” he says, assuming you ignore physical wear and tear or energy requirements.
+            <p>No end in sight
+            <p>Z is designed to loop through its 7918 instructions forever, but if it did eventually stop, it would prove ZFC inconsistent. Mathematicians wouldn’t be too panicked, though – they could simply shift to a slightly stronger set of axioms. Such axioms already exist, and could be used to prove the behaviour of Z, but there is little to be gained in doing so because there will always be a Turing machine to exceed any axiom.
+            <p>“One can think of any given axiom system as being like a computer with a certain limited amount of memory or processing power,” says Tao. “One could switch to a computer with even more storage, but no matter how large an amount of storage space the computer has, there will still exist some tasks that are beyond its ability.”
+            <p>But Aaronson and Yedidia have created two other machines that might give mathematicians more pause. These will stop only if two famous mathematical problems, long believed to be true, are actually false. These are Goldbach’s conjecture, which states that every even whole number greater than 2 is the sum of two prime numbers, and the Riemann hypothesis, which says that all prime numbers follow a certain pattern. The latter forms the basis for parts of modern number theory, and disproving it would be a major, if unlikely, upset.
+            <p>Practical benefits
+            <p>Practically, the pair have no intention of running their Turing machines indefinitely in an attempt to prove these problems wrong. It’s not a particularly efficient way to attack that problem, says Lance Fortnow of the Georgia Institute of Technology in Atlanta.
+            <p>Expressing mathematical problems as Turing machines has a different practical benefit: it helps to work out how complex they are. The Goldbach machine has 4888 states, the Riemann one has 5372, while Z has 7918, suggesting the ZFC problem is the most complex of the three. “That would match most people’s intuitions about these sorts of things,” Aaronson says.
+            <p>Yedidia has placed his code online, and mathematicians may now compete to reduce the size of these Turing machines, pushing them to the limit. Already a commenter on Aaronson’s blog claims to have created a 31-state Goldbach machine, although the pair have yet to verify this.
+            <p>Fortnow says the actual size of the Turing machines are irrelevant. “The paper tells us that we can have very compressed descriptions that already go beyond the power of ZFC, but even if they were more compressed, it wouldn’t give us much pause about the foundations of math,” he says.
+            <p>But Aaronson says shrinking Z further could say something interesting about the limits of the foundations of maths – something Gödel and Turing are likely to have wanted to know. “They might have said ‘that’s nice, but can you get 800 states? What about 80 states?’” Aaronson says. “I would like to know if there is a 10-state machine whose behaviour is independent of ZFC.”
+          <a href="./blog.html"><p class="onboarding"><a style="text-decoration:none; color:white;" href="./blog.html">Go Back</a></p></a>
+        </div>
+      </div>
     </div>
+    
+    <div class="card">
+      <div class="card-image"><img src="./Assets/blogPage/blog-2.jpg"/></div>
+      <div class="animated-card">
+        <p class="card-close"><i class="zmdi zmdi-close-circle"></i></p>
+        <div class="animated-card-image"><img class="expandImg" src="./Assets/blogPage/blog-2.jpg"/></div>
+        <div class="animated-card-text">
+          <h1 class="card-title">The mathematics behind poker</h1>
+          <p class="card-text-lead">
+            <p>What's the difference between an average poker player and a successful one? Some say that it's mainly down to luck and how the cards fall in any given situation. Others say it's down to strategy and their successful implementation as well as the ability to bluff with confidence.
+            <p>What a lot of people fail to mention is that poker is a game based on mathematics, specifically probability and that is the basis of every successful strategy. Luck and strategy on their own are useless if you have little idea on the future possibilities of the flop, the turn or the river. Just look at what happened when man came up against machine.
+            <p>In this article we'll show you how basic mathematics can improve your poker game.
+            <p>What is probability?
+            <p>The strand of mathematics that concerns poker is probability, which is the likely outcome of a certain event. In layman's terms probability can best be explained by the toss of a coin - when a coin is tossed, there are two possible outcomes, heads or tails.
+            <p>Therefore the likelihood of the coin landing on one outcome is 1 in 2 or 50%. In Poker the probabilities are harder to calculate. In any given poker game the cards will be dealt from a deck of 52 cards with 4 different suits.
+            <p>The probability of getting a King in is therefore 4 in 52 or 7.7% and then the chances of getting a second King is 3 in 51 as one card is already missing from the deck, leaving you with a 5.9% chance.
+            <p>To work out your odds of receiving a pocket pair of Kings you have to multiply the probabilities of receiving each card so in this instance you would do the following sum;
+            <p>(4/52) x (3/51) =
+            <p>(12/2652) =
+            <p>(1/221) =
+            <p>0.45%
+            <p>That means that your chances of landing pocket Kings are incredibly low and that on average you should receive these cards once in 221 hands. Don't worry though, you don't need to get your calculator out and do these sums at the table, you simply need to know the basic probabilities of receiving certain hands.
+            <p>What are pot odds?
+            <p>In basic terms, pot odds are the ratio of the size of the pot in play to the cost of your next potential move. Pot odds are used by players to compare the chances of winning a hand with a future card, so they can estimate the value of the call.
+            <p>Pot odds are usually expressed in ratios as they are easier to ascertain than percentages, but for ease and accessibility percentages are used by TV broadcasters.
+            <p>How to work out your poker odd
+            <p>Working out your pot odds requires a bit of practice, once you've got the basics sorted it will come as second nature to you at the poker table.
+            <p>To work out your pot odds you'll firstly need to calculate your 'outs'. These are quite simply the cards that will help you improve your hand and make it better than your opponents.
+            <p>Take this situation for example, you've been dealt the queen and nine of hearts, and the dealer lays out the ace of hearts, the king of hearts and the seven and four of spades. That means there are 9 hearts left in the deck, and you'll need just one of them to appear on the river for you to win.
+            <p>From the cards that we can see, there are 46 cards remaining at play, meaning there are 37 cards that will see you lose and 9 that will see you win. In simple ratio terms that means you are 4 times as likely to lose as you are to win, leaving you with a 20% chance of success.
+            <p>You might think that this seems quite complex and difficult to implement mid game, but it really isn't. The best thing you can do is enlist yourself in some soft or practice poker games and give it a go until you get your head around it.
+            <p>Working out your pre-flop odds is a little more complex and will require a bit more skill, but again it's eminently achievable. Take a look at some of the key things to look out for below.
+            <p>Premium hands: As discussed earlier in the article, the chances of getting pocket picture pairs are incredibly low. So it's best not to base your game on the chances of receiving these hands, but if you do pull them your chances of success will be considerably higher than your opponents.
+            <p>The river flush: If you're just one card short of a full flush after the flop, your chances of drawing a full flop on the river are 34.97%, meaning you can be fairly confident of winning the hand.
+            <p>Suits: Some players will tell you that playing any two cards because they're suited is a great tactic to employ. These players haven't worked out the odds, they're simply telling you about their anecdotal experiences. Playing two suited hands only improves your chances of winning by a measly 2.5%
+            <p>The river odds: By the time the game reaches the river, your chances of making a pair increase by around 50%.
+            <p>The better pair: On the occasion that two pairs go head to head, the higher pair wins roughly 80% of the time. So if you're holding queens, you might feel fairly confident, but be wary, if your opponent raises and re-raises, the likelihood is they're holding aces or kings
+            <p>Its race time: A coin-flip or race as some players call it, is simply a pair against two overcards because they each win about half of the time. If overcards are suited, the pair will win around 54% of the time, if they're not then it increases to 57% of the time.
+          <a href="./blog.html"><p class="onboarding"><a style="text-decoration:none; color:white;" href="./blog.html">Go Back</a></p></a>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js'></script>
+    <script>
+      $('.card-image').on('click', function() {
+        var animatedCard = $(this).siblings('.animated-card');    
+        animatedCard.addClass('active'); 
+        $(this).parents('.card').addClass('active').css('z-index', '1000');
+      });
+      
+      
+      $('.animated-card').swipe( {
+        pinchOut:function() {
+          $('.card').removeClass('active');
+          $('.animated-card').removeClass('active');
+        },
+        fingers: 2,
+        threshold: 0
+      });
+      
+      
+      $('.card-close').on('click', function() {
+        $('.card').removeClass('active');
+        $('.animated-card').removeClass('active');
+      });
+    </script>
   </section>
 
 </body>
-<!-- footer -->
-<footer>
-  <div class="social-links">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-pinterest"></i></a>
-  </div>
-  <span>Shunya</span>
-</footer>
-<!-- end of footer -->
 
 </html>
