@@ -45,10 +45,4 @@ if (screen.width >= 580 && screen.width < 700) {
         spacing: 30.00
     })
 }
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100px";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0px";
-}
