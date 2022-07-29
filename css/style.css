@@ -244,7 +244,8 @@ html {
     user-select: none;
 }
 
-body {
+body,
+html {
 
     width: 100%;
     height: 100%;
@@ -276,8 +277,8 @@ body {
     border-bottom-left-radius: 10px;
     position: fixed;
     background-color: #001322db;
-    width: 120px;
-    right: -123px;
+    width: 100px;
+    right: -103px;
     top: 35vh;
     height: fit-content;
     padding: 20px 0;
@@ -287,7 +288,7 @@ body {
 .toggle {
     position: absolute;
     top: 30px;
-    right: 120px;
+    right: 100px;
     padding: 10px;
     color: white;
     border-top-left-radius: 10px;
@@ -323,8 +324,8 @@ body {
 #vantajs {
     position: static;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .item2 {
@@ -352,6 +353,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
+    align-items: center;
 }
 
 .item1 {
@@ -417,3 +419,88 @@ body {
     width: 100vw - 300px;
     background-color: var(--color2);
 }
+
+/*Responsive*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 360px) and (max-width: 580px) {
+
+    /*hero-section*/
+
+    .item2 {
+        font-size: 20px;
+        margin: 20px 1px;
+        text-align: center;
+    }
+
+    .item3 {
+        font-size: 16px;
+        margin: 10px 10px;
+        text-align: center;
+    }
+
+    .hero-content-container {
+        grid-template-columns: auto;
+        padding: 10px 1px;
+    }
+
+    .item1 {
+        height: 9.75em;
+        margin: auto auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 580px) and (max-width: 700px) {
+
+    /*hero-section*/
+    .item2 {
+        font-size: 30px;
+        margin: 20px 7px;
+        text-align: center;
+    }
+
+    .item3 {
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    .hero-content-container {
+        grid-template-columns: auto;
+        padding: 10px 1px;
+    }
+
+    .item1 {
+        height: 13.75em;
+        margin: auto auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    /*hero-section*/
+    .item2 {
+        font-size: 35px;
+        margin: 10px 30px 10px 10px;
+    }
+
+    .item3 {
+        font-size: 18px;
+        margin: 10px 10px;
+    }
+
+    .hero-content-container {
+        width: 80%;
+    }
+
+    .item1 {
+        height: 15.75em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

@@ -26,7 +26,7 @@ window.onscroll = function () {
     }
 };
 function openNav() {
-    document.getElementById("mySidenav").style.width = "120px";
+    document.getElementById("mySidenav").style.width = "100px";
 }
 
 function closeNav() {
