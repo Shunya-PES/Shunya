@@ -37,7 +37,7 @@ img {
 /* header */
 header {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)), url(Assets/blogPage/banner.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)), url("../Assets/blogPage/banner.jpg") center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -111,17 +111,17 @@ header {
 
 .blog1 {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.659), rgba(0, 0, 0, 0.718)), url(Assets/blogPage/blog-1.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.659), rgba(0, 0, 0, 0.718)), url(../Assets/blogPage/blog-1.jpg) center/cover no-repeat fixed;
 }
 
 .blog2 {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.659), rgba(0, 0, 0, 0.718)), url(Assets/blogPage/blog-2.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.659), rgba(0, 0, 0, 0.718)), url(../Assets/blogPage/blog-2.jpg) center/cover no-repeat fixed;
 }
 
 .blog3 {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.659), rgba(0, 0, 0, 0.718)), url(Assets/blogPage/blog-3.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.659), rgba(0, 0, 0, 0.718)), url(../Assets/blogPage/blog-3.jpg) center/cover no-repeat fixed;
 }
 
 
