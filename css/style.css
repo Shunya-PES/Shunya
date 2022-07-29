@@ -331,7 +331,7 @@ html {
 .item2 {
     font-size: 40px;
     font-weight: 600;
-    color: var(--color4);
+    color: white;
     margin: 50px 50px 20px;
 }
 
@@ -340,7 +340,7 @@ html {
     font-weight: 400;
     margin: 10px 50px;
     display: inline-block;
-    color: var(--color4);
+    color: white;
 }
 
 .hero-content-container {
@@ -427,24 +427,25 @@ html {
     /*hero-section*/
 
     .item2 {
-        font-size: 20px;
-        margin: 20px 1px;
+        font-size: 24px;
+        margin: 20px 0px;
         text-align: center;
     }
 
     .item3 {
-        font-size: 16px;
+        font-size: 17px;
         margin: 10px 10px;
         text-align: center;
     }
 
     .hero-content-container {
         grid-template-columns: auto;
-        padding: 10px 1px;
+        padding: 10px 0px;
+        width: 80%;
     }
 
     .item1 {
-        height: 9.75em;
+        height: 10.75em;
         margin: auto auto;
     }
 }
