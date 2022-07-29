@@ -229,7 +229,6 @@ html {
     box-sizing: border-box;
 }
 
-
 /* Preloader end */
 
 /*ScrollBar*/
@@ -389,6 +388,97 @@ html {
     margin: 10px 0px 20px;
     padding: 0 8px;
 }
+
+/* CUBE animation start */
+.aboutText{
+    display:flex;
+}
+.cubing{
+    position: relative;
+}
+:root {
+    --background-color: #E1CAF9;
+    --blue: #B5D1EC;
+    --red: #F98690;
+    --yellow: #F9F7B5;
+    --orange: #F9D4BC;
+    --white: #F8F8F8;
+    --green: #B0E4D2;
+    --in-between-color: #767C87;
+}
+.box-canvas{
+    perspective: 800px;
+}
+
+@keyframes rotateCube {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.cube {
+  position:relative;
+  margin: auto;
+  margin-left: 10em;
+  width: 200px;
+  height: 200px;
+
+  transform-style: preserve-3d;
+  animation: rotateCube 10s infinite;
+}
+
+.side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.side::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transform: rotate(90deg);
+  background: repeating-linear-gradient(to right, var(--in-between-color)  0, var(--in-between-color)  2px, transparent 2px, transparent 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, transparent 68px, transparent 132px, var(--in-between-color) 132px);
+}
+
+.back {
+  transform: translateZ(-100px);
+  background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--blue) 2px, var(--blue)  66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--blue) 68px, var(--blue) 132px, var(--in-between-color) 132px);
+}
+
+
+.left {
+  transform: translateX(-100px) rotateY(90deg);
+   background: repeating-linear-gradient(to right, var(--in-between-color)  0, var(--in-between-color)  2px, var(--yellow) 2px, var(--yellow)  66px, var(--in-between-color) 66px, var(--in-between-color)  68px, var(--yellow) 68px, var(--yellow) 132px, var(--in-between-color)  132px);
+}
+
+
+
+.right {
+  transform: translateX(100px) rotateY(90deg);
+   background: repeating-linear-gradient(to right, var(--in-between-color)  0, var(--in-between-color) 2px, var(--red) 2px, var(--red)  66px, var(--in-between-color)  66px, var(--in-between-color) 68px, var(--red) 68px, var(--red) 132px, var(--in-between-color) 132px);
+}
+
+.top {
+  transform: translateY(-100px) rotateX(90deg);
+   background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--green) 2px, var(--green) 66px, var(--in-between-color) 66px, var(--in-between-color)  68px, var(--green)  68px, var(--green) 132px, var(--in-between-color) 132px);
+}
+
+.bottom {
+  transform: translateY(100px) rotateX(90deg);
+   background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--white) 2px, var(--white) 66px, var(--in-between-color) 66px, var(--in-between-color)  68px, var(--white)  68px, var(--white) 132px, var(--in-between-color) 132px);
+}
+
+.front {
+  transform: translateZ(100px);
+   background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--orange) 2px, var(--orange) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--orange) 68px, var(--orange) 132px, var(--in-between-color)  132px);
+}
+/* CUBE animation end */
 
 /*Events-section*/
 .events_section {
