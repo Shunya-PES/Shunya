@@ -12,6 +12,19 @@
     --highlight: #CCEAF2;
 }
 
+:root {
+    --color1: #001322;
+    --color2: #0052C9;
+    --color3: #00A4EB;
+    --color4: #CCEAF2;
+    --color5: #f9ffe7;
+}
+/*ScrollBar*/
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -103,6 +116,54 @@ header {
     cursor: pointer;
 }
 
+/* Nav Bar */
+.navbar {
+    z-index: 100;
+    border: 2px solid var(--color4);
+    border-right: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+    background-color: #001322db;
+    width: 100px;
+    right: -103px;
+    top: 35vh;
+    height: fit-content;
+    padding: 20px 0;
+    transition: right 0.4s ease-in-out;
+}
+
+.toggle {
+    position: absolute;
+    top: 30px;
+    right: 98px;
+    padding: 10px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid var(--color4);
+    border-right: 3px solid #001322db;
+    background-color: #001322db;
+}
+
+.nav-item {
+    padding: 10px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color4);
+    display: block;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: var(--color3);
+}
+
+.navbar:hover {
+    right: 0px;
+}
+
+
 /* Blog section */
 #Blogs {
     width: 100%;
@@ -169,11 +230,6 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 540px) {
-    .navbar-nav a {
-        padding-right: 1.2rem;
-        padding-left: 1.2rem;
-    }
-
     .banner-title {
         font-size: 5rem;
     }
@@ -185,3 +241,46 @@ footer {
         margin-right: auto;
     }
 }
+
+/*Responsive*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 360px) and (max-width: 580px) {
+
+    /*hero-section*/
+    .navbar {
+        border-left: 0px;
+        display: inline;
+        width: 310px;
+        right: -310px;
+        top: 85vh;
+        padding: 10px 0px 10px 5px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .toggle {
+        top: -2px;
+        right: 310px;
+        padding: 9px 10px 8px 15px;
+        border-right: 0px;
+    }
+
+    .nav-item {
+        padding: 5px 3px;
+        font-size: 16px;
+        display: inline;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 580px) and (max-width: 700px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
