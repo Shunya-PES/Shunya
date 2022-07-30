@@ -253,9 +253,6 @@ html {
     font-family: 'Noto Sans', sans-serif;
 }
 
-/*Index.html CSS Code*/
-
-/*Hero Section*/
 .navbar {
     z-index: 100;
     border: 2px solid var(--color4);
@@ -301,6 +298,10 @@ html {
 .navbar:hover {
     right: 0px;
 }
+
+/*Index.html CSS Code*/
+
+/*Hero Section*/
 
 .hero-section {
     display: block;
@@ -366,7 +367,6 @@ html {
     padding: 10px 30px 10px 10px;
     display: inline-block;
     margin: 30px auto 20px;
-    border-bottom: 3px solid var(--color4);
     color: var(--color4);
 }
 
@@ -384,98 +384,215 @@ html {
 /* CUBE animation start */
 .aboutText {
     display: flex;
+    justify-content: space-between;
 }
 
-.cubing {
+.scene {
+    width: 450px;
+    height: 250px;
     position: relative;
+    left: 150px;
+    top: 30px;
 }
 
-:root {
-    --background-color: #7b00ff00;
-    --blue: #0046ad;
-    --red: #b71234;
-    --yellow: #ffd500;
-    --orange: #ff5800;
-    --white: #ffffff;
-    --green: #009b48;
-    --in-between-color: #4f4e4e;
+/*--------------- Cube ---------------*/
+.cube {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    transform: rotateX(-36deg) rotateY(45deg);
+    transform-style: preserve-3d;
 }
 
-.box-canvas {
-    perspective: 800px;
+.cube_count_1 {
+    z-index: 2;
+    left: 50px;
+    animation: cube 2s 1s ease infinite;
 }
 
-@keyframes rotateCube {
+.cube_count_1 .cube__face {
+    animation-delay: 1s;
+}
+
+.cube_count_2 {
+    z-index: 1;
+    top: 38px;
+    left: -16px;
+    animation: cube 2s 1.1s ease infinite;
+}
+
+.cube_count_2 .cube__face {
+    animation-delay: 1.1s;
+}
+
+.cube_count_3 {
+    z-index: 1;
+    top: 38px;
+    left: 116px;
+    animation: cube 2s 1.2s ease infinite;
+}
+
+.cube_count_3 .cube__face {
+    animation-delay: 1.2s;
+}
+
+.cube_count_4 {
+    z-index: 2;
+    top: 116px;
+    left: -16px;
+    animation: cube 2s 1.1s ease infinite;
+}
+
+.cube_count_4 .cube__face {
+    animation-delay: 1.1s;
+}
+
+.cube_count_5 {
+    z-index: 1;
+    top: 116px;
+    left: 116px;
+    animation: cube 2s 1.2s ease infinite;
+}
+
+.cube_count_5 .cube__face {
+    animation-delay: 1.2s;
+}
+
+.cube_count_6 {
+    z-index: 0;
+    top: 154px;
+    left: 50px;
+    animation: cube 2s 1.3s ease infinite;
+}
+
+.cube_count_6 .cube__face {
+    animation-delay: 1.3s;
+}
+
+.cube__face {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: var(--color1);
+    border: 6px solid rgb(231, 231, 231);
+}
+
+.cube__face--front {
+    box-shadow: inset -6px -6px 0 0 rgb(255, 255, 255);
+    animation: cube-face-front 2s ease infinite;
+}
+
+.cube__face--right {
+    animation: cube-face-right 2s ease infinite;
+}
+
+.cube__face--back {
+    animation: cube-face-back 2s ease infinite;
+}
+
+.cube__face--left {
+    box-shadow: inset 6px -6px 0 0 rgb(255, 255, 255);
+    animation: cube-face-left 2s ease infinite;
+}
+
+.cube__face--top {
+    box-shadow: inset -6px 6px 0 0 rgb(255, 255, 255);
+    animation: cube-face-top 2s ease infinite;
+}
+
+.cube__face--front {
+    transform: rotateY(0deg) translateZ(50px);
+}
+
+.cube__face--right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.cube__face--back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.cube__face--left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.cube__face--top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.cube__face--bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+/*--------------- Animation ---------------*/
+@keyframes cube {
     0% {
-        transform: rotateX(0) rotateY(0);
+        transform: rotateX(-36deg) rotateY(45deg) rotateZ(0);
     }
 
     100% {
-        transform: rotateX(360deg) rotateY(360deg);
+        transform: rotateX(-126deg) rotateY(0deg) rotateZ(-45deg);
     }
 }
 
-.cube {
-    position: relative;
-    margin: auto;
-    margin-left: 10em;
-    width: 200px;
-    height: 200px;
+@keyframes cube-face-front {
+    0% {
+        box-shadow: inset -6px -6px 0 0 rgb(65, 64, 64);
+    }
 
-    transform-style: preserve-3d;
-    animation: rotateCube 10s infinite;
+    100% {
+        box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+    }
 }
 
-.side {
-    position: absolute;
-    width: 200px;
-    height: 200px;
+@keyframes cube-face-right {
+    0% {
+        box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+    }
 
+    50% {
+        box-shadow: inset 0 0 0 0 white;
+    }
+
+    100% {
+        box-shadow: inset 6px -6px 0 0 white;
+    }
 }
 
-.side::before {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    transform: rotate(90deg);
-    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 1px, transparent 2px, transparent 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, transparent 68px, transparent 132px, var(--in-between-color) 132px);
+@keyframes cube-face-back {
+    0% {
+        box-shadow: inset 0 0 0 0 white;
+    }
+
+    100% {
+        box-shadow: inset -6px -6px 0 0 white;
+    }
 }
 
-.back {
-    transform: translateZ(-100px);
-    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--blue) 2px, var(--blue) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--blue) 68px, var(--blue) 132px, var(--in-between-color) 132px);
+@keyframes cube-face-left {
+    0% {
+        box-shadow: inset 6px -6px 0 0 white;
+    }
+
+    100% {
+        box-shadow: inset 0 0 0 0 white;
+    }
 }
 
+@keyframes cube-face-top {
+    0% {
+        box-shadow: inset -6px 6px 0 0 white;
+    }
 
-.left {
-    transform: translateX(-100px) rotateY(90deg);
-    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--yellow) 2px, var(--yellow) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--yellow) 68px, var(--yellow) 132px, var(--in-between-color) 132px);
+    50% {
+        box-shadow: inset 0 0 0 0 white;
+    }
+
+    100% {
+        box-shadow: inset 6px -6px 0 0 white;
+    }
 }
-
-
-
-.right {
-    transform: translateX(100px) rotateY(90deg);
-    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--red) 2px, var(--red) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--red) 68px, var(--red) 132px, var(--in-between-color) 132px);
-}
-
-.top {
-    transform: translateY(-100px) rotateX(90deg);
-    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--green) 2px, var(--green) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--green) 68px, var(--green) 132px, var(--in-between-color) 132px);
-}
-
-.bottom {
-    transform: translateY(100px) rotateX(90deg);
-    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--white) 2px, var(--white) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--white) 68px, var(--white) 132px, var(--in-between-color) 132px);
-}
-
-.front {
-    transform: translateZ(100px);
-    background: repeating-linear-gradient(to right, var(--in-between-color) 0, var(--in-between-color) 2px, var(--orange) 2px, var(--orange) 66px, var(--in-between-color) 66px, var(--in-between-color) 68px, var(--orange) 68px, var(--orange) 132px, var(--in-between-color) 132px);
-}
-
-/* CUBE animation end */
 
 /*Events-section*/
 .events_section {
@@ -521,7 +638,7 @@ footer {
 .footer-logo1 {
     height: 120px;
     width: 120px;
-    margin: 20px 47.75px;
+    margin: 20px 95.5px 20px 0;
 }
 
 .footer-logo2 {
