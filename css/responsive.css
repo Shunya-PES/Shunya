@@ -49,6 +49,34 @@
         height: 10.75em;
         margin: auto auto;
     }
+
+    /*footer*/
+    footer {
+        width: 100vw-50px;
+        padding: 20px 25px 10px;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo1 {
+        height: 70px;
+        width: 70px;
+        margin: 20px 0px;
+        order: -1;
+    }
+
+    .footer-logo2 {
+        height: 37.38px;
+        width: 119.7px;
+        order: -1;
+    }
+
+    .footer-icon {
+        font-size: 18px;
+    }
+
+    .footerlink {
+        font-size: 15px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -75,6 +103,39 @@
         height: 13.75em;
         margin: auto auto;
     }
+
+    /*footer*/
+    footer {
+        width: 100vw-50px;
+        padding: 20px 25px 10px;
+    }
+
+    .footer-logo1 {
+        height: 80px;
+        width: 80px;
+        margin: 20px 54.68px 20px 0;
+    }
+
+    .footer-logo2 {
+        height: 42.06px;
+        width: 134.68px;
+    }
+
+    .footer-social {
+        margin: 20px 10px 20px;
+    }
+
+    .footer-icon {
+        font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 9px;
+    }
+
+    .footerlink {
+        font-size: 13px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -98,5 +159,34 @@
 
     .item1 {
         height: 15.75em;
+    }
+
+    /*footer*/
+    footer {
+        width: 100vw-100px;
+        padding: 20px 50px 10px;
+    }
+
+    .footer-logo1 {
+        height: 100px;
+        width: 100px;
+        margin: 20px 65.8px 20px 0;
+    }
+
+    .footer-logo2 {
+        height: 51.76px;
+        width: 165.8px;
+    }
+
+    .footer-icon {
+        font-size: 22px;
+    }
+
+    .footer-text {
+        font-size: 9px;
+    }
+
+    .footerlink {
+        font-size: 15px;
     }
 }
