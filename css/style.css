@@ -371,7 +371,6 @@ html {
 }
 
 .content1 {
-    border-left: 3px solid var(--color4);
     font-weight: 400;
     font-size: 20px;
     display: inline-block;
