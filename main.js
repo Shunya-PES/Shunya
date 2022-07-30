@@ -49,4 +49,3 @@ if (screen.width >= 580 && screen.width < 700) {
         spacing: 30.00
     })
 }
-
