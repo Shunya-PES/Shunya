@@ -1,0 +1,180 @@
+:root {
+  --dark: #3c393d;
+  --exDark: #2b2b2b;
+  --bgColor: #001322;
+  --secondary: #0052c9;
+  --primary: #00a4eb;
+  --highlight: #cceaf2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)),
+    url("../Assets/eventsPage/banner.jpg") center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.banner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-title {
+  font-size: 5rem;
+  font-family: sans-serif;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+.banner p {
+  padding: 1rem 0 2rem 0;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: 300;
+  word-spacing: 2px;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.event {
+  padding: 20px;
+  border: 1px solid black;
+  height: 100vh;
+  /* background-color: black; */
+}
+
+.event1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)),
+    url("../Assets/eventsPage/cube.jpg") center/cover no-repeat fixed;
+}
+
+.event2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)),
+    url("../Assets/eventsPage/ml-background.jpg") center/cover no-repeat fixed;
+}
+
+.event-title {
+  width: fit-content;
+  margin: 5px auto;
+  /* border: 1px solid black; */
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.event-title span {
+  font-size: 2rem;
+  border-bottom: 10px solid rgb(255, 136, 0);
+}
+
+.event-details {
+  /* border: 1px solid white; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  /* margin-left: 40px; */
+  max-width: 1100px;
+  padding: 20px 0;
+  /* padding-left: 80px; */
+  margin: 50px auto 20px auto;
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  color: white;
+  /* box-shadow: 0 0 10px #aaaaaa; */
+}
+
+.event-image {
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+
+.event-description {
+  font-size: 1.2rem;
+  max-width: 45%;
+
+  font-weight: 600;
+  margin: auto;
+  /* padding: 22px; */
+}
+
+.event-description button {
+  border: none;
+  color: white;
+  background-color: rgb(29, 144, 252);
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0 0;
+}
+
+.event-description button:hover {
+  background-color: white;
+  color: rgb(29, 144, 252);
+  transition: 1s;
+}
+
+@media screen and (max-width: 990px) and (min-width: 700px) {
+  .event-details {
+    max-width: 680px;
+  }
+  .event-description {
+    font-size: 0.9rem;
+  }
+  .event-image {
+    width: 300px;
+    height: 300px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .event-details {
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .event-description {
+    font-size: 1rem;
+    max-width: 90%;
+    text-align: center;
+  }
+  .event-image {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+
+  .event-description button {
+    margin: 10px auto;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(29, 144, 252);
+}
