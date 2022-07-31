@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./src/styles.css" /> -->
-    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
-    <link rel="stylesheet" href="css/events.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/events.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,293 +12,38 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        margin: 0;
-      }
-      html,
-      body {
-        height: 100%;
-      }
-      canvas {
-        display: block;
-        width: 400px;
-        height: 400px;
-      }
-    </style>
-    <style>
-      *,
-      *:after,
-      *::before {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-      }
+    <!-- preloader -->
 
-      body {
-        /* overflow: hidden; */
-      }
-
-      /*--------------- Vars ---------------*/
-      /*--------------- Scene ---------------*/
-      .scene {
-        width: 200px;
-        height: 250px;
-        position: relative;
-      }
-
-      /*--------------- Cube ---------------*/
-      .cube {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        z-index: 2;
-        transform: rotateX(-36deg) rotateY(45deg);
-        transform-style: preserve-3d;
-      }
-
-      .cube_count_1 {
-        z-index: 2;
-        left: 50px;
-        animation: cube 2s 1s ease infinite;
-      }
-
-      .cube_count_1 .cube__face {
-        animation-delay: 1s;
-      }
-
-      .cube_count_2 {
-        z-index: 1;
-        top: 38px;
-        left: -16px;
-        animation: cube 2s 1.1s ease infinite;
-      }
-
-      .cube_count_2 .cube__face {
-        animation-delay: 1.1s;
-      }
-
-      .cube_count_3 {
-        z-index: 1;
-        top: 38px;
-        left: 116px;
-        animation: cube 2s 1.2s ease infinite;
-      }
-
-      .cube_count_3 .cube__face {
-        animation-delay: 1.2s;
-      }
-
-      .cube_count_4 {
-        z-index: 2;
-        top: 116px;
-        left: -16px;
-        animation: cube 2s 1.1s ease infinite;
-      }
-
-      .cube_count_4 .cube__face {
-        animation-delay: 1.1s;
-      }
-
-      .cube_count_5 {
-        z-index: 1;
-        top: 116px;
-        left: 116px;
-        animation: cube 2s 1.2s ease infinite;
-      }
-
-      .cube_count_5 .cube__face {
-        animation-delay: 1.2s;
-      }
-
-      .cube_count_6 {
-        z-index: 0;
-        top: 154px;
-        left: 50px;
-        animation: cube 2s 1.3s ease infinite;
-      }
-
-      .cube_count_6 .cube__face {
-        animation-delay: 1.3s;
-      }
-
-      .cube__face {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        background: rgb(0, 0, 0);
-        border: 6px solid rgb(231, 231, 231);
-      }
-
-      .cube__face--front {
-        box-shadow: inset -6px -6px 0 0 rgb(255, 255, 255);
-        animation: cube-face-front 2s ease infinite;
-      }
-
-      .cube__face--right {
-        animation: cube-face-right 2s ease infinite;
-      }
-
-      .cube__face--back {
-        animation: cube-face-back 2s ease infinite;
-      }
-
-      .cube__face--left {
-        box-shadow: inset 6px -6px 0 0 rgb(255, 255, 255);
-        animation: cube-face-left 2s ease infinite;
-      }
-
-      .cube__face--top {
-        box-shadow: inset -6px 6px 0 0 rgb(255, 255, 255);
-        animation: cube-face-top 2s ease infinite;
-      }
-
-      .cube__face--front {
-        transform: rotateY(0deg) translateZ(50px);
-      }
-
-      .cube__face--right {
-        transform: rotateY(90deg) translateZ(50px);
-      }
-
-      .cube__face--back {
-        transform: rotateY(180deg) translateZ(50px);
-      }
-
-      .cube__face--left {
-        transform: rotateY(-90deg) translateZ(50px);
-      }
-
-      .cube__face--top {
-        transform: rotateX(90deg) translateZ(50px);
-      }
-
-      .cube__face--bottom {
-        transform: rotateX(-90deg) translateZ(50px);
-      }
-
-      /*--------------- Animation ---------------*/
-      @keyframes cube {
-        0% {
-          transform: rotateX(-36deg) rotateY(45deg) rotateZ(0);
-        }
-
-        100% {
-          transform: rotateX(-126deg) rotateY(0deg) rotateZ(-45deg);
-        }
-      }
-
-      @keyframes cube-face-front {
-        0% {
-          box-shadow: inset -6px -6px 0 0 rgb(255, 255, 255);
-        }
-
-        100% {
-          box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
-        }
-      }
-
-      @keyframes cube-face-right {
-        0% {
-          box-shadow: inset 0 0 0 0 white;
-        }
-
-        50% {
-          box-shadow: inset 0 0 0 0 white;
-        }
-
-        100% {
-          box-shadow: inset 6px -6px 0 0 white;
-        }
-      }
-
-      @keyframes cube-face-back {
-        0% {
-          box-shadow: inset 0 0 0 0 white;
-        }
-
-        100% {
-          box-shadow: inset -6px -6px 0 0 white;
-        }
-      }
-
-      @keyframes cube-face-left {
-        0% {
-          box-shadow: inset 6px -6px 0 0 white;
-        }
-
-        100% {
-          box-shadow: inset 0 0 0 0 white;
-        }
-      }
-
-      @keyframes cube-face-top {
-        0% {
-          box-shadow: inset -6px 6px 0 0 white;
-        }
-
-        50% {
-          box-shadow: inset 0 0 0 0 white;
-        }
-
-        100% {
-          box-shadow: inset 6px -6px 0 0 white;
-        }
-      }
-    </style>
-  </head>
-
-  <body bgcolor="black">
-    <!-- <div class="scene">
-      <div class="cube cube_count_1">
-        <div class="cube__face cube__face--front"></div>
-        <div class="cube__face cube__face--back"></div>
-        <div class="cube__face cube__face--right"></div>
-        <div class="cube__face cube__face--left"></div>
-        <div class="cube__face cube__face--top"></div>
-        <div class="cube__face cube__face--bottom"></div>
+    <div class="loader-wrapper">
+      <img class="loader-logo" src="Assets\logo.png" alt="" class="logo" />
+      <div class="boxes">
+          <div class="box">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+          <div class="box">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+          <div class="box">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+          <div class="box">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
       </div>
-      <div class="cube cube_count_2">
-        <div class="cube__face cube__face--front"></div>
-        <div class="cube__face cube__face--back"></div>
-        <div class="cube__face cube__face--right"></div>
-        <div class="cube__face cube__face--left"></div>
-        <div class="cube__face cube__face--top"></div>
-        <div class="cube__face cube__face--bottom"></div>
-      </div>
-      <div class="cube cube_count_3">
-        <div class="cube__face cube__face--front"></div>
-        <div class="cube__face cube__face--back"></div>
-        <div class="cube__face cube__face--right"></div>
-        <div class="cube__face cube__face--left"></div>
-        <div class="cube__face cube__face--top"></div>
-        <div class="cube__face cube__face--bottom"></div>
-      </div>
-      <div class="cube cube_count_4">
-        <div class="cube__face cube__face--front"></div>
-        <div class="cube__face cube__face--back"></div>
-        <div class="cube__face cube__face--right"></div>
-        <div class="cube__face cube__face--left"></div>
-        <div class="cube__face cube__face--top"></div>
-        <div class="cube__face cube__face--bottom"></div>
-      </div>
-      <div class="cube cube_count_5">
-        <div class="cube__face cube__face--front"></div>
-        <div class="cube__face cube__face--back"></div>
-        <div class="cube__face cube__face--right"></div>
-        <div class="cube__face cube__face--left"></div>
-        <div class="cube__face cube__face--top"></div>
-        <div class="cube__face cube__face--bottom"></div>
-      </div>
-      <div class="cube cube_count_6">
-        <div class="cube__face cube__face--front"></div>
-        <div class="cube__face cube__face--back"></div>
-        <div class="cube__face cube__face--right"></div>
-        <div class="cube__face cube__face--left"></div>
-        <div class="cube__face cube__face--top"></div>
-        <div class="cube__face cube__face--bottom"></div>
-      </div>
-    </div> -->
+  </div>
+
     <header>
       <div class="banner">
         <div class="container">
@@ -310,7 +54,15 @@
       </div>
     </header>
     <!-- end of header -->
-
+  <body>
+    <div class="navbar">
+      <div class="toggle">&#9776;</div>
+      <a href="#hero-section" class="nav-item">Home</a>
+      <a href="#about-section" class="nav-item">About</a>
+      <a href="#" class="nav-item">Events</a>
+      <a href="#blog_section" class="nav-item">Blog</a>
+      <a href="#" class="nav-item">Contact</a>
+  </div>
     <section class="events-container">
       <div class="event event1">
         <div class="event-title"><span>1.Face Off</span></div>
@@ -362,4 +114,24 @@
       </div>
     </section>
   </body>
+  <footer>
+    <img class="footer-logo1" src="Assets\logo.png" alt="" class="logo" />
+    <div class="middle-container">
+        <div class="footer-links">
+            <a href="#events_section" class="footerlink">Blogs</a>
+            <a href="#blog_section" class="footerlink">Events</a>
+            <a href="#contact_section" class="footerlink">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/shunya_pes/"><i class="footer-icon fa-brands fa-instagram"></i></a>
+            <a href=""><i class="footer-icon fa-brands fa-discord"></i></a>
+            <a href="mailto:xxxxx@pesu.pes.edu"><i class="footer-icon fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/company/shunya-pes/"><i class="footer-icon fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footer-text">Shunya 2022 ● All rights reserved<br>Made with ❣️ by Shunya Web Dev Team</div>
+    </div>
+    <img class="footer-logo2" src="Assets\PES_LogoWhite.png" alt="" class="logo" />
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="main.js"></script>
 </html>
