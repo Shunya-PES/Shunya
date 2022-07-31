@@ -54,7 +54,7 @@ header {
 .event {
   padding: 20px;
   border: 1px solid black;
-  height: 100vh;
+  height: fit-content;
   /* background-color: black; */
 }
 
@@ -96,6 +96,7 @@ header {
   /* background-color: rgba(255, 255, 255, 0.6); */
   color: white;
   /* box-shadow: 0 0 10px #aaaaaa; */
+  line-height: 1.5;
 }
 
 .event-image {
