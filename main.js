@@ -49,3 +49,13 @@ if (screen.width >= 580 && screen.width < 700) {
         spacing: 30.00
     })
 }
+
+window.onscroll = function () {
+    // We add pageYOffset for compatibility with IE.
+    if (window.scrollY >= 200 || window.pageYOffset >= 200) {
+        document.querySelector(".scrollup").style.visibility = "visible";
+    } else {
+        document.querySelector(".scrollup").style.visibility = "hidden";
+    }
+};
+
