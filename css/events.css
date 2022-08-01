@@ -21,6 +21,7 @@ header {
     url("../Assets/eventsPage/banner.jpg") center/cover no-repeat fixed;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .banner {
@@ -37,6 +38,7 @@ header {
   font-family: sans-serif;
   line-height: 1.2;
   margin: 10px 0;
+  text-align: center;
 }
 
 .banner p {
@@ -48,8 +50,10 @@ header {
   word-spacing: 2px;
 }
 
-.logo {
+.banner .logo {
   width: 15rem;
+  display: block;
+  margin: auto;
 }
 
 .event {
@@ -249,7 +253,7 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  .logo {
+  .banner .logo {
     width: 10rem;
   }
 
