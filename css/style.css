@@ -235,18 +235,18 @@
 
 body,
 html {
-  -webkit-font-smoothing: antialiased;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #f9fbff;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  font-family: "Noto Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color1);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 /*navbar*/
@@ -512,8 +512,10 @@ html {
 }
 
 .event-image:hover {
-  transition: 0.4s all;
-  background-image: url("../Assets/know-more-overlay.png");
+
+    transition: 0.4s all;
+    background-image: url("../Assets/homePage/know-more-overlay.png");
+
 }
 
 /*Blogs-Section*/
