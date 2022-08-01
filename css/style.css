@@ -244,7 +244,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #F9FBFF;
+    background-color: var(--color1);
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -517,7 +517,7 @@ html {
 
 .event-image:hover {
     transition: 0.4s all;
-    background-image: url("../Assets/know-more-overlay.png");
+    background-image: url("../Assets/homePage/know-more-overlay.png");
 }
 
 /*Blogs-Section*/
