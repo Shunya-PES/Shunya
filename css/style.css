@@ -431,8 +431,10 @@ html {
 
 .content-container {
     display: flex;
+    align-content: center;
     justify-content: space-between;
     margin: 10px 0 50px;
+    flex-wrap: wrap;
 }
 
 /*About-Section*/
@@ -477,7 +479,6 @@ html {
 }
 
 .event-button {
-    transition: 0.4s all;
     font-family: 'Noto Sans', sans-serif;
     border: 2px solid var(--color4);
     border-radius: 20px;
@@ -486,10 +487,11 @@ html {
     padding: 10px 20px;
     color: var(--color4);
     font-size: 20px;
+    transition: 0.4s all;
 }
 
 .event-button:hover {
-    transition: 0.4s all;
+    transition: all 0.4s;
     background-color: var(--color2);
     color: var(--color1);
 }
@@ -502,7 +504,6 @@ html {
 }
 
 .event-image {
-    transition: 0.3s all;
     width: 250px;
     height: 250px;
     border-radius: 30px;
@@ -511,25 +512,154 @@ html {
     margin: 0 0px 0 40px;
     background: url("../Assets/eventsPage/arithmania.PNG") no-repeat center;
     background-size: contain;
+    transition: 0.3s all;
 }
 
 .event-image:hover {
-    transition: 0.3s all;
+    transition: 0.4s all;
     background-image: url("../Assets/know-more-overlay.png");
 }
 
-/*Event-Section*/
+/*Blogs-Section*/
 
-.blog-content {
-    text-align: center;
-    font-weight: 400;
+.card {
+    --bg-filter-opacity: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+    height: 16em;
+    width: 13em;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    padding: 1em;
+    /*margin: 2em;*/
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: rotate(0);
+}
+
+.card h1 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+.card p {
+    font-size: 0.75em;
+    margin-top: 0.5em;
+    line-height: 2em;
+}
+
+.card .tags {
+    display: flex;
+}
+
+.card .tags .tag {
+    font-size: 0.75em;
+    background: var(--color3);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, 0.5s;
+}
+
+.card:hover .tags .tag {
+    background: var(--color4);
+    color: var(--color1);
+}
+
+.card .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+    padding: 1em;
+    line-height: 1em;
+    opacity: .8;
+}
+
+.card:before,
+.card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.card:before {
+    background: var(--color2);
+    width: 250%;
+    height: 250%;
+}
+
+.card:after {
+    background: var(--color1);
+    width: 200%;
+    height: 200%;
+}
+
+.card:hover {
+    color: var(--color4);
+}
+
+.card:hover:before,
+.card:hover:after {
+    transform: scale(1);
+}
+
+.card-grid-space .num {
+    font-size: 2em;
+    margin-bottom: 1.2rem;
+    color: var(--color1);
+}
+
+.info {
+    font-size: 1.2em;
+    display: flex;
+    padding: 1em 3em;
+    height: 3em;
+}
+
+.info img {
+    height: 3em;
+    margin-right: 0.5em;
+}
+
+.info h1 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.blogs-button {
+    background-color: var(--color3);
+    border: 2px solid var(--color1);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: var(--color1);
     font-size: 20px;
-    display: inline-block;
-    width: 750px;
-    margin: 10px 0px 10px;
-    padding: 30px 30px;
-    border: 3px solid var(--color1);
-    border-radius: 40px;
+    transition: 0.4s all;
+}
+
+.blogs-button:hover {
+    transition: 0.4s all;
+    background-color: var(--color2);
+    color: var(--color4);
 }
 
 /* Contact-Section*/
