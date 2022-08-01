@@ -13,7 +13,7 @@ VANTA.NET({
     color: 0x0382b8,
     backgroundColor: 0x001322,
     points: 10.00,
-    maxDistance: 35.00,
+    maxDistance: 30.00,
     spacing: 20.00
 })
 
