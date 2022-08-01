@@ -1,3 +1,4 @@
+AOS.init();
 setTimeout(function () {
     $('.loader-wrapper').fadeToggle();
 }, 1500);
@@ -54,10 +55,11 @@ window.onscroll = function () {
     // We add pageYOffset for compatibility with IE.
     if (window.scrollY >= 200 || window.pageYOffset >= 200) {
         document.querySelector(".scrollup").style.visibility = "visible";
+
     } else {
         document.querySelector(".scrollup").style.visibility = "hidden";
     }
-};
+}
 const form = document.getElementById("contact-form");
 async function handleSubmit(event) {
     event.preventDefault();
