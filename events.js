@@ -69,6 +69,8 @@ const slide = (element) => {
 
 const slider = $(".list");
 
+/*Automatic*/
+
 var automaticSlide = setInterval(() => {
   let slide1 = $(".list .next");
   let slide2 = $(".list2 .next");
@@ -79,12 +81,13 @@ var automaticSlide = setInterval(() => {
 slider.onclick = (event) => {
   clearInterval(automaticSlide);
   slide(event.target);
+  // slide(event.target);
 };
 
 const slider2 = $(".list2");
 
 slider2.onclick = (event) => {
-  slide(event.target);
   clearInterval(automaticSlide);
   slide(event.target);
+  // slide(event.target);
 };
