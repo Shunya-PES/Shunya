@@ -14,12 +14,12 @@
   font-family: "Poppins", sans-serif;
 }
 header {
-  min-height: 80vh;
+  max-height: 90vh;
+  padding: 40px 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)),
     url("../Assets/eventsPage/banner.jpg") center/cover no-repeat fixed;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
 }
 
 .banner {
@@ -55,7 +55,6 @@ header {
   padding: 20px;
   border: 1px solid black;
   height: fit-content;
-  /* background-color: black; */
 }
 
 .event1 {
@@ -71,7 +70,7 @@ header {
 .event-title {
   width: fit-content;
   margin: 5px auto;
-  /* border: 1px solid black; */
+
   padding: 10px;
   font-size: 2rem;
   font-weight: 700;
@@ -84,18 +83,17 @@ header {
 }
 
 .event-details {
-  /* border: 1px solid white; */
   display: flex;
-  /* flex-direction: row; */
+
   justify-content: space-around;
-  /* margin-left: 40px; */
+
   max-width: 1100px;
   padding: 20px 0;
-  /* padding-left: 80px; */
+
   margin: 50px auto 20px auto;
-  /* background-color: rgba(255, 255, 255, 0.6); */
+
   color: white;
-  /* box-shadow: 0 0 10px #aaaaaa; */
+
   line-height: 1.5;
 }
 
@@ -112,7 +110,6 @@ header {
 
   font-weight: 600;
   margin: auto;
-  /* padding: 22px; */
 }
 
 .event-description button {
@@ -133,6 +130,92 @@ header {
   transition: 1s;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(29, 144, 252);
+}
+
+.event-gallery {
+  height: 600px;
+  margin: 20px;
+}
+
+.event-gallery h2 {
+  color: white;
+  text-align: center;
+  margin: 50px auto;
+  width: fit-content;
+  border-bottom: 5px solid rgb(255, 136, 0);
+}
+
+.img1 {
+  background: url("../Assets/eventsPage/gallery1.jpg");
+}
+.img2 {
+  background: url("../Assets/eventsPage/gallery2.jpg");
+}
+.img3 {
+  background: url("../Assets/eventsPage/gallery3.jpg");
+}
+.img4 {
+  background: url("../Assets/eventsPage/gallery4.jpg");
+}
+.img5 {
+  background: url("../Assets/eventsPage/gallery5.jpg");
+}
+
+.img {
+  width: 500px;
+  height: 400px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.75;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  border-radius: 2px;
+
+  transition: transform 1s, opacity 1s;
+}
+
+.act {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+}
+
+.prev {
+  transform: translateX(-275px) scale(0.85);
+}
+
+.next {
+  transform: translateX(275px) scale(0.85);
+}
+
+.hide {
+  transform: translateX(-420px) scale(0.85);
+}
+
+.new-next {
+  transform: translateX(420px) scale(0.85);
+}
+
+.hide,
+.new-next {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
 @media screen and (max-width: 990px) and (min-width: 700px) {
   .event-details {
     max-width: 680px;
@@ -145,9 +228,31 @@ header {
     height: 300px;
     margin-left: 0px;
   }
+  .prev {
+    transform: translateX(-130px) scale(0.85);
+  }
+
+  .next {
+    transform: translateX(130px) scale(0.85);
+  }
+
+  .hide {
+    transform: translateX(-420px) scale(0.85);
+  }
+
+  .new-next {
+    transform: translateX(420px) scale(0.85);
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .logo {
+    width: 10rem;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
   .event-details {
     max-width: 600px;
     flex-direction: column;
@@ -169,13 +274,73 @@ header {
   .event-description button {
     margin: 10px auto;
   }
+  .img {
+    width: 400px;
+    height: 300px;
+    margin-left: -200px;
+  }
+
+  .prev {
+    transform: translateX(-80px) scale(0.85);
+  }
+
+  .next {
+    transform: translateX(80px) scale(0.85);
+  }
+
+  .hide {
+    transform: translateX(-90px) scale(0.85);
+  }
+
+  .new-next {
+    transform: translateX(90px) scale(0.85);
+  }
+
+  .event {
+    height: 1300px;
+  }
 }
 
-a {
-  color: white;
-  text-decoration: none;
+@media screen and (max-width: 566px) and (min-width: 468px) {
+  .img {
+    margin-left: -195px;
+  }
+  .prev {
+    transform: translateX(-60px) scale(0.85);
+  }
+
+  .next {
+    transform: translateX(60px) scale(0.85);
+  }
+
+  .hide {
+    transform: translateX(-70px) scale(0.85);
+  }
+
+  .new-next {
+    transform: translateX(70px) scale(0.85);
+  }
 }
 
-a:hover {
-  color: rgb(29, 144, 252);
+@media screen and (max-width: 468px) {
+  .img {
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+  }
+  .prev {
+    transform: translateX(-60px) scale(0.85);
+  }
+
+  .next {
+    transform: translateX(60px) scale(0.85);
+  }
+
+  .hide {
+    transform: translateX(-70px) scale(0.85);
+  }
+
+  .new-next {
+    transform: translateX(70px) scale(0.85);
+  }
 }
