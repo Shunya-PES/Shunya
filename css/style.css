@@ -517,7 +517,7 @@ html {
 
 .event-image:hover {
     transition: 0.4s all;
-    background-image: url("../Assets/know-more-overlay.png");
+    background-image: url("../Assets/homePage/know-more-overlay.png");
 }
 
 /*Blogs-Section*/
