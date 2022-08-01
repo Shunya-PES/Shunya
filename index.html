@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#001322">
 
-    <title>Home</title>
+    <title>Shunya - PES University | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap"
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/e7ae6f3064.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <div class="loader-wrapper">
@@ -56,7 +57,10 @@
         <a href="#blog_section" class="nav-item">Blog</a>
         <a href="#" class="nav-item">Contact</a>
     </div>
-    <section id=" hero-section" class="hero-section">
+    <div class="scrollup">
+        <a href="#hero-section"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <section id="hero-section" class="hero-section">
         <div id="vantajs"></div>
         <div class="hero-content-container">
             <img class="item1" src="Assets\logo.png" alt="" class="logo" />
@@ -65,10 +69,12 @@
                 by discovering its practicality as a step-by-step process.</h2>
         </div>
     </section>
-    <section id="about-section" class="about_section">
-        <h1 class="section-heading">About Shunya</h1>
-        <div class="aboutText">
-            <h2 class="content1">We are an <b>analysis-driven</b> and <b>research-oriented</b> club.
+    <section id="about-section" class="content_section light">
+        <div class="section-heading hover-underline-animation light" data-aos="fade-up">About Shunya
+        </div>
+        <div class="content-container light">
+            <div class="about-content" data-aos="fade-right">We are an <b>analysis-driven</b> and
+                <b>research-oriented</b> club.
                 We host fun activities and events related to a variety of branches of <em>applied
                     math</em>.<br><br>
                 Shunya promises much more than just fun mathematics. We are a community of extraordinary youth
@@ -80,132 +86,95 @@
                 We are on a journey to capture the beauty of mathematics in its true essence. The club is open
                 to all
                 those curious minds, to learn more about mathematics, regardless of their course or background.
-            </h2>
-
-            <div class="scene">
-                <div class="cube cube_count_1">
-                    <div class="cube__face cube__face--front"></div>
-                    <div class="cube__face cube__face--back"></div>
-                    <div class="cube__face cube__face--right"></div>
-                    <div class="cube__face cube__face--left"></div>
-                    <div class="cube__face cube__face--top"></div>
-                    <div class="cube__face cube__face--bottom"></div>
-                </div>
-                <div class="cube cube_count_2">
-                    <div class="cube__face cube__face--front"></div>
-                    <div class="cube__face cube__face--back"></div>
-                    <div class="cube__face cube__face--right"></div>
-                    <div class="cube__face cube__face--left"></div>
-                    <div class="cube__face cube__face--top"></div>
-                    <div class="cube__face cube__face--bottom"></div>
-                </div>
-                <div class="cube cube_count_3">
-                    <div class="cube__face cube__face--front"></div>
-                    <div class="cube__face cube__face--back"></div>
-                    <div class="cube__face cube__face--right"></div>
-                    <div class="cube__face cube__face--left"></div>
-                    <div class="cube__face cube__face--top"></div>
-                    <div class="cube__face cube__face--bottom"></div>
-                </div>
-                <div class="cube cube_count_4">
-                    <div class="cube__face cube__face--front"></div>
-                    <div class="cube__face cube__face--back"></div>
-                    <div class="cube__face cube__face--right"></div>
-                    <div class="cube__face cube__face--left"></div>
-                    <div class="cube__face cube__face--top"></div>
-                    <div class="cube__face cube__face--bottom"></div>
-                </div>
-                <div class="cube cube_count_5">
-                    <div class="cube__face cube__face--front"></div>
-                    <div class="cube__face cube__face--back"></div>
-                    <div class="cube__face cube__face--right"></div>
-                    <div class="cube__face cube__face--left"></div>
-                    <div class="cube__face cube__face--top"></div>
-                    <div class="cube__face cube__face--bottom"></div>
-                </div>
-                <div class="cube cube_count_6">
-                    <div class="cube__face cube__face--front"></div>
-                    <div class="cube__face cube__face--back"></div>
-                    <div class="cube__face cube__face--right"></div>
-                    <div class="cube__face cube__face--left"></div>
-                    <div class="cube__face cube__face--top"></div>
-                    <div class="cube__face cube__face--bottom"></div>
-                </div>
             </div>
         </div>
     </section>
-    <!--<section class="events_section">
-        <h1 class="section-heading">About Shunya</h1>
-        <h2 class="content1">Shunya, is an <em>analysis-driven</em> and <em>research-oriented</em> club.
-            We host fun activities and events related to a variety of branches of <em>applied
-                math</em>.<br><br>
+    <section id="events-section" class="content_section dark">
+        <div class="section-heading hover-underline-animation dark" data-aos="fade-up">Club Events</div>
+        <div class="content-container dark">
+            <div class="event-content" data-aos="fade-left">Shunya, is an <em>analysis-driven</em> and
+                <em>research-oriented</em> club.
+                We host fun activities and events related to a variety of branches of <em>applied
+                    math</em>.<br><br>
 
-            Shunya promises much more than just fun mathematics. We are a community of extraordinary youth
-            joining
-            together to develop their explorative, creative, and inventive skills. Shunya is a place to
-            learn,
-            explore, develop and research.<br><br>
+                Shunya promises much more than just fun mathematics. We are a community of extraordinary youth
+                joining
+                together to develop their explorative, creative, and inventive skills. Shunya is a place to
+                learn,
+                explore, develop and research.<br><br>
 
-            We are on a journey to capture the beauty of mathematics in its true essence. The club is open
-            to all
-            those curious minds, to learn more about mathematics, regardless of their course or background.
-        </h2>
-    <section class="events_section">
-        <div style="display: flex;">
+                We are on a journey to capture the beauty of mathematics in its true essence. The club is open
+                to all
+                those curious minds, to learn more about mathematics, regardless of their course or background.
+            </div>
+        </div>
+    </section>
+    <section id="blogs-section" class="content_section light">
+        <div class="section-heading hover-underline-animation light" data-aos="fade-up">Blogs</div>
+        <div class="content-container light">
+            <div class="blog-content" data-aos="fade-right">Shunya, is an <em>analysis-driven</em> and
+                <em>research-oriented</em> club.
+                We host fun activities and events related to a variety of branches of <em>applied
+                    math</em>.<br><br>
+
+                Shunya promises much more than just fun mathematics. We are a community of extraordinary youth
+                joining
+                together to develop their explorative, creative, and inventive skills. Shunya is a place to
+                learn,
+                explore, develop and research.<br><br>
+
+                We are on a journey to capture the beauty of mathematics in its true essence. The club is open
+                to all
+                those curious minds, to learn more about mathematics, regardless of their course or background.
+            </div>
+        </div>
+    </section>
+    <section id="contact-section" class="content_section dark">
+        <div class="section-heading hover-underline-animation dark" data-aos="fade-up">Contact Us</div>
+        <div class="content-container dark">
+            <div class="contact-content" data-aos="fade-left">
+                <div class="title1">We are here!</div>
+                While we’re good with smoke signals, there are simpler ways for us to get in touch.
+                <div class="contact-social">
+                    <a href="https://www.instagram.com/shunya_pes/"><i
+                            class="contact-icon fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="contact-icon fa-brands fa-discord"></i></a>
+                    <a href="mailto:xxxxx@pesu.pes.edu"><i class="contact-icon fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/company/shunya-pes/"><i
+                            class="contact-icon fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <form action="https://formspree.io/f/maykwoka" class="contact_form" id="contact-form" method="POST">
             <div>
-                <h1 class="section-heading" style="color: white;">About Shunya</h1>
-                <h2 class="content1" style="color:white;">Shunya, is an <em>analysis-driven</em> and <em>research-oriented</em> club.
-                We host fun activities and events related to a variety of branches of <em>applied
-                    math</em>.<br><br>
-                    
-                    Shunya promises much more than just fun mathematics. We are a community of extraordinary youth
-                    joining
-                    together to develop their explorative, creative, and inventive skills. Shunya is a place to
-                    learn,
-                    explore, develop and research.<br><br>
-                    
-                    We are on a journey to capture the beauty of mathematics in its true essence. The club is open
-                    to all
-                    those curious minds, to learn more about mathematics, regardless of their course or background.
-                </h2>
+                <div class="contact_content">
+                    <label class="contact_label">Name</label>
+                    <input type="text" name="name" class="contact_input" id="name" required>
+                </div>
+                <div class="contact_content">
+                    <label for="email" class="contact_label">Email</label>
+                    <input type="email" name="email" class="contact_input" id="email" required>
+                </div>
+                <div class="contact_content">
+                    <label for="subject" class="contact_label">Subject</label>
+                    <input type="text" name="subject" class="contact_input" id="subject" required>
+                </div>
+                <div id="alert" class="alert_style"></div>
             </div>
-            
+            <div>
+                <div class="contact_content">
+                    <label for="message" class="contact_label">Message</label>
+                    <textarea name="message" id="" rows="7" class="contact_input message" id="message"
+                        required></textarea>
+                    <button class="submit-button">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
         </div>
     </section>
-    <section class="blog_section">
-        <h1 class="section-heading">About Us</>
-            <h2 class="content1">Shunya, is an <em>analysis-driven</em> and <em>research-oriented</em> club.
-                We host fun activities and events related to a variety of branches of <em>applied
-                    math</em>.<br><br>
-
-                Shunya promises much more than just fun mathematics. We are a community of extraordinary youth
-                joining
-                together to develop their explorative, creative, and inventive skills. Shunya is a place to
-                learn,
-                explore, develop and research.<br><br>
-
-                We are on a journey to capture the beauty of mathematics in its true essence. The club is open
-                to all
-                those curious minds, to learn more about mathematics, regardless of their course or background.
-            </h2>
-    </section>
-    <section class="contact_section">
-        <h1 class="section-heading">About Us</>
-            <h2 class="content1">Shunya, is an <em>analysis-driven</em> and <em>research-oriented</em> club.
-                We host fun activities and events related to a variety of branches of <em>applied
-                    math</em>.<br><br>
-
-                Shunya promises much more than just fun mathematics. We are a community of extraordinary youth
-                joining
-                together to develop their explorative, creative, and inventive skills. Shunya is a place to
-                learn,
-                explore, develop and research.<br><br>
-
-                We are on a journey to capture the beauty of mathematics in its true essence. The club is open
-                to all
-                those curious minds, to learn more about mathematics, regardless of their course or background.
-            </h2>
-    </section>-->
 </body>
 <footer>
     <img class="footer-logo1" src="Assets\logo.png" alt="" class="logo" />
@@ -229,6 +198,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
 <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="main.js"></script>
 
 </html>

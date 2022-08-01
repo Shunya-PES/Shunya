@@ -1,3 +1,4 @@
+AOS.init();
 setTimeout(function () {
     $('.loader-wrapper').fadeToggle();
 }, 1500);
@@ -49,3 +50,54 @@ if (screen.width >= 580 && screen.width < 700) {
         spacing: 30.00
     })
 }
+
+window.onscroll = function () {
+    // We add pageYOffset for compatibility with IE.
+    if (window.scrollY >= 200 || window.pageYOffset >= 200) {
+        document.querySelector(".scrollup").style.visibility = "visible";
+
+    } else {
+        document.querySelector(".scrollup").style.visibility = "hidden";
+    }
+}
+const form = document.getElementById("contact-form");
+async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("alert");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            Accept: "application/json",
+        },
+    })
+        .then((response) => {
+            status.innerHTML = "Your message has been sent!";
+            document.querySelector(".alert_style").style.width = "250px";
+            document.querySelector(".alert_style").style.borderColor = "green";
+            document.querySelector(".alert_style").style.backgroundColor = "rgba(1, 232, 47, 0.525)";
+
+
+            // hide alert after 3 seconds
+            setTimeout(function () {
+                document.querySelector(".alert_style").style.width = "0px"
+                status.innerHTML = "";
+            }, 4000);
+            form.reset();
+        })
+        .catch((error) => {
+            status.innerHTML = "There was a problem. Try Again!";
+            document.querySelector(".alert_style").style.width = "250px";
+            document.querySelector(".alert_style").style.borderColor = "red";
+            document.querySelector(".alert_style").style.backgroundColor = "rgba(232, 1, 1, 0.525)";
+
+
+            // hide alert after 3 seconds
+            setTimeout(function () {
+                document.querySelector(".alert_style").style.width = "0px"
+                status.innerHTML = "";
+            }, 4000);
+        });
+}
+form.addEventListener("submit", handleSubmit);

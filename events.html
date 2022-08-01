@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/events.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <script src="https://hammerjs.github.io/dist/hammer.js"></script> -->
+    
     <script src="events.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="main.js"></script>
+    <script src="main.js"></script>
     <!-- preloader -->
 
-    <div class="loader-wrapper">
-      <img class="loader-logo" src="Assets\logo.png" alt="" class="logo" />
-      <div class="boxes">
-          <div class="box">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
-          <div class="box">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
-          <div class="box">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
-          <div class="box">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
-      </div>
-  </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/events.css" />
+  <!-- preloader -->
 
-    <header>
-      <div class="banner">
-        <div class="container">
-          <img src="Assets\logo.png" alt="" class="logo" />
-          <h1 class="banner-title">Events</h1>
-          <p>an interesting out look on math</p>
-        </div>
+  </head>
+  <div class="loader-wrapper">
+    <img class="loader-logo" src="Assets\logo.png" alt="" class="logo" />
+    <div class="boxes">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-    </header>
-    <!-- end of header -->
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+  <script>
+    setTimeout(function () {
+      $('.loader-wrapper').fadeToggle();
+    }, 1500);
+  </script>
   <body>
     <div class="navbar">
       <div class="toggle">&#9776;</div>
@@ -67,6 +66,15 @@
       <a href="#blog_section" class="nav-item">Blog</a>
       <a href="#" class="nav-item">Contact</a>
   </div>
+  <header>
+    <div class="banner">
+      <div class="container">
+        <img src="Assets\logo.png" alt="" class="logo" />
+        <h1 class="banner-title">Events</h1>
+        <p>an interesting out look on math</p>
+      </div>
+    </div>
+  </header>
     <section class="events-container">
       <div class="event event1">
         <div class="event-title"><span>1.Face Off</span></div>
@@ -141,26 +149,30 @@
 
           <div class="swipe2"></div>
         </div>
-      </div>
-    </section>
-  </body>
-  <footer>
-    <img class="footer-logo1" src="Assets\logo.png" alt="" class="logo" />
-    <div class="middle-container">
-        <div class="footer-links">
-            <a href="#events_section" class="footerlink">Blogs</a>
-            <a href="#blog_section" class="footerlink">Events</a>
-            <a href="#contact_section" class="footerlink">Contact</a>
-        </div>
-        <div class="footer-social">
-            <a href="https://www.instagram.com/shunya_pes/"><i class="footer-icon fa-brands fa-instagram"></i></a>
-            <a href=""><i class="footer-icon fa-brands fa-discord"></i></a>
-            <a href="mailto:xxxxx@pesu.pes.edu"><i class="footer-icon fa-solid fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/company/shunya-pes/"><i class="footer-icon fa-brands fa-linkedin"></i></a>
-        </div>
-        <div class="footer-text">Shunya 2022 ● All rights reserved<br>Made with ❣️ by Shunya Web Dev Team</div>
+      
     </div>
-    <img class="footer-logo2" src="Assets\PES_LogoWhite.png" alt="" class="logo" />
+  </div>
+
+</body>
+<footer>
+  <img class="footer-logo1" src="Assets\logo.png" alt="" class="logo" />
+  <div class="middle-container">
+    <div class="footer-links">
+      <a href="#events_section" class="footerlink">Blogs</a>
+      <a href="#blog_section" class="footerlink">Events</a>
+      <a href="#contact_section" class="footerlink">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/shunya_pes/"><i class="footer-icon fa-brands fa-instagram"></i></a>
+      <a href=""><i class="footer-icon fa-brands fa-discord"></i></a>
+      <a href="mailto:xxxxx@pesu.pes.edu"><i class="footer-icon fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/company/shunya-pes/"><i class="footer-icon fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="footer-text">Shunya 2022 ● All rights reserved<br>Made with ❣️ by Shunya Web Dev Team</div>
+  </div>
+  <img class="footer-logo2" src="Assets\PES_LogoWhite.png" alt="" class="logo" />
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="main.js"></script>
 
 </html>
