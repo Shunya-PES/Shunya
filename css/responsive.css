@@ -52,7 +52,7 @@
 
     /*about-section*/
 
-    .about_section {
+    .content_section {
         padding: 20px 20px;
         width: 100vw - 40px;
     }
@@ -74,7 +74,7 @@
     }
 
     /* CUBE animation start */
-    .aboutText {
+    .content-container {
         display: flex;
         flex-wrap: wrap-reverse;
     }

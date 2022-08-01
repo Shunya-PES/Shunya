@@ -13,6 +13,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 header {
   min-height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)),
@@ -137,9 +138,11 @@ header {
   .event-details {
     max-width: 680px;
   }
+
   .event-description {
     font-size: 0.9rem;
   }
+
   .event-image {
     width: 300px;
     height: 300px;
@@ -154,11 +157,13 @@ header {
     align-items: center;
     justify-content: space-evenly;
   }
+
   .event-description {
     font-size: 1rem;
     max-width: 90%;
     text-align: center;
   }
+
   .event-image {
     width: 300px;
     height: 300px;
