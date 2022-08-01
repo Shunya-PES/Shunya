@@ -91,7 +91,11 @@ header {
   padding-top: 5vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)), url("../Assets/blogPage/background.jpg") center/cover no-repeat fixed;
+}
 
+.flexblog{
+  display: flex;
+  justify-content: center;
 }
 
 :root {
@@ -116,6 +120,7 @@ header {
 
 img {
   width: 100%;
+  ;
 }
 
 .expandImg {
@@ -128,7 +133,7 @@ img {
   transition: transform 400ms ease-in-out;
   background-color: transparent;
   box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.53);
-
+  width: 100px;
 }
 
 .card.active {
@@ -224,6 +229,8 @@ img {
 /* footer start */
 
 /*footer*/
+/*footer*/
+
 footer {
   height: fit-content;
   width: 100vw-200px;
@@ -235,14 +242,14 @@ footer {
 }
 
 .footer-logo1 {
-  height: 120px;
-  width: 120px;
-  margin: 20px 95.5px 20px 0;
+  height: 67.3px;
+  width: 215.5px;
 }
 
 .footer-logo2 {
-  height: 67.3px;
-  width: 215.5px;
+  height: 120px;
+  width: 120px;
+  margin: 20px 0 20px 95.5px;
 }
 
 .footer-social {
@@ -251,7 +258,7 @@ footer {
 }
 
 .footer-icon {
-  color: white;
+  color: var(--color4);
   font-size: 25px;
   padding: 2px 10px;
 }
