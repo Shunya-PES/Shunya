@@ -14,7 +14,7 @@ VANTA.NET({
     color: 0x0382b8,
     backgroundColor: 0x001322,
     points: 10.00,
-    maxDistance: 35.00,
+    maxDistance: 30.00,
     spacing: 20.00
 })
 
@@ -30,7 +30,7 @@ if (screen.width >= 350 && screen.width < 580) {
         color: 0x0382b8,
         backgroundColor: 0x001322,
         points: 10.00,
-        maxDistance: 35.00,
+        maxDistance: 25.00,
         spacing: 30.00
     })
 }
@@ -46,7 +46,7 @@ if (screen.width >= 580 && screen.width < 700) {
         color: 0x0382b8,
         backgroundColor: 0x001322,
         points: 10.00,
-        maxDistance: 35.00,
+        maxDistance: 25.00,
         spacing: 30.00
     })
 }
