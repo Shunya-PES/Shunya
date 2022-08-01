@@ -1,7 +1,8 @@
-AOS.init();
 setTimeout(function () {
     $('.loader-wrapper').fadeToggle();
 }, 1500);
+
+AOS.init();
 
 VANTA.NET({
     el: "#vantajs",

@@ -6,46 +6,55 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/events.css" />
 
-    <script src="events.js" type="module"></script>
-    <script src="main.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- preloader -->
 
-    <div class="loader-wrapper">
-      <img class="loader-logo" src="Assets\logo.png" alt="" class="logo" />
-      <div class="boxes">
-        <div class="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+    <!-- <div class="loader-wrapper">
+    <img class="loader-logo" src="Assets\logo.png" alt="" class="logo" />
+    <div class="boxes">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
+  </div> -->
+    <script>
+      setTimeout(function () {
+        $(".loader-wrapper").fadeToggle();
+      }, 1500);
+    </script>
+  </head>
 
+  <!-- end of header -->
+
+  <body>
     <header>
       <div class="banner">
         <div class="container">
@@ -55,14 +64,6 @@
         </div>
       </div>
     </header>
-    <!-- end of header -->
-    <script>
-      setTimeout(function () {
-        $(".loader-wrapper").fadeToggle();
-      }, 1500);
-    </script>
-  </head>
-  <body>
     <div class="navbar">
       <div class="toggle">&#9776;</div>
       <a href="#hero-section" class="nav-item">Home</a>
@@ -94,7 +95,6 @@
             </button>
           </div>
         </div>
-
         <div class="event-gallery">
           <h2>Gallery</h2>
           <div class="list">
@@ -176,6 +176,7 @@
       class="logo"
     />
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <script src="main.js"></script>
+  <script src="events.js"></script>
 </html>
