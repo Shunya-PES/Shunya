@@ -725,6 +725,7 @@ html {
 }
 
 .contact_input {
+    display: block;
     padding: 5px 5px;
     width: 300px;
     font-family: "Noto Sans", sans-serif;
