@@ -75,7 +75,7 @@ async function handleSubmit(event) {
     })
         .then((response) => {
             status.innerHTML = "Your message has been sent!";
-            document.querySelector(".alert_style").style.width = "250px";
+            document.querySelector(".alert_style").style.width = "200px";
             document.querySelector(".alert_style").style.borderColor = "green";
             document.querySelector(".alert_style").style.backgroundColor = "rgba(1, 232, 47, 0.525)";
 
@@ -89,7 +89,7 @@ async function handleSubmit(event) {
         })
         .catch((error) => {
             status.innerHTML = "There was a problem. Try Again!";
-            document.querySelector(".alert_style").style.width = "250px";
+            document.querySelector(".alert_style").style.width = "200px";
             document.querySelector(".alert_style").style.borderColor = "red";
             document.querySelector(".alert_style").style.backgroundColor = "rgba(232, 1, 1, 0.525)";
 
