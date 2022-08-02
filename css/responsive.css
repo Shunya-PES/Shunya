@@ -47,6 +47,7 @@
 
     .item1 {
         height: 10.75em;
+        width: 10.75em;
         margin: auto auto;
     }
 
@@ -256,6 +257,7 @@
 
     .item1 {
         height: 13.75em;
+        width: 13.75em;
         margin: auto auto;
     }
 
@@ -445,6 +447,7 @@
 
     .item1 {
         height: 15.75em;
+        width: 15.75em;
     }
 
     /*section css global*/
