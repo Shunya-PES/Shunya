@@ -364,6 +364,7 @@ html {
     grid-row-start: 1;
     grid-row-end: 3;
     height: 18.75em;
+    width: 18.75em;
 }
 
 .item2 {

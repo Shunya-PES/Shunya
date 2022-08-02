@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e7ae6f3064.js" crossorigin="anonymous"></script>
+    <script async src="https://kit.fontawesome.com/e7ae6f3064.js" crossorigin="anonymous"></script>
 </head>
 
 <div class="loader-wrapper">
@@ -52,11 +52,11 @@
 <body>
     <div class="navbar">
         <div class="toggle">&#9776;</div>
-        <a href="#hero-section" class="nav-item">Home</a>
-        <a href="#about-section" class="nav-item">About</a>
-        <a href="#events-section" class="nav-item">Events</a>
-        <a href="#blogs-section" class="nav-item">Blog</a>
-        <a href="#contact-section" class="nav-item">Contact</a>
+        <a href="#hero-section" class="nav-item" aria-label="navbar-link">Home</a>
+        <a href="#about-section" class="nav-item" aria-label="navbar-link">About</a>
+        <a href="#events-section" class="nav-item" aria-label="navbar-link">Events</a>
+        <a href="#blogs-section" class="nav-item" aria-label="navbar-link">Blog</a>
+        <a href="#contact-section" class="nav-item" aria-label="navbar-link">Contact</a>
     </div>
     <div class="scrollup">
         <a href="#hero-section"><i class="fa-solid fa-arrow-up"></i></a>
@@ -74,10 +74,10 @@
         <div class="section-heading hover-underline-animation light" data-aos="fade-up">About Shunya
         </div>
         <div class="content-container light">
-            <div class="about-content" data-aos="fade-right">We are an <b>analysis-driven</b> and
-                <b>research-oriented</b> club.
-                We host fun activities and events related to a variety of branches of <em>applied
-                    math</em>.<br><br>
+            <div class="about-content" data-aos="fade-right">We are an analysis-driven and
+                research-oriented club.
+                We host fun activities and events related to a variety of branches of applied
+                math.<br><br>
                 Shunya promises much more than just fun mathematics. We are a community of extraordinary youth
                 joining
                 together to develop their explorative, creative, and inventive skills. Shunya is a place to
@@ -94,7 +94,7 @@
         <div class="section-heading hover-underline-animation dark" data-aos="fade-up">Club Events</div>
         <div class="content-container dark">
             <div class="event-content over" data-aos="fade-left">
-                <div class="text2">Check out our<br><b>Upcoming</b> and <b>Past events</b></div>
+                <div class="text2">Check out our<br>Upcoming and Past events</div>
                 <a href="events.html"><button class="event-button" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom">Go to Events
                         Page</button></a>
@@ -182,11 +182,13 @@
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="contact-social">
-                    <a href="https://www.instagram.com/shunya_pes/"><i
+                    <a aria-label="social-link" href="https://www.instagram.com/shunya_pes/"><i
                             class="contact-icon fa-brands fa-instagram"></i></a>
-                    <a href="https://discord.gg/JjshWgbR"><i class=" contact-icon fa-brands fa-discord"></i></a>
-                    <a href="mailto:shunya@.pes.edu"><i class="contact-icon fa-solid fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/company/shunya-pes/"><i
+                    <a aria-label="social-link" href="https://discord.gg/JjshWgbR"><i
+                            class=" contact-icon fa-brands fa-discord"></i></a>
+                    <a aria-label="social-link" href="mailto:shunya@.pes.edu"><i
+                            class="contact-icon fa-solid fa-envelope"></i></a>
+                    <a aria-label="social-link" href="https://www.linkedin.com/company/shunya-pes/"><i
                             class="contact-icon fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
@@ -228,15 +230,18 @@
         <img class="footer-logo1" src="Assets\homePage\PES_LogoWhite.png" alt="" class="logo" />
         <div class="middle-container" data-aos="fade-up">
             <div class="footer-links">
-                <a href="#events_section" class="footerlink">Blogs</a>
-                <a href="#blog_section" class="footerlink">Events</a>
-                <a href="#contact_section" class="footerlink">Contact</a>
+                <a aria-label="footer-link" href="#events_section" class="footerlink">Blogs</a>
+                <a aria-label="footer-link" href="#blog_section" class="footerlink">Events</a>
+                <a aria-label="footer-link" href="#contact_section" class="footerlink">Contact</a>
             </div>
             <div class="footer-social">
-                <a href="https://www.instagram.com/shunya_pes/"><i class="footer-icon fa-brands fa-instagram"></i></a>
-                <a href="https://discord.gg/JjshWgbR"><i class="footer-icon fa-brands fa-discord"></i></a>
-                <a href="mailto:shunya@.pes.edu"><i class="footer-icon fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/company/shunya-pes/"><i
+                <a aria-label="social-link" href="https://www.instagram.com/shunya_pes/"><i
+                        class="footer-icon fa-brands fa-instagram"></i></a>
+                <a aria-label="social-link" href="https://discord.gg/JjshWgbR"><i
+                        class="footer-icon fa-brands fa-discord"></i></a>
+                <a aria-label="social-link" href="mailto:shunya@.pes.edu"><i
+                        class="footer-icon fa-solid fa-envelope"></i></a>
+                <a aria-label="social-link" href="https://www.linkedin.com/company/shunya-pes/"><i
                         class="footer-icon fa-brands fa-linkedin"></i></a>
             </div>
             <div class="footer-text">Shunya 2022 ● All rights reserved<br>Made with ❣️ by Shunya Web Dev Team</div>
@@ -247,7 +252,7 @@
 
 <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
-<script async src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+<script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="main.js"></script>
 
