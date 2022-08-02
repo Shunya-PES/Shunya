@@ -243,7 +243,7 @@ html {
     background-color: var(--color1);
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 /*navbar*/
@@ -477,7 +477,7 @@ html {
     background-color: var(--color3);
     margin: 50px 0px;
     padding: 10px 20px;
-    color: var(--color4);
+    color: var(--color1);
     font-size: 20px;
     transition: 0.4s all;
 }
@@ -508,10 +508,8 @@ html {
 }
 
 .event-image:hover {
-
     transition: 0.4s all;
     background-image: url("../Assets/homePage/know-more-overlay.png");
-
 }
 
 /*Blogs-Section*/

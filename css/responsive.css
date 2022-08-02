@@ -1,6 +1,6 @@
 /*Responsive*/
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width:0px) and (max-width: 580px) {
+@media only screen and (min-width: 0px) and (max-width: 580px) {
 
     /*hero-section*/
     .navbar {
@@ -48,6 +48,161 @@
     .item1 {
         height: 10.75em;
         margin: auto auto;
+    }
+
+    /*section css global*/
+
+    .content_section {
+        padding: 20px 20px;
+        width: 100vw - 40px;
+    }
+
+    .section-heading {
+        font-size: 35px;
+        text-align: center;
+        padding: 5px 20px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .content-container {
+        margin: 10px 0 20px;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /*About-Section*/
+
+    .about-content {
+        font-size: 16px;
+        display: inline-block;
+        width: 100%;
+        padding: 20px 20px;
+        border-radius: 30px;
+    }
+
+    /*Event-Section*/
+
+    .event-content {
+        width: 100%;
+        padding: 10px 10px;
+        border-radius: 30px;
+    }
+
+    .text1 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .text2 {
+        font-size: 18px;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .event-button {
+        border-radius: 15px;
+        margin: 20px 0px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .event-image {
+        float: none;
+        width: 190px;
+        height: 190px;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+
+    /*Blogs-Section*/
+    .flexchange {
+        justify-content: space-around;
+    }
+
+    .card {
+        height: 10em;
+        margin-bottom: 20px;
+    }
+
+    .card h1 {
+        font-size: 1em;
+    }
+
+    .card p {
+        font-size: 0.6em;
+    }
+
+    .card .tags .tag {
+        font-size: 0.5em;
+    }
+
+    .card .date {
+        font-size: 0.65em;
+    }
+
+    .blogs-button {
+        display: none;
+    }
+
+    /* Contact-Section*/
+    .contact-content {
+        width: 100%;
+    }
+
+    .location {
+        font-size: 40px;
+        margin: 20px 20px 20px 0px;
+        float: left;
+    }
+
+    .address {
+        display: inline;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .title1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .title2 {
+        font-size: 17px;
+    }
+
+
+    .contact-icon {
+        color: var(--color4);
+        font-size: 25px;
+        padding: 2px 15px 2px 0px;
+        transition: 0.4s all;
+    }
+
+    .contact_form {
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+    }
+
+    .form-content {
+        margin: 2px 10px;
+    }
+
+    .contact_label {
+        margin: 0px 2px 5px;
+    }
+
+    .contact_input {
+        font-size: 16px;
     }
 
     /*footer*/
@@ -272,7 +427,6 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
 
     /*hero-section*/
     .item2 {
