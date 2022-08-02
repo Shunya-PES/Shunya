@@ -93,7 +93,7 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)), url("../Assets/blogPage/background.jpg") center/cover no-repeat fixed;
 }
 
-.flexblog{
+.flexblog {
   display: flex;
   justify-content: center;
 }
