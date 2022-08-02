@@ -18,7 +18,7 @@ img {
 /* header */
 header {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)), url("../Assets/blogPage/banner.jpg") center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)), url("../Assets/blogPage/banner.webp") center/cover no-repeat fixed;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -90,7 +90,7 @@ header {
   height: 200svh;
   padding-top: 5vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)), url("../Assets/blogPage/background.jpg") center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)), url("../Assets/blogPage/background.webp") center/cover no-repeat fixed;
 }
 
 .flexblog {
@@ -357,7 +357,7 @@ footer {
 
   .blog1 {
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.845), rgba(0, 0, 0, 0.865)), url(../Assets/blogPage/blog-1.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.845), rgba(0, 0, 0, 0.865)), url(../Assets/blogPage/blog-1.webp) center/cover no-repeat fixed;
   }
 
   .blogContent {

@@ -18,7 +18,7 @@ header {
   /* max-height: 90vh; */
   padding: 40px 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)),
-    url("../Assets/eventsPage/banner.jpg") center/cover no-repeat fixed;
+    url("../Assets/eventsPage/banner.webp") center/cover no-repeat fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,12 +64,12 @@ header {
 
 .event1 {
   background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)),
-    url("../Assets/eventsPage/cube.jpg") center/cover no-repeat fixed;
+    url("../Assets/eventsPage/cube.webp") center/cover no-repeat fixed;
 }
 
 .event2 {
   background: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.765)),
-    url("../Assets/eventsPage/ml-background.jpg") center/cover no-repeat fixed;
+    url("../Assets/eventsPage/ml-background.webp") center/cover no-repeat fixed;
 }
 
 .event-title {
@@ -158,19 +158,23 @@ a:hover {
 }
 
 .img1 {
-  background: url("../Assets/eventsPage/gallery1.jpg");
+  background: url("../Assets/eventsPage/gallery1.webp");
 }
+
 .img2 {
-  background: url("../Assets/eventsPage/gallery2.jpg");
+  background: url("../Assets/eventsPage/gallery2.webp");
 }
+
 .img3 {
-  background: url("../Assets/eventsPage/gallery3.jpg");
+  background: url("../Assets/eventsPage/gallery3.webp");
 }
+
 .img4 {
-  background: url("../Assets/eventsPage/gallery4.jpg");
+  background: url("../Assets/eventsPage/gallery4.webp");
 }
+
 .img5 {
-  background: url("../Assets/eventsPage/gallery5.jpg");
+  background: url("../Assets/eventsPage/gallery5.webp");
 }
 
 .img {
@@ -297,6 +301,7 @@ footer {
     height: 300px;
     margin-left: 0px;
   }
+
   .prev {
     transform: translateX(-130px) scale(0.85);
   }
@@ -322,6 +327,7 @@ footer {
   .banner-title {
     font-size: 2rem;
   }
+
   .event-details {
     max-width: 600px;
     flex-direction: column;
@@ -345,6 +351,7 @@ footer {
   .event-description button {
     margin: 10px auto;
   }
+
   .img {
     width: 400px;
     height: 300px;
@@ -376,6 +383,7 @@ footer {
   .img {
     margin-left: -195px;
   }
+
   .prev {
     transform: translateX(-60px) scale(0.85);
   }
@@ -399,6 +407,7 @@ footer {
     height: 200px;
     margin-left: -150px;
   }
+
   .prev {
     transform: translateX(-60px) scale(0.85);
   }
