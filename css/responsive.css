@@ -104,6 +104,138 @@
         margin: auto auto;
     }
 
+    /*section css global*/
+
+    .content_section {
+        padding: 20px 50px;
+        width: 100vw - 100px;
+    }
+
+    .section-heading {
+        text-align: center;
+        font-size: 35px;
+        padding: 10px 10px 10px 10px;
+        display: block;
+        margin: 20px auto 20px;
+    }
+
+    .content-container {
+        flex-wrap: wrap;
+        margin: 10px 0 30px;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /*About-Section*/
+
+    .about-content {
+        font-size: 18px;
+        width: 100%;
+        padding: 25px 25px;
+    }
+
+    /*Event-Section*/
+
+    .event-content {
+        width: 100%;
+        margin: 1px 0px 1px;
+        padding: 15px 15px;
+    }
+
+    .text1 {
+        font-size: 19px;
+        padding: 0 0 10px;
+    }
+
+    .text2 {
+        font-size: 20px;
+    }
+
+    .event-button {
+        margin: 30px 0px 0;
+        font-size: 15px;
+    }
+
+    .container {
+        display: block;
+        text-align: left;
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .event-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    /*Blogs-Section*/
+    .flexchange {
+        justify-content: space-around;
+    }
+
+    .card {
+        height: 9em;
+        width: 13em;
+        font-size: 1.5em;
+        margin: 0 0 20px;
+    }
+
+    .card h1 {
+        font-size: 0.9em;
+    }
+
+    .card p {
+        font-size: 0.58em;
+    }
+
+    .card .tags .tag {
+        font-size: 0.5em;
+    }
+
+    .card .date {
+        font-size: 0.65em;
+    }
+
+    .blogs-button {
+        display: none;
+    }
+
+    /* Contact-Section*/
+
+    .contact-content {
+        width: 100%;
+    }
+
+    .address {
+        font-size: 16px;
+    }
+
+    .title1 {
+        font-size: 22px;
+    }
+
+    .title2 {
+        font-size: 17px;
+        margin: 20px 0;
+    }
+
+    .contact-icon {
+        font-size: 25px;
+    }
+
+    .form-content {
+        margin: 5px 5px;
+    }
+
+    .contact_input {
+        width: 220px;
+        font-size: 16px;
+    }
+
+    .alert_style {
+        margin: 10px 0 0 10px;
+    }
+
     /*footer*/
     footer {
         width: 100vw-50px;
@@ -165,6 +297,7 @@
 
     .content_section {
         padding: 20px 60px;
+        width: 100vw - 120px;
     }
 
     .section-heading {
