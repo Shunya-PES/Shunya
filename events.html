@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/events.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/events.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <!-- preloader -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- preloader -->
 
   <div class="loader-wrapper">
     <img class="loader-logo" src="Assets/homePage/logo.png" alt="" class="logo" />
@@ -40,8 +44,13 @@
         <div></div>
       </div>
     </div>
-  </div>
-
+  </div> -->
+    <script>
+      setTimeout(function () {
+        $(".loader-wrapper").fadeToggle();
+      }, 1500);
+    </script>
+  </head>
 
   <!-- end of header -->
 
@@ -53,82 +62,109 @@
         <h1 class="banner-title">Events</h1>
         <p>an interesting out look on math</p>
       </div>
+    </header>
+    <div class="navbar">
+      <div class="toggle">&#9776;</div>
+      <a href="#hero-section" class="nav-item">Home</a>
+      <a href="#about-section" class="nav-item">About</a>
+      <a href="#" class="nav-item">Events</a>
+      <a href="#blog_section" class="nav-item">Blog</a>
+      <a href="#" class="nav-item">Contact</a>
     </div>
-  </header>
-  <div class="navbar">
-    <div class="toggle">&#9776;</div>
-    <a href="#hero-section" class="nav-item">Home</a>
-    <a href="#about-section" class="nav-item">About</a>
-    <a href="#" class="nav-item">Events</a>
-    <a href="#blog_section" class="nav-item">Blog</a>
-    <a href="#" class="nav-item">Contact</a>
-  </div>
-  <section class="events-container">
-    <div class="event event1">
-      <div class="event-title"><span>1.Face Off</span></div>
+    <section class="events-container">
+      <div class="event event1">
+        <div class="event-title"><span>1.Face Off</span></div>
 
-      <div class="event-details">
-        <img src="Assets/eventsPage/faceOff.PNG" class="event-image" />
-        <div class="event-description">
-          <p>
-            Team Shunya is super excited to inform you that we are going to be
-            hosting our very first event in the month of April. But before
-            that what is even better is that we are organising a very fun
-            event for all PES RR and EC Campus students on 18th March. Make
-            sure you attend the event to stand a chance to win exciting prizes
-            and get to know more about the event! In case of any queries, feel
-            free to reach out to us.
-          </p>
-          <button>
-            <a href="https://www.instagram.com/shunya_pes/?hl=en">Know more</a>
-          </button>
+        <div class="event-details">
+          <img src="Assets/eventsPage/faceOff.PNG" class="event-image" />
+          <div class="event-description">
+            <p>
+              Team Shunya is super excited to inform you that we are going to be
+              hosting our very first event in the month of April. But before
+              that what is even better is that we are organising a very fun
+              event for all PES RR and EC Campus students on 18th March. Make
+              sure you attend the event to stand a chance to win exciting prizes
+              and get to know more about the event! In case of any queries, feel
+              free to reach out to us.
+            </p>
+            <button>
+              <a href="https://www.instagram.com/shunya_pes/?hl=en"
+                >Know more</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="event-gallery">
+          <h2>Gallery</h2>
+          <div class="list">
+            <div class="img1 hide img"></div>
+            <div class="img2 prev img"></div>
+            <div class="img3 act img"></div>
+            <div class="img4 next img"></div>
+            <div class="img5 next new-next img"></div>
+          </div>
+
+          <div class="swipe"></div>
         </div>
       </div>
+      <div class="event event2">
+        <div class="event-title"><span>2.ArithMania</span></div>
+        <div class="event-details">
+          <img src="Assets/eventsPage/arithmania.PNG" class="event-image" />
+          <div class="event-description">
+            <p>
+              Team Shunya is super excited to inform you that we are going to be
+              hosting our very first event in the month of April. But before
+              that what is even better is that we are organising a very fun
+              event for all PES RR and EC Campus students on 18th March. Make
+              sure you attend the event to stand a chance to win exciting prizes
+              and get to know more about the event! In case of any queries, feel
+              free to reach out to us.
+            </p>
+            <button>
+              <a href="https://www.instagram.com/shunya_pes/?hl=en"
+                >Know more</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="event-gallery">
+          <h2>Gallery</h2>
+          <div class="list2">
+            <div class="img1 hide img"></div>
+            <div class="img2 prev img"></div>
+            <div class="img3 act img"></div>
+            <div class="img4 next img"></div>
+            <div class="img5 next new-next img"></div>
+          </div>
 
-      <div class="event-gallery"></div>
-    </div>
-    <div class="event event2">
-      <div class="event-title"><span>2.ArithMania</span></div>
-      <div class="event-details">
-        <img src="Assets/eventsPage/arithmania.PNG" class="event-image" />
-        <div class="event-description">
-          <p>
-            Team Shunya is super excited to inform you that we are going to be
-            hosting our very first event in the month of April. But before
-            that what is even better is that we are organising a very fun
-            event for all PES RR and EC Campus students on 18th March. Make
-            sure you attend the event to stand a chance to win exciting prizes
-            and get to know more about the event! In case of any queries, feel
-            free to reach out to us.
-          </p>
-          <button>
-            <a href="https://www.instagram.com/shunya_pes/?hl=en">Know more</a>
-          </button>
+          <div class="swipe"></div>
         </div>
       </div>
       <div class="event-gallery"></div>
     </div>
   </section>
 </body>
-<footer>
-  <img class="footer-logo1" src="Assets/homePage/PES_LogoWhite.png" alt="" class="logo" />
-  <div class="middle-container">
-    <div class="footer-links">
-      <a href="#events_section" class="footerlink">Blogs</a>
-      <a href="#blog_section" class="footerlink">Events</a>
-      <a href="#contact_section" class="footerlink">Contact</a>
+  <footer>
+    <img class="footer-logo1" data-aos="fade-right" src="Assets\homePage\PES_LogoWhite.png" alt="" class="logo" />
+    <div class="middle-container" data-aos="fade-up">
+        <div class="footer-links">
+            <a href="#events_section" class="footerlink">Blogs</a>
+            <a href="#blog_section" class="footerlink">Events</a>
+            <a href="#contact_section" class="footerlink">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/shunya_pes/"><i class="footer-icon fa-brands fa-instagram"></i></a>
+            <a href="https://discord.gg/JjshWgbR"><i class="footer-icon fa-brands fa-discord"></i></a>
+            <a href="mailto:shunya@.pes.edu"><i class="footer-icon fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/company/shunya-pes/"><i
+                    class="footer-icon fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footer-text">Shunya 2022 ● All rights reserved<br>Made with ❣️ by Shunya Web Dev Team</div>
     </div>
-    <div class="footer-social">
-      <a href="https://www.instagram.com/shunya_pes/"><i class="footer-icon fa-brands fa-instagram"></i></a>
-      <a href=""><i class="footer-icon fa-brands fa-discord"></i></a>
-      <a href="mailto:xxxxx@pesu.pes.edu"><i class="footer-icon fa-solid fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/company/shunya-pes/"><i class="footer-icon fa-brands fa-linkedin"></i></a>
-    </div>
-    <div class="footer-text">Shunya 2022 ● All rights reserved<br>Made with ❣️ by Shunya Web Dev Team</div>
-  </div>
-  <img class="footer-logo2" src="Assets/homePage/logo.png" alt="" class="logo" />
+    <img class="footer-logo2" data-aos="fade-left" src="Assets\homePage\logo.png" alt="" class="logo" />
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="main.js"></script>
 
+  <script src="main.js"></script>
+  <script src="events.js"></script>
 </html>
