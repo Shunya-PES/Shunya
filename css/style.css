@@ -503,14 +503,14 @@ html {
     border: 2px solid var(--color3);
     float: right;
     margin: 0 0px 0 40px;
-    background: url("../Assets/eventsPage/arithmania.PNG") no-repeat center;
+    background: url("../Assets/eventsPage/arithmania.webp") no-repeat center;
     background-size: contain;
     transition: 0.3s all;
 }
 
 .event-image:hover {
     transition: 0.4s all;
-    background-image: url("../Assets/homePage/know-more-overlay.png");
+    background-image: url("../Assets/homePage/know-more-overlay.webp");
 }
 
 /*Blogs-Section*/
