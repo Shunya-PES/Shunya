@@ -233,6 +233,14 @@
     .footerlink {
         font-size: 15px;
     }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 11px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
