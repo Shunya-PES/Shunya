@@ -19,7 +19,7 @@ This repository contains all the files and folders for the Official Shunya Websi
 - If there is any problem in the repo with an inaccurate solution create an issue!
 
 ### Note: Any Contribution not following these guidelines will be discarded.
-### Read [`CONTRIBUTING.md`](https://github.com/adithya-sk/Shunya/blob/62c516c9de38e6f60f29053182a16699a3110053/.github/CONTRIBUTING.md) to get started with contributing to this repository.
+### Read [`CONTRIBUTING.md`](https://github.com/adithya-s-k/Shunya/blob/62c516c9de38e6f60f29053182a16699a3110053/.github/CONTRIBUTING.md) to get started with contributing to this repository.
 
 <hr>
 
