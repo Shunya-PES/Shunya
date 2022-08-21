@@ -1,11 +1,11 @@
 ## Contributing
 
-**1.** Fork [this](https://github.com/thepranaygupta/Data-Structures-and-Algorithms.git) repository.
+**1.** Fork [this](https://github.com/adithya-s-k/Shunya) repository.
 
 **2.** Clone your forked copy of the project into your local system.
 
 ```
-git clone https://github.com/<your_name>/Data-Structures-and-Algorithms.git
+git clone https://github.com/adithya-s-k/Shunya.git
 ```
 
 **3.** Navigate to the project directory. 📁
