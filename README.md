@@ -23,4 +23,10 @@ This repository contains all the files and folders for the Official Shunya Websi
 
 <hr>
 
+## Contributors:
+
+1) Sarthak S Kumar : https://github.com/SarthakSKumar
+
 ## Happy Coding 👨‍💻
+
+
