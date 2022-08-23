@@ -24,3 +24,7 @@ This repository contains all the files and folders for the Official Shunya Websi
 <hr>
 
 ## Happy Coding 👨‍💻
+
+## Contributors:
+
+1) Akash Kamalesh: https://github.com/asphytheghoul
