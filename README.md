@@ -28,5 +28,6 @@ This repository contains all the files and folders for the Official Shunya Websi
 1) Sarthak S Kumar : https://github.com/SarthakSKumar
 2) Akash Kamalesh : https://github.com/asphytheghoul
 3) Samar Pratap : https://github.com/noughtsamar
+4) Anirudh Revanur: https://github.com/AnirudhRevanur
 
 ## Happy Coding 👨‍💻
