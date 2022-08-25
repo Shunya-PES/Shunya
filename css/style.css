@@ -1,8 +1,9 @@
 :root {
     --color1: #001322;
     --color2: #0052c9;
-    --color3: #00a4eb;
+    --color3: #0ea5e9;
     --color4: #ffffff;
+    --color5: #e7f1ff;
 }
 
 /* Preloader start */
@@ -243,7 +244,7 @@ html {
     background-color: var(--color1);
     margin: 0;
     padding: 0;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /*navbar*/
@@ -363,12 +364,12 @@ html {
 .item1 {
     grid-row-start: 1;
     grid-row-end: 3;
-    height: 18.75em;
-    width: 18.75em;
+    height: 19.75em;
+    width: 19.75em;
 }
 
 .item2 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 600;
     color: var(--color4);
     margin: 50px 50px 10px;
@@ -376,7 +377,8 @@ html {
 
 .item3 {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 1.75rem;
     margin: 5px 50px 15px;
     display: inline-block;
     color: var(--color4);
@@ -407,8 +409,8 @@ html {
 
 .section-heading {
     font-weight: 600;
-    font-size: 50px;
-    padding: 10px 30px 10px 10px;
+    font-size: 48px;
+    padding: 10px;
     display: inline-block;
     margin: 30px auto 20px;
 }
@@ -425,23 +427,22 @@ html {
 
 .content-container {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
-    margin: 10px 0 50px;
+    margin: 10px 0 30px;
+    padding: 10px;
 }
 
 /*About-Section*/
 
 .about-content {
-    text-align: center;
     font-weight: 400;
-    font-size: 20px;
+    line-height: 1.8rem;
+    font-size: 18px;
     display: inline-block;
     width: 750px;
-    margin: 10px 0px 10px;
-    padding: 30px 30px;
-    border: 3px solid var(--color1);
-    border-radius: 40px;
+    padding: 5px;
+    color: rgb(27, 27, 58);
 }
 
 /*Event-Section*/
@@ -449,10 +450,13 @@ html {
 .event-content {
     text-align: center;
     width: 750px;
-    margin: 10px 0px 10px;
-    padding: 30px 30px;
-    border: 3px solid var(--color4);
-    border-radius: 40px;
+    height: fit-content;
+    margin: 10px 0px;
+    padding: 28px;
+    border-radius: 12px;
+    background: #001322;
+    box-shadow: 5px 5px 10px #00080e,
+        -5px -5px 10px #001e36;
 }
 
 .over {
@@ -461,39 +465,42 @@ html {
 }
 
 .text1 {
-    font-size: 23px;
+    font-size: 24px;
     font-weight: 800;
     color: var(--color4);
     padding: 0 0 10px;
 }
 
 .text2 {
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .event-button {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Inter', sans-serif;
     border: 2px solid var(--color1);
-    border-radius: 20px;
+    border-radius: 18px;
     background-color: var(--color3);
-    margin: 50px 0px;
-    padding: 10px 20px;
+    margin: 32px 0px;
+    padding: 16px 28px;
     color: var(--color1);
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
     transition: 0.4s all;
 }
 
 .event-button:hover {
     transition: all 0.4s;
-    background-color: var(--color2);
-    color: var(--color4);
+    background-color: #38bdf9;
 }
 
 .container {
     display: block;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     margin: 20px 0;
+    color: var(--color5);
+    line-height: 1.65rem;
 }
 
 .event-image {
@@ -535,6 +542,8 @@ html {
     position: relative;
     overflow: hidden;
     text-decoration: none;
+    box-shadow: 18px 18px 30px #bebebe,
+        -18px -18px 30px #ffffff;
 }
 
 .card:hover {
@@ -543,12 +552,12 @@ html {
 
 .card h1 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 40px;
     line-height: 1.2em;
 }
 
 .card p {
-    font-size: 0.75em;
+    font-size: 18px;
     margin-top: 0.5em;
     line-height: 2em;
 }
@@ -729,7 +738,7 @@ html {
     display: block;
     padding: 5px 5px;
     width: 300px;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: var(--color1);
     border: 2px solid var(--color4);
     border-radius: 10px;
@@ -747,7 +756,7 @@ html {
 
 .submit-button {
     transition: 0.4s all;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 15px;
     width: 150px;
     height: 40px;
