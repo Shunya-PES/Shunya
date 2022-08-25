@@ -441,13 +441,17 @@ html {
     font-size: 18px;
     display: inline-block;
     width: 850px;
-    padding: 5px;
+    padding: 24px;
     color: rgb(27, 27, 58);
+    border-radius: 15px;
+    background: #f0f0f0;
+    box-shadow: 5px 5px 10px #c1c1c1,
+        -5px -5px 10px #ffffff;
 }
 
 .cube-animation {
-    width: 300px;
-    height: 300px;
+    width: 420px;
+    height: 340px;
     border-radius: 15px;
 }
 
@@ -668,10 +672,6 @@ html {
 }
 
 /* Contact-Section*/
-.override {
-    margin-bottom: 5px;
-}
-
 .contact-content {
     font-weight: 400;
     display: block;
@@ -757,7 +757,7 @@ html {
 .contact_input {
     display: block;
     padding: 5px 5px;
-    width: 300px;
+    width: 288px;
     margin: 10px 0;
     font-family: 'Inter', sans-serif;
     background-color: var(--color1);
@@ -795,7 +795,7 @@ html {
 footer {
     width: 100%;
     height: fit-content;
-    background-color: var(--color1);
+    background-color: var(--color3);
     padding: 20px 100px 10px;
     display: flex;
     align-items: center;
@@ -819,32 +819,23 @@ footer {
 }
 
 .footer-icon {
-    color: var(--color4);
+    color: var(--color1);
     font-size: 25px;
     padding: 2px 10px;
 }
 
 .footer-text {
-    color: rgb(183, 183, 183);
+    color: rgb(6, 0, 40);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     padding: 3px;
 }
 
 .footerlink {
     margin: 20px 10px;
-    color: var(--color4);
+    color: var(--color1);
     text-decoration: none;
     font-size: 17px;
-}
-
-.footerlink:hover {
-    color: var(--color3);
-    transition: 0.4s ease;
-}
-
-.footer-icon:hover {
-    color: var(--color3);
-    transition: 0.4s ease;
+    font-weight: 500;
 }
