@@ -449,9 +449,6 @@ html {
     width: 300px;
     height: 300px;
     border-radius: 15px;
-    background: #f0f0f0;
-    box-shadow: 6px 6px 12px #c3c3c3,
-        -6px -6px 12px #fdfdfd;
 }
 
 /*Event-Section*/
