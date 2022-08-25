@@ -3,7 +3,7 @@
     --color2: #0052c9;
     --color3: #0ea5e9;
     --color4: #ffffff;
-    --color5: #e7f1ff;
+    --color5: #cae1ff;
 }
 
 /* Preloader start */
@@ -676,8 +676,13 @@ html {
     font-weight: 400;
     display: block;
     width: 600px;
-    padding: 10px;
-    margin: 10px 0px 10px;
+    height: fit-content;
+    padding: 24px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    background: #001322;
+    box-shadow: 5px 5px 10px #00080e,
+        -5px -5px 10px #001e36;
 }
 
 .location {
@@ -689,11 +694,18 @@ html {
 .address {
     display: inline;
     text-align: left;
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.address2 {
+    font-size: 16px;
+    color: var(--color5);
+    line-height: 1.5rem;
 }
 
 .title1 {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 600;
     width: 200px;
     margin: 0 0 10px;
@@ -702,13 +714,10 @@ html {
 .title2 {
     font-size: 19px;
     margin: 30px 0;
+    line-height: 1.65rem;
+    color: var(--color5);
 }
 
-.contact-social {
-    display: block;
-    margin: 30px 0;
-    width: 200px;
-}
 
 .contact-icon {
     color: var(--color4);
@@ -727,6 +736,11 @@ html {
     flex-wrap: wrap;
     height: fit-content;
     width: fit-content;
+    padding: 18px 16px;
+    border-radius: 15px;
+    background: #001322;
+    box-shadow: 5px 5px 10px #00080e,
+        -5px -5px 10px #001e36;
 }
 
 .form-content {
@@ -736,7 +750,7 @@ html {
 }
 
 .contact_label {
-    margin: 0px 2px 8px;
+    margin: 0px 2px 10px;
     display: block;
 }
 
@@ -744,12 +758,13 @@ html {
     display: block;
     padding: 5px 5px;
     width: 300px;
+    margin: 10px 0;
     font-family: 'Inter', sans-serif;
     background-color: var(--color1);
     border: 2px solid var(--color4);
     border-radius: 10px;
     font-size: 17px;
-    color: var(--color4);
+    color: var(--color5);
 }
 
 .alert_style {
@@ -761,22 +776,18 @@ html {
 }
 
 .submit-button {
-    transition: 0.4s all;
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     width: 150px;
     height: 40px;
     margin: 15px 0px 0px;
-    border: 2px solid var(--color4);
     color: var(--color1);
     border-radius: 10px;
     background: var(--color3);
 }
 
 .submit-button:hover {
-    transition: 0.4s all;
-    background: var(--color2);
-    color: white;
+    background: #38bdf9;
 }
 
 /*footer*/
