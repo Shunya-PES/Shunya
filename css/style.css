@@ -440,9 +440,18 @@ html {
     line-height: 1.8rem;
     font-size: 18px;
     display: inline-block;
-    width: 750px;
+    width: 850px;
     padding: 5px;
     color: rgb(27, 27, 58);
+}
+
+.cube-animation {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f0f0f0, #e3e1e1);
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
 }
 
 /*Event-Section*/
@@ -453,7 +462,7 @@ html {
     height: fit-content;
     margin: 10px 0px;
     padding: 28px;
-    border-radius: 12px;
+    border-radius: 15px;
     background: #001322;
     box-shadow: 5px 5px 10px #00080e,
         -5px -5px 10px #001e36;
