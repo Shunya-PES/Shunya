@@ -3,7 +3,7 @@
     --color2: #0052c9;
     --color3: #0ea5e9;
     --color4: #ffffff;
-    --color5: #cae1ff;
+    --color5: #e6f1ff;
 }
 
 /* Preloader start */
@@ -444,9 +444,9 @@ html {
     padding: 24px;
     color: rgb(27, 27, 58);
     border-radius: 15px;
-    background: #f0f0f0;
-    box-shadow: 5px 5px 10px #c1c1c1,
-        -5px -5px 10px #ffffff;
+    background: #ffffff;
+    box-shadow: 6px 6px 17px #dbdbdb,
+        -6px -6px 17px #ffffff;
 }
 
 .cube-animation {
