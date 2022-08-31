@@ -59,7 +59,7 @@ header {
 .event {
   padding: 20px;
   border: 1px solid black;
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 .event1 {
@@ -147,6 +147,7 @@ a:hover {
 .event-gallery {
   height: 600px;
   margin: 20px;
+  display: none;
 }
 
 .event-gallery h2 {
@@ -155,6 +156,7 @@ a:hover {
   margin: 50px auto;
   width: fit-content;
   border-bottom: 5px solid rgb(255, 136, 0);
+  display: none;
 }
 
 .img1 {
@@ -375,7 +377,7 @@ footer {
   }
 
   .event {
-    height: 1300px;
+    height: 100%;
   }
 }
 
