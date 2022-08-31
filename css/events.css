@@ -59,7 +59,7 @@ header {
 .event {
   padding: 20px;
   border: 1px solid black;
-  /* height: fit-content; */
+  height: 100%;
 }
 
 .event1 {
