@@ -39,8 +39,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -48,7 +47,7 @@
 </head>
 
 <div class="loader-wrapper">
-    <img class="loader-logo" src="Assets\homePage\logo.webp" alt="" class="logo" />
+    <img class="loader-logo" src="Assets\homePage\logo_white.webp" alt="" class="logo" />
     <div class="boxes">
         <div class="box">
             <div></div>
@@ -92,7 +91,7 @@
     <section id="hero-section" class="hero-section">
         <div id="vantajs"></div>
         <div class="hero-content-container">
-            <img class="item1" src="Assets\homePage\logo.webp" alt="" class="logo" />
+            <img class="item1" src="Assets\homePage\logo_white.webp" alt="" class="logo" />
             <h1 class="item2">The Official Math Club of<br>PES University</h1>
             <h2 class="item3">We break down the myth of mathematics being mundane and inapplicable
                 by discovering its practicality as a step-by-step process.</h2>
@@ -116,6 +115,10 @@
                 to all
                 those curious minds, to learn more about mathematics, regardless of their course or background.
             </div>
+
+            <lottie-player src="https://lottie.host/9ba772ff-3d8e-47fd-9909-2785b2356373/lDdmGK5rqf.json"
+                background="transparent" speed="1" class="cube-animation" data-aos="zoom-in" loop autoplay>
+            </lottie-player>
         </div>
     </section>
     <section id="events-section" class="content_section dark">
@@ -196,7 +199,7 @@
     </section>
     <section id="contact-section" class="content_section dark">
         <div class="section-heading hover-underline-animation dark" data-aos="fade-up">Contact Us</div>
-        <div class="content-container dark override">
+        <div class="content-container dark">
             <div class="contact-content" data-aos="fade-up">
                 <div class="title1">We are here!</div>
                 <div class="title2">While we’re good with smoke signals,<br>there are simpler ways for us to get in
@@ -205,19 +208,12 @@
                 <div>
                     <i class="location fa-solid fa-map-location-dot"></i>
                     <div class="address">
-                        <b>PES University Ring Road Campus</b><br>100 Feet Ring Road, Banashankari Stage III,<br>Dwaraka
+                        <b>PES University Ring Road Campus</b>
+                    </div>
+                    <div class="address2">
+                        100 Feet Ring Road, Banashankari Stage III,<br>Dwaraka
                         Nagar, Banashankari, Bengaluru, Karnataka 560085
                     </div>
-                </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="contact-social">
-                    <a aria-label="social-link" href="https://www.instagram.com/shunya_pes/"><i
-                            class="contact-icon fa-brands fa-instagram"></i></a>
-                    <a aria-label="social-link" href="https://discord.gg/JjshWgbR"><i
-                            class=" contact-icon fa-brands fa-discord"></i></a>
-                    <a aria-label="social-link" href="mailto:shunya@.pes.edu"><i
-                            class="contact-icon fa-solid fa-envelope"></i></a>
-                    <a aria-label="social-link" href="https://www.linkedin.com/company/shunya-pes/"><i
-                            class="contact-icon fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <form data-aos="flip-up" action="https://formspree.io/f/maykwoka" class="contact_form" id="contact-form"
@@ -254,9 +250,9 @@
             </form>
         </div>
     </section>
-    <footer data-aos="fade-up">
-        <img class="footer-logo1" src="Assets\homePage\PES_LogoWhite.webp" alt="" class="logo" />
-        <div class="middle-container" data-aos="fade-up">
+    <footer>
+        <img class="footer-logo1" src="Assets\homePage\PES_LogoBlack.png" alt="" class="logo" />
+        <div class="middle-container">
             <div class="footer-links">
                 <a aria-label="footer-link" href="#events_section" class="footerlink">Blogs</a>
                 <a aria-label="footer-link" href="#blog_section" class="footerlink">Events</a>
@@ -274,13 +270,15 @@
             </div>
             <div class="footer-text">Shunya 2022 ● All rights reserved<br>Made with ❣️ by Shunya Web Dev Team</div>
         </div>
-        <img class="footer-logo2" src="Assets\homePage\logo.webp" alt="" class="logo" />
+        <img class="footer-logo2" src="Assets\homePage\logo_black.png" alt="" class="logo" />
     </footer>
 </body>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
 <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 <script src="js/main.js"></script>
 
 </html>
