@@ -833,3 +833,13 @@ footer {
   font-size: 17px;
   font-weight: 500;
 }
+
+.footerlink:hover {
+  color: var(--color3);
+  transition: 0.4s ease;
+}
+
+.footer-icon:hover {
+  color: var(--color3);
+  transition: 0.4s ease;
+}
