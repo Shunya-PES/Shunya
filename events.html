@@ -10,11 +10,57 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    setTimeout(function () {
+      $(".loader-wrapper").fadeToggle();
+    }, 1500);
+  </script>
 </head>
 
-<!-- end of header -->
-
+  <!-- Preloader start-->
+  <div class="loader-wrapper">
+    <img
+      class="loader-logo"
+      src="Assets/homePage/logo_white.webp"
+      alt=""
+      class="logo"
+    />
+    <div class="boxes">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+  />
+  
+  <!-- Preloader end-->
 <body>
+
   <header>
     <div id="event-top" class="banner">
       <div class="container">
@@ -97,9 +143,7 @@
   </div>
   <img class="footer-logo2" data-aos="fade-left" src="Assets\homePage\logo_white.webp" alt="" class="logo" />
 </footer>
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/events.js"></script>
-<script src="js/main.js"></script>
+
+
 
 </html>
