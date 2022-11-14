@@ -5,7 +5,7 @@ setTimeout(function () {
 AOS.init();
 
 VANTA.NET({
-    el: "#vantajs",
+    el: "#dynamicHero",
     mouseControls: true,
     touchControls: false,
     minHeight: 100.00,
@@ -21,7 +21,7 @@ VANTA.NET({
 
 if (screen.width >= 350 && screen.width < 580) {
     VANTA.NET({
-        el: "#vantajs",
+        el: "#dynamicHero",
         mouseControls: true,
         touchControls: true,
         minHeight: 100.00,
@@ -37,7 +37,7 @@ if (screen.width >= 350 && screen.width < 580) {
 }
 if (screen.width >= 580 && screen.width < 700) {
     VANTA.NET({
-        el: "#vantajs",
+        el: "#dynamicHero",
         mouseControls: true,
         touchControls: true,
         minHeight: 100.00,
