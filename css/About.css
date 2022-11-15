@@ -1,0 +1,348 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: #001322;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+
+section {
+	padding: 1em;
+	text-align: center;
+}
+
+/* Header */
+.codrops-header {
+	margin: 0 auto;
+	padding: 3em 1em;
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 800;
+	font-size: 3em;
+	line-height: 1.3;
+	color: #fff;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Related demos */
+.related {
+	padding: 6em 1em;
+	font-size: 120%;
+}
+@media screen and (max-width: 25em) {
+
+	.codrops-header {
+		font-size: 75%;
+	}
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+.grid {
+	overflow: hidden;
+	margin: 0;
+	padding: 1em 0 0 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: 1rem;
+	width: 30%;
+	height: 400px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+
+
+.grid figure h2 {
+	word-spacing: 5px;
+	font-size: 23px;
+	font-weight: 300;
+}
+
+
+.grid figure h2,
+.grid figure p {
+	margin: 5px;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+
+
+/*---------------*/
+/***** Zoe *****/
+/*---------------*/
+
+figure.effect-zoe figcaption {
+	top: auto;
+	bottom: 0;
+	padding: 1em;
+	height: 3.75em;
+	background: yellow;
+	width: 400px;
+	border-radius: 0 0 5px 5px;
+	color: black;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+.effect-zoe figcaption a i {
+	font-size: 30px;
+	position: relative; 
+	left: -10px; 
+	top: 5px;
+	color: black;
+	opacity: 1;
+}
+
+.effect-zoe figcaption a i:hover {
+	color: orange;
+	transition: 0.4s ease;
+}
+
+figure.effect-zoe figcaption a {
+	color: #39545e;
+}
+
+figure.effect-zoe h2 {
+	float: left;
+}
+
+figure.effect-zoe figcaption > span {
+	float: right;
+}
+
+figure.effect-zoe p {
+	position: absolute;
+	bottom: 8em;
+	padding: 2em;
+	color: #fff;
+	text-transform: none;
+	font-size: 90%;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-zoe h2,
+figure.effect-zoe figcaption > span {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+
+figure.effect-zoe figcaption > span::before {
+	display: inline-block;
+	padding: 8px 10px;
+	font-family: 'feathericons';
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye::before {
+	content: '\e000';
+}
+
+.icon-paper-clip::before {
+	content: '\e001';
+}
+
+.icon-heart::before {
+	content: '\e024';
+}
+
+figure.effect-zoe h2 {
+	display: inline-block;
+}
+
+figure.effect-zoe:hover p {
+	opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover figcaption > span {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe:hover h2 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-zoe:hover figcaption > span:nth-child(4) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover figcaption > span:nth-child(3) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.effect-zoe:hover figcaption > span:nth-child(2) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+img {
+	width: 400px;
+	height: 100px;
+	border-radius: 5px;
+}
+
+/* footer section start */
+
+footer {
+	height: fit-content;
+	width: 100vw-200px;
+	background-color: var(--color1);
+	padding: 20px 100px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+  }
+  
+  .footer-logo1 {
+	height: 67.3px;
+	width: 215.5px;
+  }
+  
+  .footer-logo2 {
+	height: 120px;
+	width: 120px;
+	margin: 20px 0 20px 95.5px;
+  }
+  
+  .footer-social {
+	text-align: center;
+	margin: 25px 10px 20px;
+  }
+
+  .footer-social a {
+	color: #fff;
+  }
+  
+  .footer-icon {
+	color: var(--color4);
+	font-size: 25px;
+	padding: 2px 10px;
+  }
+  
+  .footer-text {
+	color: white;
+	font-size: 11px;
+	font-weight: 500;
+	text-align: center;
+	padding: 3px;
+  }
+  
+  .footerlink {
+	margin: 20px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  .footerlink:hover {
+	color: var(--color3);
+	transition: 0.4s ease;
+  }
+  
+  .footer-icon:hover {
+	color: black;
+	transition: 0.4s ease;
+  }
+  
+  
+  /* footer section end */
