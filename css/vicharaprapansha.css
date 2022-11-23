@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(137, 106, 232);
+  border-radius: 10px;
+}
+
+#header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 5;
+}
+
+#info {
+  height: 100vh;
+  width: 100vw;
+}
+
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+  width: 100vw; /* Full width (cover the whole page) */
+  height: 100vh; /* Full height (cover the whole page) */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  pointer-events: none;
+}
+
+/* s */
