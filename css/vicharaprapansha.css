@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: transparent;
+  border-radius: 5px;
+  background-color: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(137, 106, 232);
+  border-radius: 10px;
+}
+
+#header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10vh;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 5;
+}
+
+#logo-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vh;
+}
+
+#logo {
+  height: 20vh;
+}
+
+#info {
+  height: 100vh;
+  width: 100vw;
+}
+
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+  width: 100vw; /* Full width (cover the whole page) */
+  height: 100vh; /* Full height (cover the whole page) */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  pointer-events: none;
+}
