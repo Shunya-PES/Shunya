@@ -30,5 +30,6 @@ This repository contains all the files and folders for the Official Shunya Websi
 3) Samar Pratap : https://github.com/noughtsamar
 4) Anirudh Revanur: https://github.com/AnirudhRevanur
 5) Abhishek Honnapure: https://github.com/its-abhishek
+6) Karthik Namboori: https://github.com/karthik2603-theBrogrammer
 
 ## Happy Coding 👨‍💻
