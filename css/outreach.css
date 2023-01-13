@@ -1,8 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville:wght@700&family=Merriweather:wght@300;400&family=Montserrat:ital,wght@0,100;0,200;1,600&family=Noto+Sans:ital,wght@0,600;1,800&family=Noto+Serif:ital@0;1&family=Open+Sans:ital,wght@0,400;1,500&family=Poor+Story&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Work+Sans:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville:wght@700&family=Merriweather:wght@300;400&family=Montserrat:ital,wght@0,100;0,200;1,600&family=Noto+Sans:ital,wght@0,600;1,800&family=Noto+Serif:ital@0;1&family=Open+Sans:ital,wght@0,400;1,500&family=PT+Serif:ital,wght@0,700;1,400&family=Poor+Story&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Work+Sans:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville:wght@700&family=Merriweather:wght@300;400&family=Montserrat:ital,wght@0,100;0,200;1,600&family=Noto+Sans:ital,wght@0,600;1,800&family=Noto+Serif:ital@0;1&family=Open+Sans:ital,wght@0,400;1,500&family=Poor+Story&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Work+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville:wght@700&family=Merriweather:wght@300;400&family=Montserrat:ital,wght@0,100;0,200;1,600&family=Noto+Sans:ital,wght@0,600;1,800&family=Noto+Serif:ital@0;1&family=Open+Sans:ital,wght@0,400;1,500&family=PT+Serif:ital,wght@0,700;1,400&family=Poor+Story&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Work+Sans:ital@0;1&display=swap');
+:root {
+  --color1: #001322;
+  --color2: #0052c9;
+  --color3: #0ea5e9;
+  --color4: #ffffff;
+  --color5: #e6f1ff;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar {
+  z-index: 500;
+  border: 2px solid var(--color4);
+  border-right: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: fixed;
+  background-color: #001322db;
+  width: 100px;
+  right: -100px;
+  top: 35vh;
+  height: fit-content;
+  padding: 20px 0;
+  transition: right 0.4s ease-in-out;
+}
+
+.toggle {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  padding: 10px;
+  color: var(--color4);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid var(--color4);
+  border-right: 0px;
+  background-color: #001322db;
+}
+
+.nav-item {
+  padding: 10px 15px;
+  font-size: 21px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color4);
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  color: var(--color3);
+}
+
+.navbar:hover {
+  right: 0px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--color2);
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color2);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.scrollup {
+  visibility: hidden;
+  transition: 0.2s all;
+  display: flex;
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  z-index: 500;
+  border-radius: 50%;
+  border: 2px solid var(--color4);
+  background-color: #00a4ebd6;
+  right: 20px;
+  bottom: 30px;
+}
+
+.scrollup a {
+  color: var(--color1);
+}
+
+.scrollup:hover {
+  background-color: var(--color2);
 }
 
 body {
@@ -10,16 +115,22 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-body:active .canvas, body:active .canvas *,
-body:active .canvas, body:active .canvas *::before,
-body:active .canvas, body:active .canvas *::after {
+body:active .canvas,
+body:active .canvas *,
+body:active .canvas,
+body:active .canvas *::before,
+body:active .canvas,
+body:active .canvas *::after {
   padding: 40px;
 }
 
-.canvas, .canvas *,
-.canvas::before, .canvas *::before,
-.canvas::before, .canvas *::after {
-  content: "";
+.canvas,
+.canvas *,
+.canvas::before,
+.canvas *::before,
+.canvas::before,
+.canvas *::after {
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
@@ -30,7 +141,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .purple {
   -webkit-animation: purple linear 30s alternate infinite;
-          animation: purple linear 30s alternate infinite;
+  animation: purple linear 30s alternate infinite;
   border: 2px solid #241379;
   border-radius: 100%;
   width: 12px;
@@ -41,7 +152,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .purple::before {
   -webkit-animation: purple-pseudo linear 15s alternate infinite;
-          animation: purple-pseudo linear 15s alternate infinite;
+  animation: purple-pseudo linear 15s alternate infinite;
   background: #241379;
   border: 2px solid #241379;
   width: 31px;
@@ -51,7 +162,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .purple::after {
   -webkit-animation: purple-pseudo linear 20s alternate infinite;
-          animation: purple-pseudo linear 20s alternate infinite;
+  animation: purple-pseudo linear 20s alternate infinite;
   border: 2px solid #241379;
   width: 28px;
   height: 22px;
@@ -93,7 +204,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .medium-blue {
   -webkit-animation: medium-blue linear 30s alternate infinite;
-          animation: medium-blue linear 30s alternate infinite;
+  animation: medium-blue linear 30s alternate infinite;
   border: 2px solid #2185bf;
   border-radius: 100%;
   width: 26px;
@@ -104,7 +215,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .medium-blue::before {
   -webkit-animation: medium-blue-pseudo linear 15s alternate infinite;
-          animation: medium-blue-pseudo linear 15s alternate infinite;
+  animation: medium-blue-pseudo linear 15s alternate infinite;
   background: #2185bf;
   border: 2px solid #2185bf;
   width: 21px;
@@ -114,7 +225,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .medium-blue::after {
   -webkit-animation: medium-blue-pseudo linear 20s alternate infinite;
-          animation: medium-blue-pseudo linear 20s alternate infinite;
+  animation: medium-blue-pseudo linear 20s alternate infinite;
   border: 2px solid #2185bf;
   width: 34px;
   height: 25px;
@@ -156,7 +267,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .light-blue {
   -webkit-animation: light-blue linear 30s alternate infinite;
-          animation: light-blue linear 30s alternate infinite;
+  animation: light-blue linear 30s alternate infinite;
   border: 2px solid #1fbce1;
   border-radius: 100%;
   width: 23px;
@@ -167,7 +278,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .light-blue::before {
   -webkit-animation: light-blue-pseudo linear 15s alternate infinite;
-          animation: light-blue-pseudo linear 15s alternate infinite;
+  animation: light-blue-pseudo linear 15s alternate infinite;
   background: #1fbce1;
   border: 2px solid #1fbce1;
   width: 5px;
@@ -177,7 +288,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .light-blue::after {
   -webkit-animation: light-blue-pseudo linear 20s alternate infinite;
-          animation: light-blue-pseudo linear 20s alternate infinite;
+  animation: light-blue-pseudo linear 20s alternate infinite;
   border: 2px solid #1fbce1;
   width: 35px;
   height: 36px;
@@ -219,7 +330,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .red {
   -webkit-animation: red linear 30s alternate infinite;
-          animation: red linear 30s alternate infinite;
+  animation: red linear 30s alternate infinite;
   border: 2px solid #b62f56;
   border-radius: 100%;
   width: 5px;
@@ -230,7 +341,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .red::before {
   -webkit-animation: red-pseudo linear 15s alternate infinite;
-          animation: red-pseudo linear 15s alternate infinite;
+  animation: red-pseudo linear 15s alternate infinite;
   background: #b62f56;
   border: 2px solid #b62f56;
   width: 37px;
@@ -240,7 +351,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .red::after {
   -webkit-animation: red-pseudo linear 20s alternate infinite;
-          animation: red-pseudo linear 20s alternate infinite;
+  animation: red-pseudo linear 20s alternate infinite;
   border: 2px solid #b62f56;
   width: 40px;
   height: 47px;
@@ -282,7 +393,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .orange {
   -webkit-animation: orange linear 30s alternate infinite;
-          animation: orange linear 30s alternate infinite;
+  animation: orange linear 30s alternate infinite;
   border: 2px solid #d5764c;
   border-radius: 100%;
   width: 25px;
@@ -293,7 +404,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .orange::before {
   -webkit-animation: orange-pseudo linear 15s alternate infinite;
-          animation: orange-pseudo linear 15s alternate infinite;
+  animation: orange-pseudo linear 15s alternate infinite;
   background: #d5764c;
   border: 2px solid #d5764c;
   width: 21px;
@@ -303,7 +414,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .orange::after {
   -webkit-animation: orange-pseudo linear 20s alternate infinite;
-          animation: orange-pseudo linear 20s alternate infinite;
+  animation: orange-pseudo linear 20s alternate infinite;
   border: 2px solid #d5764c;
   width: 39px;
   height: 21px;
@@ -345,7 +456,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .yellow {
   -webkit-animation: yellow linear 30s alternate infinite;
-          animation: yellow linear 30s alternate infinite;
+  animation: yellow linear 30s alternate infinite;
   border: 2px solid #ffd53e;
   border-radius: 100%;
   width: 10px;
@@ -356,7 +467,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .yellow::before {
   -webkit-animation: yellow-pseudo linear 15s alternate infinite;
-          animation: yellow-pseudo linear 15s alternate infinite;
+  animation: yellow-pseudo linear 15s alternate infinite;
   background: #ffd53e;
   border: 2px solid #ffd53e;
   width: 37px;
@@ -366,7 +477,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .yellow::after {
   -webkit-animation: yellow-pseudo linear 20s alternate infinite;
-          animation: yellow-pseudo linear 20s alternate infinite;
+  animation: yellow-pseudo linear 20s alternate infinite;
   border: 2px solid #ffd53e;
   width: 49px;
   height: 30px;
@@ -408,7 +519,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .cyan {
   -webkit-animation: cyan linear 30s alternate infinite;
-          animation: cyan linear 30s alternate infinite;
+  animation: cyan linear 30s alternate infinite;
   border: 2px solid #78ffba;
   border-radius: 100%;
   width: 47px;
@@ -419,7 +530,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .cyan::before {
   -webkit-animation: cyan-pseudo linear 15s alternate infinite;
-          animation: cyan-pseudo linear 15s alternate infinite;
+  animation: cyan-pseudo linear 15s alternate infinite;
   background: #78ffba;
   border: 2px solid #78ffba;
   width: 42px;
@@ -429,7 +540,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .cyan::after {
   -webkit-animation: cyan-pseudo linear 20s alternate infinite;
-          animation: cyan-pseudo linear 20s alternate infinite;
+  animation: cyan-pseudo linear 20s alternate infinite;
   border: 2px solid #78ffba;
   width: 10px;
   height: 24px;
@@ -471,7 +582,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .light-green {
   -webkit-animation: light-green linear 30s alternate infinite;
-          animation: light-green linear 30s alternate infinite;
+  animation: light-green linear 30s alternate infinite;
   border: 2px solid #98fd85;
   border-radius: 100%;
   width: 11px;
@@ -482,7 +593,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .light-green::before {
   -webkit-animation: light-green-pseudo linear 15s alternate infinite;
-          animation: light-green-pseudo linear 15s alternate infinite;
+  animation: light-green-pseudo linear 15s alternate infinite;
   background: #98fd85;
   border: 2px solid #98fd85;
   width: 9px;
@@ -492,7 +603,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .light-green::after {
   -webkit-animation: light-green-pseudo linear 20s alternate infinite;
-          animation: light-green-pseudo linear 20s alternate infinite;
+  animation: light-green-pseudo linear 20s alternate infinite;
   border: 2px solid #98fd85;
   width: 13px;
   height: 45px;
@@ -534,7 +645,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .lime {
   -webkit-animation: lime linear 30s alternate infinite;
-          animation: lime linear 30s alternate infinite;
+  animation: lime linear 30s alternate infinite;
   border: 2px solid #befb46;
   border-radius: 100%;
   width: 19px;
@@ -545,7 +656,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .lime::before {
   -webkit-animation: lime-pseudo linear 15s alternate infinite;
-          animation: lime-pseudo linear 15s alternate infinite;
+  animation: lime-pseudo linear 15s alternate infinite;
   background: #befb46;
   border: 2px solid #befb46;
   width: 7px;
@@ -555,7 +666,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .lime::after {
   -webkit-animation: lime-pseudo linear 20s alternate infinite;
-          animation: lime-pseudo linear 20s alternate infinite;
+  animation: lime-pseudo linear 20s alternate infinite;
   border: 2px solid #befb46;
   width: 44px;
   height: 24px;
@@ -597,7 +708,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .magenta {
   -webkit-animation: magenta linear 30s alternate infinite;
-          animation: magenta linear 30s alternate infinite;
+  animation: magenta linear 30s alternate infinite;
   border: 2px solid #6c046c;
   border-radius: 100%;
   width: 21px;
@@ -608,7 +719,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .magenta::before {
   -webkit-animation: magenta-pseudo linear 15s alternate infinite;
-          animation: magenta-pseudo linear 15s alternate infinite;
+  animation: magenta-pseudo linear 15s alternate infinite;
   background: #6c046c;
   border: 2px solid #6c046c;
   width: 30px;
@@ -618,7 +729,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .magenta::after {
   -webkit-animation: magenta-pseudo linear 20s alternate infinite;
-          animation: magenta-pseudo linear 20s alternate infinite;
+  animation: magenta-pseudo linear 20s alternate infinite;
   border: 2px solid #6c046c;
   width: 23px;
   height: 40px;
@@ -660,7 +771,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .lightish-red {
   -webkit-animation: lightish-red linear 30s alternate infinite;
-          animation: lightish-red linear 30s alternate infinite;
+  animation: lightish-red linear 30s alternate infinite;
   border: 2px solid #f04c81;
   border-radius: 100%;
   width: 32px;
@@ -671,7 +782,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .lightish-red::before {
   -webkit-animation: lightish-red-pseudo linear 15s alternate infinite;
-          animation: lightish-red-pseudo linear 15s alternate infinite;
+  animation: lightish-red-pseudo linear 15s alternate infinite;
   background: #f04c81;
   border: 2px solid #f04c81;
   width: 45px;
@@ -681,7 +792,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .lightish-red::after {
   -webkit-animation: lightish-red-pseudo linear 20s alternate infinite;
-          animation: lightish-red-pseudo linear 20s alternate infinite;
+  animation: lightish-red-pseudo linear 20s alternate infinite;
   border: 2px solid #f04c81;
   width: 22px;
   height: 32px;
@@ -723,7 +834,7 @@ body:active .canvas, body:active .canvas *::after {
 }
 .pink {
   -webkit-animation: pink linear 30s alternate infinite;
-          animation: pink linear 30s alternate infinite;
+  animation: pink linear 30s alternate infinite;
   border: 2px solid #ff4293;
   border-radius: 100%;
   width: 9px;
@@ -734,7 +845,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .pink::before {
   -webkit-animation: pink-pseudo linear 15s alternate infinite;
-          animation: pink-pseudo linear 15s alternate infinite;
+  animation: pink-pseudo linear 15s alternate infinite;
   background: #ff4293;
   border: 2px solid #ff4293;
   width: 45px;
@@ -744,7 +855,7 @@ body:active .canvas, body:active .canvas *::after {
 
 .pink::after {
   -webkit-animation: pink-pseudo linear 20s alternate infinite;
-          animation: pink-pseudo linear 20s alternate infinite;
+  animation: pink-pseudo linear 20s alternate infinite;
   border: 2px solid #ff4293;
   width: 22px;
   height: 13px;
@@ -793,7 +904,7 @@ body:active .canvas, body:active .canvas *::after {
   flex-direction: column;
   text-align: center;
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .parent-container img {
@@ -812,7 +923,7 @@ body:active .canvas, body:active .canvas *::after {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .program {
@@ -826,7 +937,7 @@ body:active .canvas, body:active .canvas *::after {
   margin: 10px;
   height: 42vh;
   width: 80%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } /*# sourceMappingURL=style.css.map */
 .programtext {
   margin-top: 10px;
@@ -839,12 +950,12 @@ body:active .canvas, body:active .canvas *::after {
   font-weight: bolder;
   color: rgb(88, 6, 165);
   font-size: 25px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .program > h3 {
   color: #2f6775;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   margin-top: 5px;
 }
 
@@ -904,7 +1015,7 @@ body:active .canvas, body:active .canvas *::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
 }
 
@@ -919,4 +1030,4 @@ body:active .canvas, body:active .canvas *::after {
 #logo {
   height: 20%;
   width: 20%;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
