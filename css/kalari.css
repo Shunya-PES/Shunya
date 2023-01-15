@@ -1,0 +1,51 @@
+.hero-section {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+#dynamicHeroKalari {
+  position: static;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-content-container-kalari {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.image-container-kalari {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-kalari {
+  display: block;
+  margin: 0 auto;
+  width: 60vw;
+  /* max-width: 400px; */
+}
+
+.pes_logo {
+  display: block;
+  margin: 0 auto;
+  width: 10vw;
+  /* max-width: 400px; */
+}
+
+.shunya_logo {
+  display: block;
+  margin: 0 auto;
+  width: 7vw;
+  /* max-width: 400px; */
+}

@@ -241,7 +241,7 @@ html {
   background-color: var(--color1);
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /*navbar*/
@@ -298,7 +298,7 @@ html {
 }
 
 .hover-underline-animation:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -410,6 +410,7 @@ html {
   padding: 10px;
   display: inline-block;
   margin: 30px auto 20px;
+  text-align: center;
 }
 
 .light {
@@ -482,7 +483,7 @@ html {
 }
 
 .event-button {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   border: 2px solid var(--color1);
   border-radius: 18px;
   background-color: var(--color3);
@@ -508,6 +509,17 @@ html {
   line-height: 1.65rem;
 }
 
+.event-image-1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  border: 2px solid var(--color3);
+  float: right;
+  margin: 0 0px 0 40px;
+  background: url('../Assets/kalari/post.jpeg') no-repeat center;
+  background-size: contain;
+  transition: 0.3s all;
+}
 .event-image {
   width: 250px;
   height: 250px;
@@ -515,14 +527,18 @@ html {
   border: 2px solid var(--color3);
   float: right;
   margin: 0 0px 0 40px;
-  background: url("../Assets/eventsPage/arithmania.webp") no-repeat center;
+  background: url('../Assets/eventsPage/arithmania.webp') no-repeat center;
   background-size: contain;
   transition: 0.3s all;
 }
 
+.event-image-1:hover {
+  transition: 0.4s all;
+  background-image: url('../Assets/homePage/know-more-overlay.webp');
+}
 .event-image:hover {
   transition: 0.4s all;
-  background-image: url("../Assets/homePage/know-more-overlay.webp");
+  background-image: url('../Assets/homePage/know-more-overlay.webp');
 }
 
 /*Blogs-Section*/
@@ -599,7 +615,7 @@ html {
 
 .card:before,
 .card:after {
-  content: "";
+  content: '';
   transform: scale(0);
   transform-origin: top left;
   border-radius: 50%;
@@ -752,7 +768,7 @@ html {
   padding: 5px 5px;
   width: 288px;
   margin: 10px 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--color1);
   border: 2px solid var(--color4);
   border-radius: 10px;
@@ -770,7 +786,7 @@ html {
 }
 
 .submit-button {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   width: 150px;
   height: 40px;
@@ -797,10 +813,8 @@ footer {
 }
 
 .footer-logo1 {
-
   height: 100px;
   width: 215.5px;
-
 }
 
 .footer-logo2 {
