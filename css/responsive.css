@@ -1,6 +1,84 @@
 /*Responsive*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 0px) and (max-width: 580px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .arthMobile {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 20%, #1b2633, #1b2633);
+  }
+
+  .arthCoverMobile {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    right: 0;
+    bottom: 0;
+    background-color: #1b2633;
+    z-index: 100;
+  }
+
+  .arthLoadingMobile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+
+  .arthButtonMobile {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 300;
+    /* add button animation and blue color */
+    background-color: #8d8cfb;
+    box-shadow: 3 3 3 3 #000;
+    animation: pulse 2s infinite;
+  }
+
+  .arthLoading .arthTextMobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8em;
+    font-weight: 900;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .arthLoading .arthText1Mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+
   .arth {
     display: none;
   }
@@ -254,6 +332,84 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 580px) and (max-width: 768px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .arthMobile {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 20%, #1b2633, #1b2633);
+  }
+
+  .arthCoverMobile {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    right: 0;
+    bottom: 0;
+    background-color: #1b2633;
+    z-index: 100;
+  }
+
+  .arthLoadingMobile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+
+  .arthButtonMobile {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 300;
+    /* add button animation and blue color */
+    background-color: #8d8cfb;
+    box-shadow: 3 3 3 3 #000;
+    animation: pulse 2s infinite;
+  }
+
+  .arthLoading .arthTextMobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8em;
+    font-weight: 900;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .arthLoading .arthText1Mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+
   .arth {
     display: none;
   }
@@ -448,6 +604,84 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .arthMobile {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 20%, #1b2633, #1b2633);
+  }
+
+  .arthCoverMobile {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    right: 0;
+    bottom: 0;
+    background-color: #1b2633;
+    z-index: 100;
+  }
+
+  .arthLoadingMobile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+
+  .arthButtonMobile {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 300;
+    /* add button animation and blue color */
+    background-color: #8d8cfb;
+    box-shadow: 3 3 3 3 #000;
+    animation: pulse 2s infinite;
+  }
+
+  .arthLoading .arthTextMobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8em;
+    font-weight: 900;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .arthLoading .arthText1Mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+
   .arth {
     display: none;
   }
