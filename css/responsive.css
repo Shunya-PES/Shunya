@@ -1,6 +1,10 @@
 /*Responsive*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 0px) and (max-width: 580px) {
+  .arth {
+    display: none;
+  }
+
   /*hero-section*/
   .navbar {
     border-left: 0px;
@@ -250,6 +254,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 580px) and (max-width: 768px) {
+  .arth {
+    display: none;
+  }
   /*hero-section*/
   .item2 {
     font-size: 30px;
@@ -441,6 +448,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .arth {
+    display: none;
+  }
   /*hero-section*/
   .item2 {
     font-size: 35px;

@@ -17,9 +17,70 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at 50% 20%, #1a232e, #000);
+  background: radial-gradient(circle at 50% 20%, #1b2633, #1b2633);
 }
 
+.arthCover {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  right: 0;
+  bottom: 0;
+  background-color: #1b2633;
+  z-index: 100;
+}
+
+.arthLoading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.arthButton {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 100;
+  /* add button animation and blue color */
+  background-color: #8d8cfb;
+  box-shadow: 3 3 3 3 #000;
+  animation: pulse 2s infinite;
+}
+
+.arthLoading .arthText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 8em;
+  font-weight: 900;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.arthLoading .arthText1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+/*
 .arthDiv {
   position: absolute;
   padding: 0px 10px 20px;
@@ -492,7 +553,7 @@ arthlogin-box .arthlogin-box a span:nth-child(3) {
   100% {
     bottom: 100%;
   }
-}
+} */
 
 /* Preloader start */
 .loader-wrapper {
